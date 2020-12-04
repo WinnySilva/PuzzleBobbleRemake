@@ -1,7 +1,883 @@
 fileFormatVersion: 2
 guid: 8eb42a8d8ca927641abd573d4677b4df
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5004029512607437839
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_0
+  - first:
+      213: -6057261465111190469
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_1
+  - first:
+      213: 6624061068305371649
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_2
+  - first:
+      213: -2387050516852114800
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_3
+  - first:
+      213: 1988159520292634191
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_4
+  - first:
+      213: 479631991423283190
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_5
+  - first:
+      213: 7313358923258658714
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_6
+  - first:
+      213: -7780941877117154257
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_7
+  - first:
+      213: 4943705838668540522
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_8
+  - first:
+      213: -7856315657919442870
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_9
+  - first:
+      213: 745987784448009806
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_10
+  - first:
+      213: 524879117545623673
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_11
+  - first:
+      213: 7843449334404260820
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_12
+  - first:
+      213: -4135577980218338206
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_13
+  - first:
+      213: 5330147697086992959
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_14
+  - first:
+      213: -4300287447745400831
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_15
+  - first:
+      213: 8354870905114184238
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_16
+  - first:
+      213: -1009546086875998931
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_17
+  - first:
+      213: -2710751285972960792
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_18
+  - first:
+      213: 4333818414570430846
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_19
+  - first:
+      213: -7537786694860283402
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_20
+  - first:
+      213: 2045783763448929608
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_21
+  - first:
+      213: 7346806471156322423
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_22
+  - first:
+      213: -3861416568018921405
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_23
+  - first:
+      213: 2659803091486377083
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_24
+  - first:
+      213: 5685975483143011432
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_25
+  - first:
+      213: -1408741060437223184
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_26
+  - first:
+      213: 1653842057569712795
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_27
+  - first:
+      213: -5664862157606252856
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_28
+  - first:
+      213: -3288173427585800609
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_29
+  - first:
+      213: 8387189211929145081
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_30
+  - first:
+      213: -1255801814492097898
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_31
+  - first:
+      213: 4896382102793778975
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_32
+  - first:
+      213: 7189797077849703576
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_33
+  - first:
+      213: -1810571804975158461
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_34
+  - first:
+      213: -3175218980425582974
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_35
+  - first:
+      213: 3090544889358213580
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_36
+  - first:
+      213: 7553571669720642969
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_37
+  - first:
+      213: 6869679161984030012
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_38
+  - first:
+      213: -8998812613689288987
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_39
+  - first:
+      213: -3051484809893775774
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_40
+  - first:
+      213: -1099082397381715642
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_41
+  - first:
+      213: 4395237039797040063
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_42
+  - first:
+      213: 1091021477909383929
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_43
+  - first:
+      213: -9166377208098002651
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_44
+  - first:
+      213: -7656751469749161847
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_45
+  - first:
+      213: 5683657254559247957
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_46
+  - first:
+      213: -7588778210925311307
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_47
+  - first:
+      213: -637245273381164214
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_48
+  - first:
+      213: 7906062000578246212
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_49
+  - first:
+      213: -6489573736008366121
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_50
+  - first:
+      213: 3526725259513215969
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_51
+  - first:
+      213: 7422283741410056218
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_52
+  - first:
+      213: -2078960803274900084
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_53
+  - first:
+      213: 402433746113117907
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_54
+  - first:
+      213: -6059035025007793170
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_55
+  - first:
+      213: -1875765257208507751
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_56
+  - first:
+      213: 5878909149831811560
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_57
+  - first:
+      213: -7870050366078706776
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_58
+  - first:
+      213: -7471212782721285270
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_59
+  - first:
+      213: -1080589768396575725
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_60
+  - first:
+      213: 2256309832091789456
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_61
+  - first:
+      213: -5319900242147937871
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_62
+  - first:
+      213: 5219222289878944425
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_63
+  - first:
+      213: 4084337756477302853
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_64
+  - first:
+      213: -4661836160109568856
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_65
+  - first:
+      213: 4496860563746664080
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_66
+  - first:
+      213: 1832819432691623950
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_67
+  - first:
+      213: -8657551358084685675
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_68
+  - first:
+      213: 1313176981750824200
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_69
+  - first:
+      213: 6866595215072122727
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_70
+  - first:
+      213: 2275120690912420881
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_71
+  - first:
+      213: -7948693807365194395
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_72
+  - first:
+      213: -2557281675837420724
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_73
+  - first:
+      213: -7160441995302970688
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_74
+  - first:
+      213: -6430551557001138907
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_75
+  - first:
+      213: -3108068500391989895
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_76
+  - first:
+      213: -1390689801919062894
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_77
+  - first:
+      213: 6466594906149924241
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_78
+  - first:
+      213: 3595637921584804267
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_79
+  - first:
+      213: -5184161522336126128
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_80
+  - first:
+      213: 9023774347645582512
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_81
+  - first:
+      213: 917778960899004118
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_82
+  - first:
+      213: -2758523592298286614
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_83
+  - first:
+      213: 2573979455118978767
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_84
+  - first:
+      213: 8582984657715925545
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_85
+  - first:
+      213: -5901976452220734501
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_86
+  - first:
+      213: -189333847211198265
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_87
+  - first:
+      213: 2257584875613238666
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_88
+  - first:
+      213: -966890792678231803
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_89
+  - first:
+      213: -7494601597540993902
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_90
+  - first:
+      213: 5914929736917822217
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_91
+  - first:
+      213: 1028220541425458175
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_92
+  - first:
+      213: 6033826809526175242
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_93
+  - first:
+      213: 4833856427757214767
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_94
+  - first:
+      213: 211666520786515418
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_95
+  - first:
+      213: -6906261935495765015
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_96
+  - first:
+      213: 7598297894492832689
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_97
+  - first:
+      213: 917101750459335985
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_98
+  - first:
+      213: 3424056146707128047
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_99
+  - first:
+      213: 7711956536450523349
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_100
+  - first:
+      213: 3596759149476158929
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_101
+  - first:
+      213: 3502653119047734440
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_102
+  - first:
+      213: -1209660504460427144
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_103
+  - first:
+      213: -2511464734075300676
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_104
+  - first:
+      213: -5913134338673880619
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_105
+  - first:
+      213: -645617668754084959
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_106
+  - first:
+      213: 5282941492257328526
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_107
+  - first:
+      213: 6015035621333142039
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_108
+  - first:
+      213: -2115102238562485210
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_109
+  - first:
+      213: -8857575738296126543
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_110
+  - first:
+      213: 804194209232050571
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_111
+  - first:
+      213: 2587079144651000880
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_112
+  - first:
+      213: 7402209865729627549
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_113
+  - first:
+      213: 8049640604044536458
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_114
+  - first:
+      213: -1474103008514683295
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_115
+  - first:
+      213: -2936602057178403708
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_116
+  - first:
+      213: -2775077979245089014
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_117
+  - first:
+      213: 5221308692231880617
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_118
+  - first:
+      213: 3308017143317603286
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_119
+  - first:
+      213: -6615682783485387563
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_120
+  - first:
+      213: 1257015542426306769
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_121
+  - first:
+      213: 5751227236892288405
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_122
+  - first:
+      213: 8119801274942640545
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_123
+  - first:
+      213: -6819288583628634705
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_124
+  - first:
+      213: 4747414618100805932
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_125
+  - first:
+      213: 1945148161811730084
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_126
+  - first:
+      213: 2583586978088132070
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_127
+  - first:
+      213: 8019388676142941661
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_128
+  - first:
+      213: -7822732258490738202
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_129
+  - first:
+      213: -5896928359739107316
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_130
+  - first:
+      213: 238758534708429906
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_131
+  - first:
+      213: -1734907887614214123
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_132
+  - first:
+      213: 1071572940146295967
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_133
+  - first:
+      213: 8502294538406123275
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_134
+  - first:
+      213: 1475253334618962839
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_135
+  - first:
+      213: 5907310155571758695
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_136
+  - first:
+      213: -7476203332248991753
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_137
+  - first:
+      213: -7858280706430721880
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_138
+  - first:
+      213: 4779236627738270614
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_139
+  - first:
+      213: 8710747618179556427
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_140
+  - first:
+      213: 8100168495282512419
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_141
+  - first:
+      213: -3845917417591689309
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_142
+  - first:
+      213: -6062466020883292849
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_143
+  - first:
+      213: 1867593914033443146
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_144
+  - first:
+      213: 3288520546444606311
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_145
+  - first:
+      213: -1301605273324488452
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_146
+  - first:
+      213: 1808872563449581652
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_147
+  - first:
+      213: 6646179514883761863
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_148
+  - first:
+      213: 3696232178640697526
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_149
+  - first:
+      213: -4565143358639288537
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_150
+  - first:
+      213: 5395228973439796721
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_151
+  - first:
+      213: -2428223521260298181
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_152
+  - first:
+      213: -6342234023499694905
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_153
+  - first:
+      213: 6829987134606790138
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_154
+  - first:
+      213: 7681463152947944167
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_155
+  - first:
+      213: 4384827872284763785
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_156
+  - first:
+      213: -4836112411549790462
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_157
+  - first:
+      213: -4938496654892446238
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_158
+  - first:
+      213: -3905841652862613804
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_159
+  - first:
+      213: 8250385156874345592
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_160
+  - first:
+      213: 7804534896044260808
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_161
+  - first:
+      213: -5109142541677256828
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_162
+  - first:
+      213: 4150153082505007798
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_163
+  - first:
+      213: 2114686362065131233
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_164
+  - first:
+      213: -8271030131175065616
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_165
+  - first:
+      213: 6863631323526639428
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_166
+  - first:
+      213: -5172028934402602241
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_167
+  - first:
+      213: -1682889149598361998
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_168
+  - first:
+      213: -4797287344957483691
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_169
+  - first:
+      213: -6876700780455715665
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_170
+  - first:
+      213: 9176253186385421640
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_171
+  - first:
+      213: 1738142937523089948
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_172
+  - first:
+      213: 5265226958060093222
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_173
+  - first:
+      213: 6121407162369794931
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_174
+  - first:
+      213: 3847154037787538410
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_175
+  - first:
+      213: 671630452287933389
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_176
+  - first:
+      213: 681437602732314760
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_177
+  - first:
+      213: 2154247586239991446
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_178
+  - first:
+      213: -8991316752904724975
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_179
+  - first:
+      213: 8641511673537703113
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_180
+  - first:
+      213: 6398795281430482025
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_181
+  - first:
+      213: -6468258052375560915
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_182
+  - first:
+      213: 179619706843165360
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_183
+  - first:
+      213: -4121227009078409959
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_184
+  - first:
+      213: 494147518824252223
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_185
+  - first:
+      213: 1763351389013944339
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_186
+  - first:
+      213: 5646629879779359991
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_187
+  - first:
+      213: 9196154489818953919
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_188
+  - first:
+      213: 2975151915200516758
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_189
+  - first:
+      213: 4193313624649986439
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_190
+  - first:
+      213: 6788910766564762173
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_191
+  - first:
+      213: 2718948045368777520
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_192
+  - first:
+      213: -6678522315677108776
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_193
+  - first:
+      213: 3511512585747733841
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_194
+  - first:
+      213: 2516779388336441790
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_195
+  - first:
+      213: -6485398820665382050
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_196
+  - first:
+      213: 5777901781256891428
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_197
+  - first:
+      213: 8355833240539664955
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_198
+  - first:
+      213: 6816040699841443034
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_199
+  - first:
+      213: 521863577332815325
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_200
+  - first:
+      213: -8454813416501438269
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_201
+  - first:
+      213: -7988661467496461487
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_202
+  - first:
+      213: 7306053108576178683
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_203
+  - first:
+      213: 5717044821498848147
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_204
+  - first:
+      213: 2028067848062065857
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_205
+  - first:
+      213: 7597527349497257873
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_206
+  - first:
+      213: 3768527422811601190
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_207
+  - first:
+      213: -7394370481923046563
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_208
+  - first:
+      213: 5919543626131895889
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_209
+  - first:
+      213: 7335773327158539364
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_210
+  - first:
+      213: 2100221270178703719
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_211
+  - first:
+      213: 7685222445468461469
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_212
+  - first:
+      213: -8087868278766443996
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_213
+  - first:
+      213: -5807029814574276923
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_214
+  - first:
+      213: 3088501920439084122
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_215
+  - first:
+      213: -8987510420074519302
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_216
+  - first:
+      213: 80518117732187990
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_217
+  - first:
+      213: 8543294442959106358
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_218
+  - first:
+      213: -4003088201910904793
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_219
+  - first:
+      213: 2462214124837284276
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_220
+  - first:
+      213: -1876545241398361945
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_221
+  - first:
+      213: 6090216427022247358
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_222
+  - first:
+      213: 3103548106035973922
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_223
+  - first:
+      213: 3669448273050366907
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_224
+  - first:
+      213: 2673640201288677152
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_225
+  - first:
+      213: 1897757766286879368
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_226
+  - first:
+      213: 7052261797498395633
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_227
+  - first:
+      213: -1911836499261886923
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_228
+  - first:
+      213: -1303712182405729333
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_229
+  - first:
+      213: 3223373242604410277
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_230
+  - first:
+      213: 9045992188396427675
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_231
+  - first:
+      213: -8798050500946467924
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_232
+  - first:
+      213: -5965314663747091715
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_233
+  - first:
+      213: 9188634772289081429
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_234
+  - first:
+      213: -7304069410598094667
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_235
+  - first:
+      213: -3029388257519784405
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_236
+  - first:
+      213: 3127607505976266133
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_237
+  - first:
+      213: -7132820404150424072
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_238
+  - first:
+      213: 4343313171393237761
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_239
+  - first:
+      213: -3148470814315978302
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_240
+  - first:
+      213: -7930208463215637753
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_241
+  - first:
+      213: -3490463930156367970
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_242
+  - first:
+      213: 8090891804217019333
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_243
+  - first:
+      213: -610238618478846600
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_244
+  - first:
+      213: 8006769157615802618
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_245
+  - first:
+      213: 3797046114096946696
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_246
+  - first:
+      213: 3480647006716630818
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_247
+  - first:
+      213: -5714406856286502118
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_248
+  - first:
+      213: -7645934326156108618
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_249
+  - first:
+      213: -5211762552698854272
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_250
+  - first:
+      213: -3359807455304696133
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_251
+  - first:
+      213: 8633455880797333058
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_252
+  - first:
+      213: 7323721778346570161
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_253
+  - first:
+      213: -4355794832673315190
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_254
+  - first:
+      213: 730386481023648886
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_255
+  - first:
+      213: 5042097581934181225
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_256
+  - first:
+      213: -2398454381236638968
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_257
+  - first:
+      213: 2162879730033005156
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_258
+  - first:
+      213: 7710216172320447038
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_259
+  - first:
+      213: 1306983313600365309
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_260
+  - first:
+      213: -3237659045323672910
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_261
+  - first:
+      213: -2735147407046348606
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_262
+  - first:
+      213: -3974144245646057737
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_263
+  - first:
+      213: -6405326949515210276
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_264
+  - first:
+      213: -8178632849500279027
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_265
+  - first:
+      213: 5116717580483301469
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_266
+  - first:
+      213: 7110795441770313203
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_267
+  - first:
+      213: -4118707748539738687
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_268
+  - first:
+      213: 733779863529586990
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_269
+  - first:
+      213: -2939524636299437699
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_270
+  - first:
+      213: 6170536951417107114
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_271
+  - first:
+      213: -8013594184076773211
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_272
+  - first:
+      213: -3680554156507341583
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_273
+  - first:
+      213: 6715908870291556624
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_274
+  - first:
+      213: -1904256991877345075
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_275
+  - first:
+      213: -2452856178451713189
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_276
+  - first:
+      213: 6273409836407294727
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_277
+  - first:
+      213: 6421512594847495845
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_278
+  - first:
+      213: 1391327751902704146
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_279
+  - first:
+      213: -8886918625835777586
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_280
+  - first:
+      213: -3791351535547004867
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_281
+  - first:
+      213: 1521243296215747835
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_282
+  - first:
+      213: -7638973998173471502
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_283
+  - first:
+      213: -6981992065854363860
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_284
+  - first:
+      213: -6643430820680832400
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_285
+  - first:
+      213: 9073493848914280437
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_286
+  - first:
+      213: 1334031827861579901
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_68
+  - first:
+      213: 6846073429789810693
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_69
+  - first:
+      213: -7877747955631979902
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_287
+  - first:
+      213: -7717478829380906422
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_288
+  - first:
+      213: 8479422906258473009
+    second: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_289
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +916,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +947,6123 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3482
+        width: 320
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb6677bbad1e8ab0800000000000000
+      internalID: -5004029512607437839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 3483
+        width: 230
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34a26c4ac840fba0800000000000000
+      internalID: -6057261465111190469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3311
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10216d222746deb50800000000000000
+      internalID: 6624061068305371649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 3318
+        width: 121
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09afd1ab33e7fded0800000000000000
+      internalID: -2387050516852114800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3262
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e7adbcc8c579b10800000000000000
+      internalID: 1988159520292634191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3262
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffa2b741cef7a600800000000000000
+      internalID: 479631991423283190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3262
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ff3cf51354e7560800000000000000
+      internalID: 7313358923258658714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 3262
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c8874869a840490800000000000000
+      internalID: -7780941877117154257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3262
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6aecd374429b9440800000000000000
+      internalID: 4943705838668540522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3262
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a405f5e9882c8f290800000000000000
+      internalID: -7856315657919442870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3262
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46edc200f74a5a00800000000000000
+      internalID: 745987784448009806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 3262
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970d357c6ceb84700800000000000000
+      internalID: 524879117545623673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3262
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3a0fefc9789dc60800000000000000
+      internalID: 7843449334404260820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 3257
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264982cfcb97b96c0800000000000000
+      internalID: -4135577980218338206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 3262
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f329c35171d78f940800000000000000
+      internalID: 5330147697086992959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3262
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1007015a95f4254c0800000000000000
+      internalID: -4300287447745400831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 3262
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ac39b72d672f370800000000000000
+      internalID: 8354870905114184238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 3262
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25de5bce2f5df1f0800000000000000
+      internalID: -1009546086875998931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3262
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9f52d411a716ad0800000000000000
+      internalID: -2710751285972960792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 3262
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e716481f2e0d42c30800000000000000
+      internalID: 4333818414570430846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 3262
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1ef2c10f6646790800000000000000
+      internalID: -7537786694860283402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3262
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d92ab6e75146c10800000000000000
+      internalID: 2045783763448929608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 3262
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77050da7f8915f560800000000000000
+      internalID: 7346806471156322423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 3262
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3489c6d071e796ac0800000000000000
+      internalID: -3861416568018921405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 3270
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b740888c1d489e420800000000000000
+      internalID: 2659803091486377083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3201
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cb15a8394a8ee40800000000000000
+      internalID: 5685975483143011432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 3201
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8d1282875237ce0800000000000000
+      internalID: -1408741060437223184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 3195
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a3b04c690a3f610800000000000000
+      internalID: 1653842057569712795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3204
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce8352a1ed5261b0800000000000000
+      internalID: -5664862157606252856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3206
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56aed860bf0e52d0800000000000000
+      internalID: -3288173427585800609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe6609a628456470800000000000000
+      internalID: 8387189211929145081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3204
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69258ea37ee729ee0800000000000000
+      internalID: -1255801814492097898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 3201
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f177a91949173f340800000000000000
+      internalID: 4896382102793778975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3202
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8948f50695a47c360800000000000000
+      internalID: 7189797077849703576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 3202
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b2e14498e8fd6e0800000000000000
+      internalID: -1810571804975158461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 3199
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286b7ab092b5fe3d0800000000000000
+      internalID: -3175218980425582974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3199
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc16894d332d3ea20800000000000000
+      internalID: 3090544889358213580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3201
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995372fb96da3d860800000000000000
+      internalID: 7553571669720642969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 3133
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3516fafcc0065f50800000000000000
+      internalID: 6869679161984030012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_39
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3193
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6deb80b9bcd1380800000000000000
+      internalID: -8998812613689288987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3139
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266f7cc9bb2f6a5d0800000000000000
+      internalID: -3051484809893775774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_41
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3139
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6499d2df1664fb0f0800000000000000
+      internalID: -1099082397381715642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_42
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3135
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3fdbcfcc40ffc30800000000000000
+      internalID: 4395237039797040063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_43
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3144
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa4c11f046142f00800000000000000
+      internalID: 1091021477909383929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_44
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3146
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529e41aae7c7ac080800000000000000
+      internalID: -9166377208098002651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_45
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3142
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980b6200b11cdb590800000000000000
+      internalID: -7656751469749161847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_46
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3137
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e6313e82860ee40800000000000000
+      internalID: 5683657254559247957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_47
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 3137
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba829a9c6e3fa690800000000000000
+      internalID: -7588778210925311307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_48
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3135
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ba155dccc0827f0800000000000000
+      internalID: -637245273381164214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_49
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3139
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4463eac5089f7bd60800000000000000
+      internalID: 7906062000578246212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_50
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 3139
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d74481021760f5a0800000000000000
+      internalID: -6489573736008366121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_51
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3135
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebbea920f171f030800000000000000
+      internalID: 3526725259513215969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_52
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3137
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1857e4ecbf310760800000000000000
+      internalID: 7422283741410056218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_53
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3137
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8db6da0a2c0623e0800000000000000
+      internalID: -2078960803274900084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_54
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 3133
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3deb3b22c5bb59500800000000000000
+      internalID: 402433746113117907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_55
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 3137
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeba2c43fbbf9eba0800000000000000
+      internalID: -6059035025007793170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_56
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 3137
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9925112df61f7f5e0800000000000000
+      internalID: -1875765257208507751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_57
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 3133
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1d48659b4169150800000000000000
+      internalID: 5878909149831811560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_58
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2665
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab127da3e6f7c290800000000000000
+      internalID: -7870050366078706776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_59
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3053
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a634a8cee8be05890800000000000000
+      internalID: -7471212782721285270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_60
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3053
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cecc2b459f001f0800000000000000
+      internalID: -1080589768396575725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_61
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3044
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0986d0d76d5005f10800000000000000
+      internalID: 2256309832091789456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_62
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2955
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1f1427aeaeb26b0800000000000000
+      internalID: -5319900242147937871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_63
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2955
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa090025076e6840800000000000000
+      internalID: 5219222289878944425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_64
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2948
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548ab8dbc8b7ea830800000000000000
+      internalID: 4084337756477302853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_65
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2859
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac199b36b4dd4fb0800000000000000
+      internalID: -4661836160109568856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_66
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2859
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e259a7bde086e30800000000000000
+      internalID: 4496860563746664080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_67
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2855
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e086407309b7f6910800000000000000
+      internalID: 1832819432691623950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_70
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2761
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76755c2a7fb0b4f50800000000000000
+      internalID: 6866595215072122727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_71
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2761
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114e9fad63ad29f10800000000000000
+      internalID: 2275120690912420881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_72
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2754
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d76af981190b190800000000000000
+      internalID: -7948693807365194395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_73
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2665
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b48196dd5b28cd0800000000000000
+      internalID: -2557281675837420724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_74
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2665
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca5d2361fff0ac90800000000000000
+      internalID: -7160441995302970688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_75
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2656
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52dac1fed6712c6a0800000000000000
+      internalID: -6430551557001138907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_76
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2200
+        width: 131
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ded888a2cedd4d0800000000000000
+      internalID: -3108068500391989895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_77
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 2174
+        width: 148
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 13, z: 14, w: 14}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c1bdb4ef643bce0800000000000000
+      internalID: -1390689801919062894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2116
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19daa6f3ec5fdb950800000000000000
+      internalID: 6466594906149924241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_79
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2116
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba17cf0a3a546e130800000000000000
+      internalID: 3595637921584804267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_80
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2116
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b28e2ff882e08b0800000000000000
+      internalID: -5184161522336126128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_81
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2116
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc72bc85f2ea3d70800000000000000
+      internalID: 9023774347645582512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_82
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2116
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d656b23a1b9cbc00800000000000000
+      internalID: 917778960899004118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_83
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2116
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1b6887861c7b9d0800000000000000
+      internalID: -2758523592298286614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_84
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2116
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce25894dac98b320800000000000000
+      internalID: 2573979455118978767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_85
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2116
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92219c35213ec1770800000000000000
+      internalID: 8582984657715925545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_86
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2116
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3b9accfa7f71ea0800000000000000
+      internalID: -5901976452220734501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_87
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 2116
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8b40d7ed95f5df0800000000000000
+      internalID: -189333847211198265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_88
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 2116
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85b831bb7d845f10800000000000000
+      internalID: 2257584875613238666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_89
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 2117
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50171d562f9e492f0800000000000000
+      internalID: -966890792678231803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_90
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2117
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2947e7d1e83ddf790800000000000000
+      internalID: -7494601597540993902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_91
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2044
+        width: 9
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ba160d14d061250800000000000000
+      internalID: 5914929736917822217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_92
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2052
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb9c6a7229f44e00800000000000000
+      internalID: 1028220541425458175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_93
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2051
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a064902c3857cb350800000000000000
+      internalID: 6033826809526175242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_94
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2053
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c15b76fce451340800000000000000
+      internalID: 4833856427757214767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_95
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2053
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5b256449dffe200800000000000000
+      internalID: 211666520786515418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_96
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 2053
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e329f05c570820a0800000000000000
+      internalID: -6906261935495765015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_97
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2053
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b308d27da3927960800000000000000
+      internalID: 7598297894492832689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_98
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2053
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135840bde233abc00800000000000000
+      internalID: 917101750459335985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_99
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2053
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee987b8ce0b48f20800000000000000
+      internalID: 3424056146707128047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_100
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2053
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0a2663c9f560b60800000000000000
+      internalID: 7711956536450523349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_101
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 2053
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd9927d3614ae130800000000000000
+      internalID: 3596759149476158929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_102
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 2053
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a41144347ceb9030800000000000000
+      internalID: 3502653119047734440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_103
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 2055
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87001d42e2c663fe0800000000000000
+      internalID: -1209660504460427144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_104
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2055
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb45583712c752dd0800000000000000
+      internalID: -2511464734075300676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_105
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 2055
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1dd2ae5a350fda0800000000000000
+      internalID: -5913134338673880619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_106
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 2055
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab6231a62e4a07f0800000000000000
+      internalID: -645617668754084959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_107
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 2055
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d8b270c47c05940800000000000000
+      internalID: 5282941492257328526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_108
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1991
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a02e05703b97350800000000000000
+      internalID: 6015035621333142039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_109
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1991
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c79d668b5a5a2e0800000000000000
+      internalID: -2115102238562485210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_110
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1991
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3bdb3abc1931580800000000000000
+      internalID: -8857575738296126543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_111
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1991
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89d3bb5f52192b00800000000000000
+      internalID: 804194209232050571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_112
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1991
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c8ebe66c627e320800000000000000
+      internalID: 2587079144651000880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_113
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1991
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95d4bf77aee9b660800000000000000
+      internalID: 7402209865729627549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_114
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1991
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8aa2a50b7116bf60800000000000000
+      internalID: 8049640604044536458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_115
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1993
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ec527bf1fea8be0800000000000000
+      internalID: -1474103008514683295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_116
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1993
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c233fdcf71f37d0800000000000000
+      internalID: -2936602057178403708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_117
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1993
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f6617e741fc79d0800000000000000
+      internalID: -2775077979245089014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_118
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1993
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aff3278790d57840800000000000000
+      internalID: 5221308692231880617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_119
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1993
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d32952b01078ed20800000000000000
+      internalID: 3308017143317603286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_120
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1995
+        width: 53
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc9faf4f8f5034a0800000000000000
+      internalID: -6615682783485387563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_121
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1995
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d80773d9f0d17110800000000000000
+      internalID: 1257015542426306769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_122
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1995
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595248d53b670df40800000000000000
+      internalID: 5751227236892288405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_123
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1996
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a158bf2d345fa070800000000000000
+      internalID: 8119801274942640545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_124
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1931
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa540ffc9250d51a0800000000000000
+      internalID: -6819288583628634705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_125
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1931
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c213569317432e140800000000000000
+      internalID: 4747414618100805932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_126
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1931
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aeca4482fd8efa10800000000000000
+      internalID: 1945148161811730084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_127
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1931
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed944b0baebad320800000000000000
+      internalID: 2583586978088132070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_128
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1933
+        width: 56
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd54a4d23879a4f60800000000000000
+      internalID: 8019388676142941661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_129
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e99baf1572107390800000000000000
+      internalID: -7822732258490738202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_130
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1933
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08d2db66e6e92ea0800000000000000
+      internalID: -5896928359739107316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_131
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25483605f9d305300800000000000000
+      internalID: 238758534708429906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_132
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5104bb8d77e5ce7e0800000000000000
+      internalID: -1734907887614214123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_133
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94475069edfede00800000000000000
+      internalID: 1071572940146295967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_134
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07d079e5d73ef570800000000000000
+      internalID: 8502294538406123275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_135
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b7ca37717297410800000000000000
+      internalID: 1475253334618962839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_136
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1933
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76689e8c94bfaf150800000000000000
+      internalID: 5907310155571758695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_137
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1933
+        width: 59
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f705b01ea03f3890800000000000000
+      internalID: -7476203332248991753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_138
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1933
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a024eb1557c1f290800000000000000
+      internalID: -7858280706430721880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_139
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1842
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b10e53462435240800000000000000
+      internalID: 4779236627738270614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1871
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b442ca5aecac2e870800000000000000
+      internalID: 8710747618179556427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1871
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322ef167454996070800000000000000
+      internalID: 8100168495282512419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_142
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1871
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afa5f83c7e80aac0800000000000000
+      internalID: -3845917417591689309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_143
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1871
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d106a364bcddba0800000000000000
+      internalID: -6062466020883292849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_144
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1810
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4115a615c60be910800000000000000
+      internalID: 1867593914033443146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1846
+        width: 172
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b776f730c23ad20800000000000000
+      internalID: 3288520546444606311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_146
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1844
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8f7bd66e4cfede0800000000000000
+      internalID: -1301605273324488452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_147
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1844
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450dc5c33086a1910800000000000000
+      internalID: 1808872563449581652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1813
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6ef1a4e09fb3c50800000000000000
+      internalID: 6646179514883761863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_149
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1813
+        width: 106
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b83f3f3597ab4330800000000000000
+      internalID: 3696232178640697526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_150
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1811
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f429f6d4a55a0c0800000000000000
+      internalID: -4565143358639288537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_151
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1811
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f546cb8a24bfda40800000000000000
+      internalID: 5395228973439796721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1781
+        width: 172
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30280c92973d4ed0800000000000000
+      internalID: -2428223521260298181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_153
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1779
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc77ea12cbdbf7a0800000000000000
+      internalID: -6342234023499694905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_154
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1779
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdc9b2bc1df8ce50800000000000000
+      internalID: 6829987134606790138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_155
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1748
+        width: 172
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ead6ba1a0a0a9a60800000000000000
+      internalID: 7681463152947944167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_156
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1746
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986e3c0d7b90adc30800000000000000
+      internalID: 4384827872284763785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_157
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1746
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f87bf626da2ecb0800000000000000
+      internalID: -4836112411549790462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_158
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1706
+        width: 172
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed4ea8257fe67bb0800000000000000
+      internalID: -4938496654892446238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_159
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1706
+        width: 174
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d60334f5b9abc9c0800000000000000
+      internalID: -3905841652862613804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_160
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1283
+        width: 9
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c96a776914f7270800000000000000
+      internalID: 8250385156874345592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_161
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1292
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdbbd343274f4c60800000000000000
+      internalID: 7804534896044260808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_162
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1292
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f9d708deda819b0800000000000000
+      internalID: -5109142541677256828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_163
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1292
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b214367d3e489930800000000000000
+      internalID: 4150153082505007798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_164
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1292
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6514eca00e85d10800000000000000
+      internalID: 2114686362065131233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_165
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1292
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7f1c0eae5673d80800000000000000
+      internalID: -8271030131175065616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_166
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1292
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fac0cd254804f50800000000000000
+      internalID: 6863631323526639428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_167
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1292
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa04e436134938b0800000000000000
+      internalID: -5172028934402602241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_168
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1292
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27694d91c3d25a8e0800000000000000
+      internalID: -1682889149598361998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_169
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1293
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555155ea39c9c6db0800000000000000
+      internalID: -4797287344957483691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_170
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1294
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac1942131d0190a0800000000000000
+      internalID: -6876700780455715665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_171
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1294
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845ac87b7a9985f70800000000000000
+      internalID: 9176253186385421640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_172
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1294
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12fae7eacf1f1810800000000000000
+      internalID: 1738142937523089948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_173
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1294
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f7bf0a508d11940800000000000000
+      internalID: 5265226958060093222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_174
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1294
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373659ea16b93f450800000000000000
+      internalID: 6121407162369794931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_175
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1295
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3398ad636d36530800000000000000
+      internalID: 3847154037787538410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_176
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1295
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb05f0865c125900800000000000000
+      internalID: 671630452287933389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_177
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8801477a3e3f47900800000000000000
+      internalID: 681437602732314760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_178
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ec31814cc65ed10800000000000000
+      internalID: 2154247586239991446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_179
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1230
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e58102d0d683380800000000000000
+      internalID: -8991316752904724975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_180
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1230
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc2b971511dce770800000000000000
+      internalID: 8641511673537703113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_181
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1232
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c0c1cf7661dc850800000000000000
+      internalID: 6398795281430482025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_182
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1232
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d389852912c36a0800000000000000
+      internalID: -6468258052375560915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_183
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1232
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2fb05fb232e7200800000000000000
+      internalID: 179619706843165360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_184
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1232
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915c225ded57ec6c0800000000000000
+      internalID: -4121227009078409959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_185
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1232
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33092edc809bd600800000000000000
+      internalID: 494147518824252223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_186
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1234
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3182e54eebea87810800000000000000
+      internalID: 1763351389013944339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_187
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1234
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcfa5265fbdc5e40800000000000000
+      internalID: 5646629879779359991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_188
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1234
+        width: 53
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8b54109cd4f9f70800000000000000
+      internalID: 9196154489818953919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_189
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1234
+        width: 53
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692995267ecd94920800000000000000
+      internalID: 2975151915200516758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_190
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1234
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78171154684a13a30800000000000000
+      internalID: 4193313624649986439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_191
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1234
+        width: 55
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32eaec7f5e073e50800000000000000
+      internalID: 6788910766564762173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_192
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1236
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bd2f677d4abb520800000000000000
+      internalID: 2718948045368777520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_193
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1170
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5fb85965f1153a0800000000000000
+      internalID: -6678522315677108776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_194
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1170
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d9ec987166bb030800000000000000
+      internalID: 3511512585747733841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_195
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1172
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb981dbe4856de220800000000000000
+      internalID: 2516779388336441790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_196
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1172
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ba08b322c3ff5a0800000000000000
+      internalID: -6485398820665382050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_197
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1172
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ce9e2be0b3f2050800000000000000
+      internalID: 5777901781256891428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_198
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1172
+        width: 58
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3294c8af02e5f370800000000000000
+      internalID: 8355833240539664955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_199
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1174
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad477a057e0779e50800000000000000
+      internalID: 6816040699841443034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_200
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5132c98280e3700800000000000000
+      internalID: 521863577332815325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_201
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c899334ef77aaa80800000000000000
+      internalID: -8454813416501438269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_202
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bc50798b2922190800000000000000
+      internalID: -7988661467496461487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_203
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf152d6d790546560800000000000000
+      internalID: 7306053108576178683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_204
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393ec6699f5075f40800000000000000
+      internalID: 5717044821498848147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_205
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc512076f4252c10800000000000000
+      internalID: 2028067848062065857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_206
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1174
+        width: 60
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f5916fed6df6960800000000000000
+      internalID: 7597527349497257873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_207
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1174
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629f00b79bf7c4430800000000000000
+      internalID: 3768527422811601190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_208
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 1174
+        width: 58
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53c757493be16990800000000000000
+      internalID: -7394370481923046563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_209
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1154
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156f40c9091762250800000000000000
+      internalID: 5919543626131895889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_210
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 449
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464f11679f6edc560800000000000000
+      internalID: 7335773327158539364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_211
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 433
+        width: 351
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769a8b62e1c752d10800000000000000
+      internalID: 2100221270178703719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_212
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 449
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99a10a981567aa60800000000000000
+      internalID: 7685222445468461469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_213
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 449
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422e9fdd6ae12cf80800000000000000
+      internalID: -8087868278766443996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_214
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 351
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce923e8629496fa0800000000000000
+      internalID: -5807029814574276923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_215
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 351
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5422ef02209cda20800000000000000
+      internalID: 3088501920439084122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_216
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 353
+        width: 89
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4265c04e2f54380800000000000000
+      internalID: -8987510420074519302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_217
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 351
+        width: 83
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ff86d2dce0e1100800000000000000
+      internalID: 80518117732187990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_218
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 326
+        width: 132
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63175241801ef8670800000000000000
+      internalID: 8543294442959106358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_219
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 166
+        width: 111
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7281b885d7c2278c0800000000000000
+      internalID: -4003088201910904793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_220
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 159
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b920ef73ba8b2220800000000000000
+      internalID: 2462214124837284276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_221
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 157
+        width: 111
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a040899b0c25f5e0800000000000000
+      internalID: -1876545241398361945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_222
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 161
+        width: 108
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5e8e1b29bc48450800000000000000
+      internalID: 6090216427022247358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_223
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 157
+        width: 108
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f4c932f84021b20800000000000000
+      internalID: 3103548106035973922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_224
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 117
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb376d443cf7ce230800000000000000
+      internalID: 3669448273050366907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_225
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 119
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027f307f89daa1520800000000000000
+      internalID: 2673640201288677152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_226
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 121
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aa44932a0365a10800000000000000
+      internalID: 1897757766286879368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_227
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 121
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb13f68dbaaed160800000000000000
+      internalID: 7052261797498395633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_228
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 117
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e6ed055dac775e0800000000000000
+      internalID: -1911836499261886923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_229
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 113
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc37b5e6da848ede0800000000000000
+      internalID: -1303712182405729333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_230
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 112
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a55fefc2e8bbbc20800000000000000
+      internalID: 3223373242604410277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_231
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 117
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99d356b7f1d98d70800000000000000
+      internalID: 9045992188396427675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_232
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 117
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca36327feab07e580800000000000000
+      internalID: -8798050500946467924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_233
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 115
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df20ded3be1f63da0800000000000000
+      internalID: -5965314663747091715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_234
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 117
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550d71554a6948f70800000000000000
+      internalID: 9188634772289081429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_235
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8f086d19bb2aa90800000000000000
+      internalID: -7304069410598094667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_236
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 75
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e2bcf1e6375f5d0800000000000000
+      internalID: -3029388257519784405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_237
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d8f86b47e776b20800000000000000
+      internalID: 3127607505976266133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_238
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 75
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fda4fb32a1230d90800000000000000
+      internalID: -7132820404150424072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_239
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 75
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1035b29415c864c30800000000000000
+      internalID: 4343313171393237761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_240
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 81
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1e207c9726e44d0800000000000000
+      internalID: -3148470814315978302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_241
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 86
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b4c333b6d32f190800000000000000
+      internalID: -7930208463215637753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_242
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 43
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f37bd7c816f8fc0800000000000000
+      internalID: -3490463930156367970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_243
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 43
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb89728a3f984070800000000000000
+      internalID: 8090891804217019333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_244
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 43
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dd75da53ff787f0800000000000000
+      internalID: -610238618478846600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_245
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 43
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af85e3e8022cd1f60800000000000000
+      internalID: 8006769157615802618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_246
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 43
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e968ab251d1b430800000000000000
+      internalID: 3797046114096946696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_247
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 43
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2271fd7e20ebd4030800000000000000
+      internalID: 3480647006716630818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_248
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 43
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a138cfc8d3952b0b0800000000000000
+      internalID: -5714406856286502118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_249
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 46
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcdf718d3f24e590800000000000000
+      internalID: -7645934326156108618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_250
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 50
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084a3b842991ca7b0800000000000000
+      internalID: -5211762552698854272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_251
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 55
+        width: 45
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbebad0abe09f51d0800000000000000
+      internalID: -3359807455304696133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_252
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 48
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246aeeea16230d770800000000000000
+      internalID: 8633455880797333058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_253
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 41
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1b328972613a560800000000000000
+      internalID: 7323721778346570161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_254
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 39
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86660c7dab1d83c0800000000000000
+      internalID: -4355794832673315190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_255
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 0
+        width: 230
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674892e72aad22a00800000000000000
+      internalID: 730386481023648886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bfa0e590129f540800000000000000
+      internalID: 5042097581934181225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_257
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 157
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b2964a27af6bed0800000000000000
+      internalID: -2398454381236638968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_258
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 105
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4629280b7a7140e10800000000000000
+      internalID: 2162879730033005156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_259
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3311
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ad1ac12c0300b60800000000000000
+      internalID: 7710216172320447038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_260
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 3311
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df243862666532210800000000000000
+      internalID: 1306983313600365309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_261
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3311
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2f6ab80468113d0800000000000000
+      internalID: -3237659045323672910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_262
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3311
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0fbaabcedca0ad0800000000000000
+      internalID: -2735147407046348606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_263
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3311
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe9a105dd009d8c0800000000000000
+      internalID: -3974144245646057737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_264
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 3306
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1d8e78315bb17a0800000000000000
+      internalID: -6405326949515210276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_265
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1777
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fe13171c8af7e80800000000000000
+      internalID: -8178632849500279027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_266
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1744
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5014b8a78b320740800000000000000
+      internalID: 5116717580483301469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_267
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1154
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5bf2997ce9ea260800000000000000
+      internalID: 7110795441770313203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_268
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 762
+        width: 983
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5d3a2ef1967d6c0800000000000000
+      internalID: -4118707748539738687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_269
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 449
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21040de5e8ee2a00800000000000000
+      internalID: 733779863529586990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_270
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2576
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79dcd4eae5b437d0800000000000000
+      internalID: -2939524636299437699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_271
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2568
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa273a61aa622a550800000000000000
+      internalID: 6170536951417107114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_272
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1873
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8b7f32c8ef9c090800000000000000
+      internalID: -8013594184076773211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_273
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1872
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcdaccbe7b0cecc0800000000000000
+      internalID: -3680554156507341583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_274
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1871
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0198f9df883b33d50800000000000000
+      internalID: 6715908870291556624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_275
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1871
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0d816ea58b295e0800000000000000
+      internalID: -1904256991877345075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_276
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2947
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53734e2d44b5fdd0800000000000000
+      internalID: -2452856178451713189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_277
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 3047
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b8f7d1201af0750800000000000000
+      internalID: 6273409836407294727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_278
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2855
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6f490beabcd1950800000000000000
+      internalID: 6421512594847495845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_279
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2757
+        width: 68
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212bd42083dfe4310800000000000000
+      internalID: 1391327751902704146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_280
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2659
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1814f38925ba480800000000000000
+      internalID: -8886918625835777586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_281
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2660
+        width: 69
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38c619add9626bc0800000000000000
+      internalID: -3791351535547004867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_282
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2660
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc42efc7ba8c1510800000000000000
+      internalID: 1521243296215747835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_283
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 2754
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcbc662f99ecf590800000000000000
+      internalID: -7638973998173471502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_284
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2755
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27a722553bfa1f90800000000000000
+      internalID: -6981992065854363860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_285
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 2855
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07aef63fddacdc3a0800000000000000
+      internalID: -6643430820680832400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_286
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 2849
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff3a3805968bed70800000000000000
+      internalID: 9073493848914280437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_68
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2950
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7821c221ee638210800000000000000
+      internalID: 1334031827861579901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_69
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 2950
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500acd82383220f50800000000000000
+      internalID: 6846073429789810693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_287
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 3045
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2820f72f8fd9ca290800000000000000
+      internalID: -7877747955631979902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_288
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 3040
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a425725c4e106e490800000000000000
+      internalID: -7717478829380906422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Bust-a-Move Puzzle Bobble - General Sprites_289
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 3485
+        width: 319
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130c8d31536fca570800000000000000
+      internalID: 8479422906258473009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
