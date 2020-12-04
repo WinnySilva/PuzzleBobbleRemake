@@ -1,4 +1,4 @@
-# PuzzleBobbleRemake
+# Puzzle Bobble: Remake
 Remake do jogo Puzzle Bobble para o curso de Especialização em Desenvolvimento de Jogos Digitais - PUCRS
 
 
