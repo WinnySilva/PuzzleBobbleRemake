@@ -7,12 +7,13 @@ public class MiraController : MonoBehaviour
     public int forcaImpulso = 20;
 
     private FixedJoint2D joint;
-    private float forcaQuebra;
+    public delegate void FireAction();
+    public static event FireAction Fired;
     // Start is called before the first frame update
     void Start()
     {
         joint = this.GetComponent<FixedJoint2D>();
-        forcaQuebra = joint.breakForce;
+ 
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class MiraController : MonoBehaviour
         {
             if (TryGetComponent<FixedJoint2D>(out joint))
             {
-                Debug.Log("fire"); 
+                Debug.Log("fire");
                 Rigidbody2D rg = joint.connectedBody;
                 Destroy(joint);
 
@@ -30,8 +31,18 @@ public class MiraController : MonoBehaviour
 
                 graus = graus / 85;
 
-                rg.AddForce(new Vector3(graus * forcaImpulso, (1-graus) * forcaImpulso), ForceMode2D.Impulse);
+                rg.AddForce(new Vector3(graus * forcaImpulso, (1 - graus) * forcaImpulso), ForceMode2D.Impulse);
+
+                Fired();
+
             }
         }
     }
+
+    public void AddNovoProjetil(Rigidbody2D bolinha)
+    {
+        joint = this.gameObject.AddComponent<FixedJoint2D>();
+        joint.connectedBody = bolinha; 
+    }
+
 }

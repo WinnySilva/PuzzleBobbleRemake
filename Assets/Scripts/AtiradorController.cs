@@ -25,8 +25,7 @@ public class AtiradorController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float graus = 85 * (horizontalInput );
-        
-        Debug.Log(graus);
+               
         Quaternion rot = Quaternion.Euler(0, 0, -graus);
         
         this.transform.rotation = rot;
