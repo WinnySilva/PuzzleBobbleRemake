@@ -21,14 +21,41 @@ public class BolaController : MonoBehaviour
             joint = gameObject.AddComponent<FixedJoint2D>();
             joint.connectedBody = collision.gameObject.GetComponent<Rigidbody2D>();
             joint.autoConfigureConnectedAnchor = false;
+
+            if (collision.gameObject.CompareTag("bubble") && rg.bodyType != RigidbodyType2D.Static)
+            {
+                FixBobblePosition(collision);
+            }
+
             rg.bodyType = RigidbodyType2D.Static;
         }
-        else if (joint == null)
+    }
+
+    private void FixBobblePosition(Collision2D collision)
+    {
+        Vector3 colliderPosition = collision.gameObject.transform.position;
+        Vector3 positionDif = colliderPosition - transform.position;
+
+        Debug.Log("subtract" + positionDif);
+
+        Vector3 fixedPos = new Vector3();
+        if (positionDif.x <= 0 && positionDif.z >= 0.2f) //posicionar no lado direito 
         {
-            ContactPoint2D point = collision.GetContact(0);
-            Debug.Log(point.relativeVelocity);
-            Vector3 vec = new Vector3(0, -point.relativeVelocity.y * 60);
-            // rg.AddForce(vec, ForceMode2D.Impulse);
+            fixedPos = new Vector3(0.8f, 0, 0);
         }
+        else if (positionDif.x <= 0 && positionDif.z < 0.2f) //posicionar no canto inferior direito 
+        {
+            fixedPos = new Vector3(0.4f, -0.6f, 0);
+        }
+        else if (positionDif.x > 0 && positionDif.z < 0.2f) //posicionar no canto inferior esquerdo 
+        {
+            fixedPos = new Vector3(-0.4f, -0.6f, 0);
+        }
+        else if (positionDif.x > 0 && positionDif.z >= 0.2f) //posicionar no lado esquerdo
+        {
+            fixedPos = new Vector3(-0.8f, 0, 0);
+        }
+
+        transform.position = colliderPosition + fixedPos;
     }
 }

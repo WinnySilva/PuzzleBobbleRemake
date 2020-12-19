@@ -2,40 +2,27 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RecargaController : MonoBehaviour
 {
     public MiraController mira;
-    public Rigidbody2D rg;
     public FixedJoint2D joint;
+    public GameObject bolaClone;
     public GameObject atualProjetil;
-    public GameObject clonavel;
-    public float breakForce = 10;
 
-    private Vector3 posicaoInicialProjetil;
+    private Vector3 _posicaoInicialProjetil;
 
     private void Awake()
     {
         MiraController.Fired += RecarregarMira;
-        posicaoInicialProjetil = atualProjetil.transform.position;
+        _posicaoInicialProjetil = atualProjetil.transform.position;
         RecarregarMira();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void RecarregarMira()
     {
-        atualProjetil = Instantiate(clonavel, posicaoInicialProjetil, Quaternion.identity);
+        atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
         joint.connectedBody = mira.gameObject.GetComponent<Rigidbody2D>();
@@ -44,9 +31,9 @@ public class RecargaController : MonoBehaviour
 
         mira.AtualProjetil = atualProjetil;
 
-        atualProjetil.transform.position = posicaoInicialProjetil;
+        atualProjetil.transform.position = _posicaoInicialProjetil;
 
-        StartCoroutine(this.RecarregarCoroutine());
+        StartCoroutine(RecarregarCoroutine());
     }
 
     IEnumerator RecarregarCoroutine()
