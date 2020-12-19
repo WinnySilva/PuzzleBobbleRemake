@@ -443,7 +443,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 114239030}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 95157dfb09c59544393d7848dbc275ee, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -701,7 +701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46478cd3989631b4589754b4cb43d873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaImpulso: 60
+  forcaImpulso: 20
+  seta: {fileID: 831558530}
 --- !u!1 &831558527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705916, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4475350412385705918, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
