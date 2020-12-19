@@ -5,6 +5,7 @@ using UnityEngine;
 public class AtiradorController : MonoBehaviour
 {
     public float speed = 5;
+
     private float velocidade;
 
     // Start is called before the first frame update
