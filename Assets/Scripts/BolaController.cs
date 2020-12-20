@@ -36,24 +36,25 @@ public class BolaController : MonoBehaviour
         Vector3 colliderPosition = collision.gameObject.transform.position;
         Vector3 positionDif = colliderPosition - transform.position;
 
-        Debug.Log("subtract" + positionDif);
+        Debug.Log("diff y: " + positionDif.y);
+        Debug.Log("diff x: " + positionDif.x);
 
         Vector3 fixedPos = new Vector3();
-        if (positionDif.x <= 0 && positionDif.z >= 0.2f) //posicionar no lado direito 
+        if (positionDif.x <= 0 && positionDif.y <= 0.2f) //posicionar no lado direito 
         {
-            fixedPos = new Vector3(0.8f, 0, 0);
+            fixedPos = new Vector3(0.34f, 0, 0);
         }
-        else if (positionDif.x <= 0 && positionDif.z < 0.2f) //posicionar no canto inferior direito 
+        else if (positionDif.x <= 0 && positionDif.y > 0.2f) //posicionar no canto inferior direito 
         {
-            fixedPos = new Vector3(0.4f, -0.6f, 0);
+            fixedPos = new Vector3(0.17f, -0.255f, 0);
         }
-        else if (positionDif.x > 0 && positionDif.z < 0.2f) //posicionar no canto inferior esquerdo 
+        else if (positionDif.x > 0 && positionDif.y > 0.2f) //posicionar no canto inferior esquerdo 
         {
-            fixedPos = new Vector3(-0.4f, -0.6f, 0);
+            fixedPos = new Vector3(-0.17f, -0.255f, 0);
         }
-        else if (positionDif.x > 0 && positionDif.z >= 0.2f) //posicionar no lado esquerdo
+        else if (positionDif.x > 0 && positionDif.y <= 0.2f) //posicionar no lado esquerdo
         {
-            fixedPos = new Vector3(-0.8f, 0, 0);
+            fixedPos = new Vector3(-0.34f, 0, 0);
         }
 
         transform.position = colliderPosition + fixedPos;
