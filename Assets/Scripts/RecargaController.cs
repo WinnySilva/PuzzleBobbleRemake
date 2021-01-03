@@ -22,18 +22,23 @@ public class RecargaController : MonoBehaviour
 
     void RecarregarMira()
     {
+        BolaController bc;
         if (atualProjetil != null)
         {
-            BolaController bc = atualProjetil.GetComponent<BolaController>();
+            bc = atualProjetil.GetComponent<BolaController>();
             bc.Shooted = true;
         }
 
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
+        bc = atualProjetil.GetComponent<BolaController>();
+
+        bc.setColor(proximaCor());
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
         joint.connectedBody = mira.gameObject.GetComponent<Rigidbody2D>();
         joint.autoConfigureConnectedAnchor = false;
         joint.anchor = new Vector2(0, 0);
+
 
         mira.AtualProjetil = atualProjetil;
 
@@ -46,5 +51,13 @@ public class RecargaController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         atualProjetil.SetActive(true);
+    }
+
+    private CoresBolinhas proximaCor()
+    {
+       
+        int rnd = Random.Range(0, 3);
+
+        return (CoresBolinhas)rnd;
     }
 }

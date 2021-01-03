@@ -7,15 +7,47 @@ public class BolaController : MonoBehaviour
 {
     public Grid posicaoBolinhas;
     public float offsetJuncao = 0.35f;
+    public CoresBolinhas cor;
+
     private bool shooted = false;
     private Rigidbody2D rg;
 
-    public bool Shooted { get => shooted; set => shooted = value; }
+    public bool Shooted
+    {
+        get => shooted;
+        set => shooted = value;
+    }
+
+    private void Awake()
+    {
+       
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         rg = GetComponent<Rigidbody2D>();
+    }
+
+    public void setColor(CoresBolinhas novaCor)
+    {
+        cor = novaCor;
+        SpriteRenderer spRen = GetComponent<SpriteRenderer>();
+       
+        switch (novaCor)
+        {
+            case CoresBolinhas.AMARELO:
+                spRen.color = Color.yellow;
+            break;
+            case CoresBolinhas.AZUL:
+                spRen.color = Color.blue ;
+                break;
+            case CoresBolinhas.VERMELHO:
+                spRen.color = Color.red;
+                break;
+            default:
+                break;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,7 +62,7 @@ public class BolaController : MonoBehaviour
             log.AppendLine(collision.gameObject.tag);
             //  FixBobblePosition(collision);
             Vector3 point = FixBobblePosition(collision); //collision.contacts[0].point + new Vector2(0.0f,-0.50f);
-            log.AppendLine("colisao corrigido "+point);
+            log.AppendLine("colisao corrigido " + point);
             Vector3Int cellPosition = posicaoBolinhas.WorldToCell(point);
             transform.position = posicaoBolinhas.CellToWorld(cellPosition);
             rg.bodyType = RigidbodyType2D.Static;
@@ -42,8 +74,8 @@ public class BolaController : MonoBehaviour
 
             log.AppendLine("POSICAO NO GRID " + cellPosition);
             log.AppendLine("position " + transform.position);
-            log.AppendLine("positionDiff " + ( new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) - transform.position));
-            
+            log.AppendLine("positionDiff " + (new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) - transform.position));
+
             Debug.Log(log.ToString());
         }
     }

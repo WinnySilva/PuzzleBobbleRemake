@@ -2510,6 +2510,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: bobble
       objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705904, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705905, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7870050366078706776, guid: 8eb42a8d8ca927641abd573d4677b4df,
+        type: 3}
+    - target: {fileID: 4475350412385705905, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705905, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705905, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705905, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9105978
+      objectReference: {fileID: 0}
     - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
       propertyPath: posicaoBolinhas
@@ -2519,6 +2550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offsetJuncao
       value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: cor
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4475350412385705918, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
