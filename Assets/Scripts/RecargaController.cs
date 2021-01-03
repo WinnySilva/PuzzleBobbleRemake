@@ -22,6 +22,12 @@ public class RecargaController : MonoBehaviour
 
     void RecarregarMira()
     {
+        if (atualProjetil != null)
+        {
+            BolaController bc = atualProjetil.GetComponent<BolaController>();
+            bc.Shooted = true;
+        }
+
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
