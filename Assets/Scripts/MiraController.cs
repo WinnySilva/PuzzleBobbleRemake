@@ -12,7 +12,7 @@ public class MiraController : MonoBehaviour
 
     public delegate void FireAction();
     public static event FireAction Fired;
-    
+
     protected internal GameObject AtualProjetil { get; set; }
 
     // Start is called before the first frame update
@@ -40,7 +40,10 @@ public class MiraController : MonoBehaviour
             Destroy(joint);
             //Debug.Log(rg.transform.up + " :: " + vec);
             rg.AddForce(vec, ForceMode2D.Impulse);
-            Fired();
+            if (Fired != null)
+            {
+                Fired();
+            }
 
         }
     }

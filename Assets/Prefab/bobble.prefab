@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4475350412385705918
 Transform:
   m_ObjectHideFlags: 0
@@ -73,9 +73,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5319900242147937871, guid: 8eb42a8d8ca927641abd573d4677b4df,
+  m_Sprite: {fileID: -7870050366078706776, guid: 8eb42a8d8ca927641abd573d4677b4df,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.9105978, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.008420722, y: 0.0022060566}
   serializedVersion: 2
-  m_Radius: 0.525
+  m_Radius: 0.45
 --- !u!114 &4475350412385705917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,4 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posicaoBolinhas: {fileID: 0}
-  offsetJuncao: 0.25
+  offsetJuncao: 0.17
+  cor: 2
+  limiteLinhas: 12

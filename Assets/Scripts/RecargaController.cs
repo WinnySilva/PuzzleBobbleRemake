@@ -12,23 +12,24 @@ public class RecargaController : MonoBehaviour
     public GameObject atualProjetil;
 
     private Vector3 _posicaoInicialProjetil;
-
+    private bool stopRecarregamento = false;
     private void Awake()
     {
-        MiraController.Fired += RecarregarMira;
+        MiraController.Fired += Fired;
+        BolaController.BolinhaFixada  += RecarregarMira;
+        BolaController.LimiteBolinhasAlcancado += LimiteBolinhasAlcancado;
         _posicaoInicialProjetil = atualProjetil.transform.position;
         RecarregarMira();
     }
 
     void RecarregarMira()
     {
-        BolaController bc;
-        if (atualProjetil != null)
+        if (stopRecarregamento)
         {
-            bc = atualProjetil.GetComponent<BolaController>();
-            bc.Shooted = true;
+            return;
         }
-
+        BolaController bc;
+       
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
         bc = atualProjetil.GetComponent<BolaController>();
 
@@ -39,12 +40,24 @@ public class RecargaController : MonoBehaviour
         joint.autoConfigureConnectedAnchor = false;
         joint.anchor = new Vector2(0, 0);
 
-
         mira.AtualProjetil = atualProjetil;
 
         atualProjetil.transform.position = _posicaoInicialProjetil;
 
         StartCoroutine(RecarregarCoroutine());
+    }
+
+    public void LimiteBolinhasAlcancado()
+    {
+        Debug.Log("Limite Alcançado");
+        stopRecarregamento = true;
+    }
+
+    public void Fired()
+    {
+        BolaController bc;
+        bc = atualProjetil.GetComponent<BolaController>();
+        bc.Shooted = true;
     }
 
     IEnumerator RecarregarCoroutine()
