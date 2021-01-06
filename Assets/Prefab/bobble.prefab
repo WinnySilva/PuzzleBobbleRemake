@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4475350412385705918
 Transform:
   m_ObjectHideFlags: 0
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.008420722, y: 0.0022060566}
   serializedVersion: 2
-  m_Radius: 0.45
+  m_Radius: 0.4
 --- !u!114 &4475350412385705917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posicaoBolinhas: {fileID: 0}
+  posicaoBolinhasTile: {fileID: 0}
   offsetJuncao: 0.17
   cor: 2
   limiteLinhas: 12
+  controleJogo: {fileID: 0}
