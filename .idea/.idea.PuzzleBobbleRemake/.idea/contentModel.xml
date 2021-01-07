@@ -20,6 +20,8 @@
         <e p="Scripts" t="Include">
           <e p="AtiradorController.cs" t="Include" />
           <e p="BolaController.cs" t="Include" />
+          <e p="Enum.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
           <e p="MiraController.cs" t="Include" />
           <e p="RecargaController.cs" t="Include" />
         </e>

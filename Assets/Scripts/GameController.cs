@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
         while (matches.Count > 0)
         {
             BolaController m = matches.Dequeue();
-            List<BolaController> vizinhos = this.BuscaVizinhos(m);
+            List<BolaController> vizinhos = BuscaVizinhos(m);
             foreach (BolaController v in vizinhos)
             {
                 if (!avaliados.Contains(v))
@@ -51,7 +51,6 @@ public class GameController : MonoBehaviour
                     {
                         matches.Enqueue(v);
                         listaMatches.Add(v);
-
                     }
                 }
             }
@@ -88,11 +87,16 @@ public class GameController : MonoBehaviour
         BolaController auxVal = null;
 
         //x-1
-        auxKey = hashPos((val.x - 1), val.y);
+        auxKey = hashPos((val.x - 1), val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
+         auxKey = hashPos((val.x - 1), val.y);
+         if (conj.TryGetValue(auxKey, out auxVal))
+         {
+             vizinhos.Add(auxVal);
+         }
         auxKey = hashPos(val.x - 1, val.y - 1); // (val.x - 1) * 10 + (val.y - 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
