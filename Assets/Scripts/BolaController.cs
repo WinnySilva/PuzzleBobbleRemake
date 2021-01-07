@@ -14,9 +14,11 @@ public class BolaController : MonoBehaviour
     public GameController controleJogo;
 
     public delegate void LimiteAlcancado();
+
     public static event LimiteAlcancado LimiteBolinhasAlcancado;
 
     public delegate void BolinhaFixadaAction();
+
     public static event BolinhaFixadaAction BolinhaFixada;
     public int x;
     public int y;
@@ -27,12 +29,12 @@ public class BolaController : MonoBehaviour
     private bool isMatched = false;
 
 
-
     public bool Shooted
     {
         get => shooted;
         set => shooted = value;
     }
+
     public bool IsMatched
     {
         get => isMatched;
@@ -41,7 +43,6 @@ public class BolaController : MonoBehaviour
 
     private void Awake()
     {
-
     }
 
     // Start is called before the first frame update
@@ -92,7 +93,6 @@ public class BolaController : MonoBehaviour
         if (collision.gameObject.CompareTag("teto")
             || collision.gameObject.CompareTag("bubble"))
         {
-
             Vector3Int cellPosition = FixBobblePosition(collision);
             rg.bodyType = RigidbodyType2D.Static;
 
@@ -100,7 +100,9 @@ public class BolaController : MonoBehaviour
             log.AppendLine(collision.gameObject.tag);
             log.AppendLine("POSICAO NO GRID " + cellPosition);
             log.AppendLine("position " + transform.position);
-            log.AppendLine("positionDiff " + (new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) - transform.position));
+            log.AppendLine("positionDiff " +
+                           (new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) -
+                            transform.position));
             log.AppendLine("colisoes " + collision.contacts.Length);
             Debug.Log(log.ToString());
 
@@ -108,6 +110,7 @@ public class BolaController : MonoBehaviour
             {
                 LimiteBolinhasAlcancado();
             }
+
             BolinhaFixada();
             x = cellPosition.x;
             y = cellPosition.y;
@@ -117,7 +120,6 @@ public class BolaController : MonoBehaviour
 
     private Vector3Int FixBobblePosition(Collision2D collision)
     {
-
         Vector3 ponto = collision.contacts[0].point;
 
         Vector3Int celulaColidida = posicaoBolinhasTile.WorldToCell(ponto);
@@ -125,7 +127,7 @@ public class BolaController : MonoBehaviour
         Vector3Int novaCelula = buscarPosicaoLivre(collision, celulaColidida);
         Tile hex = ScriptableObject.CreateInstance<Tile>();
 
-        hex.sprite = Resources.Load<Sprite>("Tilesets/Hexagon") as Sprite;
+        hex.sprite = Resources.Load<Sprite>("Tilesets/Hexagon");
 
         posicaoBolinhasTile.SetTile(novaCelula, hex);
         transform.position = posicaoBolinhasTile.CellToWorld(novaCelula);
@@ -133,11 +135,10 @@ public class BolaController : MonoBehaviour
         return novaCelula;
     }
 
-    private Vector3Int buscarPosicaoLivre(Collision2D collision, Vector3Int celulaColidida)
+    private Vector3Int buscarPosicaoLivre(Collision2D collision, Vector3Int celula)
     {
         Vector3 colliderPosition = collision.contacts[0].point; //collision.gameObject.transform.position;
         Vector3 positionDif = colliderPosition - transform.position;
-        Vector3Int celula = celulaColidida;
 
         bool ahEsquerda = positionDif.x > 0;
 
@@ -146,71 +147,31 @@ public class BolaController : MonoBehaviour
             return celula;
         }
 
+        Vector3Int tilePosition = posicaoBolinhasTile.WorldToCell(colliderPosition);
+        Debug.Log("Tile da colisão: " + tilePosition + " Diferença: " + positionDif);
+
         if (ahEsquerda)
         {
-            Vector3Int esqInf = new Vector3Int(celulaColidida.x - 1, celulaColidida.y - 1, celulaColidida.z);
-            Vector3Int esq = new Vector3Int(celulaColidida.x - 1, celulaColidida.y, celulaColidida.z);
+            Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);
+            Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);
 
-            if ((positionDif.y < 0.2f)) // esquerda inferior
+            if (positionDif.y > 0.13f) // esquerda inferior
             {
-                if (!posicaoBolinhasTile.HasTile(esqInf))
-                {
-                    return esqInf;
-                }
-                else
-                {
-                    return esq;
-                }
+                return posicaoBolinhasTile.HasTile(esqInf) ? esq : esqInf;
             }
 
-            if ((positionDif.y >= 0.2f)) //esquerda
-            {
-
-                if (!posicaoBolinhasTile.HasTile(esq))
-                {
-                    return esq;
-                }
-                else
-                {
-                    return esqInf;
-                }
-            }
-
+            //esquerda
+            return posicaoBolinhasTile.HasTile(esq) ? esqInf : esq;
         }
-        else
+
+        Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);
+        Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);
+
+        if (positionDif.y > 0.13f) // direita inferior
         {
-            Vector3Int dir = new Vector3Int(celulaColidida.x + 1, celulaColidida.y, celulaColidida.z);
-            Vector3Int dirInf = new Vector3Int(celulaColidida.x + 1, celulaColidida.y - 1, celulaColidida.z);
-
-            if ((positionDif.y < 0.2f)) // direita inferior
-            {
-                if (!posicaoBolinhasTile.HasTile(dirInf))
-                {
-                    return dirInf;
-                }
-                else
-                {
-                    return dir;
-                }
-
-            }
-
-            if ((positionDif.y >= 0.2f)) //direita
-            {
-
-                if (!posicaoBolinhasTile.HasTile(dir))
-                {
-                    return dir;
-                }
-                else
-                {
-                    return dirInf;
-                }
-            }
-
+            return posicaoBolinhasTile.HasTile(dirInf) ? dir : dirInf;
         }
 
-        return celula;
-
+        return posicaoBolinhasTile.HasTile(dir) ? dirInf : dir;
     }
 }

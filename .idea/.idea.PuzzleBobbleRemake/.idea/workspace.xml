@@ -27,10 +27,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a82512d-af48-4855-a928-46505372702a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/bobble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/bobble.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Fernando/POS/inteligencia artificial/PuzzleBobbleRemake/Assets/Scripts/BolaController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Fernando/POS/inteligencia artificial/PuzzleBobbleRemake/Assets/Scripts/BolaController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/c4/2f9b3b13/FixedJoint2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/dd/d49bd905/GridLayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/64/121a44d9/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/95/7d3d732c/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -51,6 +57,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +110,7 @@
       <updated>1608385428787</updated>
       <workItem from="1608385469610" duration="13452000" />
       <workItem from="1608422367778" duration="1680000" />
+      <workItem from="1609975520734" duration="7665000" />
     </task>
     <servers />
   </component>
@@ -139,6 +147,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1609977512383">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1609977512383" />
     <state width="1877" height="143" key="GridCell.Tab.0.bottom" timestamp="1608415563494">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -211,10 +223,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="143" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1608415563500" />
+    <state x="714" y="214" key="VCS.ChangeListViewerDialog" timestamp="1609977148545">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="714" y="214" key="VCS.ChangeListViewerDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1609977148545" />
     <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1608404664011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1608404664011" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1609983566487">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1609983566487" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1608411949779">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -225,7 +245,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/BolaController.cs</url>
-          <line>16</line>
+          <line>17</line>
           <properties documentPath="D:\Fernando\POS\inteligencia artificial\PuzzleBobbleRemake\Assets\Scripts\BolaController.cs" initialLine="16">
             <startOffsets>
               <option value="353" />
