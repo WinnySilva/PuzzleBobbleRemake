@@ -87,11 +87,6 @@ public class GameController : MonoBehaviour
         BolaController auxVal = null;
 
         //x-1
-        auxKey = hashPos((val.x - 1), val.y + 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }
          auxKey = hashPos((val.x - 1), val.y);
          if (conj.TryGetValue(auxKey, out auxVal))
          {
@@ -114,6 +109,7 @@ public class GameController : MonoBehaviour
         {
             vizinhos.Add(auxVal);
         }
+
         //x+1
         auxKey = hashPos(val.x + 1, val.y - 1);
         if (conj.TryGetValue(auxKey, out auxVal))
@@ -125,11 +121,7 @@ public class GameController : MonoBehaviour
         {
             vizinhos.Add(auxVal);
         }
-        auxKey = hashPos(val.x + 1, val.y + 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }
+        
         return vizinhos;
     }
 
