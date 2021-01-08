@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour
         Vector3 mouse = ray.origin;
         Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow);
         Vector3Int cord = posicaoBolinhasTile.WorldToCell(mouse);
-      
+        
         GUI.Label(new Rect(10, 10, 100, 20), $"{cord}");
         GUI.Label(new Rect(10, 40, 100, 20), $"{ray.origin}"); 
         GUI.Label(new Rect(10, 55, 100, 20), $":: {x},{y}");
@@ -105,50 +105,65 @@ public class GameController : MonoBehaviour
 
     private List<BolaController> BuscaVizinhos(BolaController val)
     {
-        int auxKey = 0;
+        bool par = val.y % 2 == 0;
+        int xEsquerda, xDireita;
+        int auxKey;
         List<BolaController> vizinhos = new List<BolaController>();
         BolaController auxVal;
 
+
+        if (par)
+        {
+            xDireita = val.x;
+            xEsquerda = val.x - 1;
+        }
+        else
+        {
+            xDireita = val.x + 1;
+            xEsquerda = val.x;
+        }
+        
         //esquerda topo
-        auxKey = hashPos(val.x, val.y + 1);
+        auxKey = hashPos(xEsquerda, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
-        //esquerda
-        auxKey = hashPos((val.x - 1), val.y);
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }       
-
         //esquerda inferior
-        auxKey = hashPos(val.x , val.y - 1);
+        auxKey = hashPos(xEsquerda , val.y - 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
         //direita topo
-        auxKey = hashPos(val.x+1, val.y + 1);
+        auxKey = hashPos(xDireita, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
+        //direita inferior
+        auxKey = hashPos(xDireita, val.y - 1);
+        if (conj.TryGetValue(auxKey, out auxVal))
+        {
+            vizinhos.Add(auxVal);
+        }
+       
+        //esquerda
+        auxKey = hashPos((val.x - 1), val.y);
+        if (conj.TryGetValue(auxKey, out auxVal))
+        {
+            vizinhos.Add(auxVal);
+        }    
+        
         //direita
         auxKey = hashPos(val.x + 1, val.y);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
-        //direita inferior
-        auxKey = hashPos(val.x+1, val.y - 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }
-       
+        
         return vizinhos;
     }
 
