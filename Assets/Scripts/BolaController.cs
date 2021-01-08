@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class BolaController : MonoBehaviour
 {
-    public Grid posicaoBolinhas;
+   
     public Tilemap posicaoBolinhasTile;
     public float offsetJuncao = 0.35f;
     public CoresBolinhas cor;
@@ -137,6 +137,7 @@ public class BolaController : MonoBehaviour
 
         Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);
         Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);
+      
         Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);
         Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);
         //isso diminui a taxa de erro porém ainda precisa ser melhorado

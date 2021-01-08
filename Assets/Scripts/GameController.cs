@@ -5,18 +5,27 @@ using UnityEngine.Tilemaps;
 
 public class GameController : MonoBehaviour
 {
+    
+    public Tilemap posicaoBolinhasTile;
+
     [SerializeField]
     private Dictionary<int, BolaController> conj;
-
+    private int x, y;
+    BolaController b;
     // Start is called before the first frame update
     void Start()
     {
         conj = new Dictionary<int, BolaController>();
+        x = 0;
+        y = 0;
     }
 
     public void AdicionarBolinha(int x, int y, BolaController obj)
     {
         int coord = hashPos(x, y);
+        this.x = x;
+        this.y = y;
+        b = obj;
         conj.Add(coord, obj);
         EncontrarMatches(obj);
     }
@@ -72,9 +81,27 @@ public class GameController : MonoBehaviour
     }
     private int hashPos(int x, int y)
     {
-        return x * 500 + y;
+        return x * 5000 + y*500;
     }
 
+    void OnGUI()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Vector3 mouse = ray.origin;
+        Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow);
+        Vector3Int cord = posicaoBolinhasTile.WorldToCell(mouse);
+      
+        GUI.Label(new Rect(10, 10, 100, 20), $"{cord}");
+        GUI.Label(new Rect(10, 40, 100, 20), $"{ray.origin}"); 
+        GUI.Label(new Rect(10, 55, 100, 20), $":: {x},{y}");
+        List<BolaController> vs = BuscaVizinhos(b);
+        int ypos = 55;
+        foreach (BolaController b in vs)
+        {
+            ypos += 30;
+            GUI.Label(new Rect(10, ypos, 100, 20), $"{b.cor}");
+        }
+    }
 
     private List<BolaController> BuscaVizinhos(BolaController val)
     {
@@ -82,20 +109,29 @@ public class GameController : MonoBehaviour
         List<BolaController> vizinhos = new List<BolaController>();
         BolaController auxVal;
 
-        //esquerda
-         auxKey = hashPos((val.x - 1), val.y);
-         if (conj.TryGetValue(auxKey, out auxVal))
-         {
-             vizinhos.Add(auxVal);
-         }
-         //esquerda topo
-        auxKey = hashPos(val.x - 1, val.y + 1);
+        //esquerda topo
+        auxKey = hashPos(val.x, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
+
+        //esquerda
+        auxKey = hashPos((val.x - 1), val.y);
+        if (conj.TryGetValue(auxKey, out auxVal))
+        {
+            vizinhos.Add(auxVal);
+        }       
+
+        //esquerda inferior
+        auxKey = hashPos(val.x , val.y - 1);
+        if (conj.TryGetValue(auxKey, out auxVal))
+        {
+            vizinhos.Add(auxVal);
+        }
+
         //direita topo
-        auxKey = hashPos(val.x, val.y + 1);
+        auxKey = hashPos(val.x+1, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
@@ -107,25 +143,19 @@ public class GameController : MonoBehaviour
             vizinhos.Add(auxVal);
         }
         //direita inferior
-        auxKey = hashPos(val.x, val.y - 1); 
+        auxKey = hashPos(val.x+1, val.y - 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
-        //esquerda inferior
-        auxKey = hashPos(val.x - 1, val.y - 1); 
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }
-        
+       
         return vizinhos;
     }
 
     IEnumerator DestruirBolinhasMatches(List<BolaController> bolinhasParaDestruir)
     {
         yield return new WaitForSeconds(0.15f);
-        
+
         DestruirBolinhas(bolinhasParaDestruir);
     }
 
