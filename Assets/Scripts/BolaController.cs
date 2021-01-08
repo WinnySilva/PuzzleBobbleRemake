@@ -23,10 +23,9 @@ public class BolaController : MonoBehaviour
     public int x;
     public int y;
 
-    private bool shooted = false;
+    private bool shooted;
     private Rigidbody2D rg;
-    private FixedJoint2D joint;
-    private bool isMatched = false;
+    private bool isMatched;
 
 
     public bool Shooted
@@ -35,20 +34,10 @@ public class BolaController : MonoBehaviour
         set => shooted = value;
     }
 
-    public bool IsMatched
-    {
-        get => isMatched;
-        set => isMatched = value;
-    }
-
-    private void Awake()
-    {
-    }
 
     // Start is called before the first frame update
     void Start()
     {
-        joint = GetComponent<FixedJoint2D>();
         rg = GetComponent<Rigidbody2D>();
     }
 
@@ -120,10 +109,7 @@ public class BolaController : MonoBehaviour
 
     private Vector3Int FixBobblePosition(Collision2D collision)
     {
-        Vector3 ponto = collision.contacts[0].point;
-
-        Vector3Int celulaColidida = posicaoBolinhasTile.WorldToCell(ponto);
-        //Vector3Int novaCelula = new Vector3Int(celulaColidida.x - 1, celulaColidida.y, celulaColidida.z);
+        Vector3Int celulaColidida = posicaoBolinhasTile.WorldToCell(transform.position);
         Vector3Int novaCelula = buscarPosicaoLivre(collision, celulaColidida);
         Tile hex = ScriptableObject.CreateInstance<Tile>();
 
@@ -137,7 +123,7 @@ public class BolaController : MonoBehaviour
 
     private Vector3Int buscarPosicaoLivre(Collision2D collision, Vector3Int celula)
     {
-        Vector3 colliderPosition = collision.contacts[0].point; //collision.gameObject.transform.position;
+        Vector3 colliderPosition = collision.contacts[0].point;
         Vector3 positionDif = colliderPosition - transform.position;
 
         bool ahEsquerda = positionDif.x > 0;
@@ -147,31 +133,38 @@ public class BolaController : MonoBehaviour
             return celula;
         }
 
-        Vector3Int tilePosition = posicaoBolinhasTile.WorldToCell(colliderPosition);
-        Debug.Log("Tile da colisão: " + tilePosition + " Diferença: " + positionDif);
+        Vector3Int tilePosition =  posicaoBolinhasTile.WorldToCell(colliderPosition);
 
+        Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);
+        Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);
+        Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);
+        Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);
+        //isso diminui a taxa de erro porém ainda precisa ser melhorado
         if (ahEsquerda)
         {
-            Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);
-            Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);
-
             if (positionDif.y > 0.13f) // esquerda inferior
             {
-                return posicaoBolinhasTile.HasTile(esqInf) ? esq : esqInf;
+                return !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :
+                    !posicaoBolinhasTile.HasTile(esq) ? esq :
+                    !posicaoBolinhasTile.HasTile(dir) ? dir : dirInf;
             }
 
             //esquerda
-            return posicaoBolinhasTile.HasTile(esq) ? esqInf : esq;
+            return !posicaoBolinhasTile.HasTile(esq) ? esq :
+                !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :
+                !posicaoBolinhasTile.HasTile(dirInf) ? dirInf : dir;
         }
 
-        Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);
-        Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);
 
         if (positionDif.y > 0.13f) // direita inferior
         {
-            return posicaoBolinhasTile.HasTile(dirInf) ? dir : dirInf;
+            return !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
+                !posicaoBolinhasTile.HasTile(dir) ? dir :
+                !posicaoBolinhasTile.HasTile(esq) ? esq : esqInf;
         }
 
-        return posicaoBolinhasTile.HasTile(dir) ? dirInf : dir;
+        return !posicaoBolinhasTile.HasTile(dir) ? dir :
+            !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
+            !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;
     }
 }

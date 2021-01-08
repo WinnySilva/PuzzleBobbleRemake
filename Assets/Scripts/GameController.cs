@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GameController : MonoBehaviour
 {
@@ -11,12 +12,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         conj = new Dictionary<int, BolaController>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void AdicionarBolinha(int x, int y, BolaController obj)
@@ -42,6 +37,7 @@ public class GameController : MonoBehaviour
         {
             BolaController m = matches.Dequeue();
             List<BolaController> vizinhos = BuscaVizinhos(m);
+            Debug.Log("Encontrou vizinhos: " + vizinhos.Count);
             foreach (BolaController v in vizinhos)
             {
                 if (!avaliados.Contains(v))
@@ -59,7 +55,7 @@ public class GameController : MonoBehaviour
         Debug.Log(" iguais " + listaMatches.Count + " avaliados: " + avaliados.Count + " iterador " + matches.Count);
         if (listaMatches.Count > 2)
         {
-            DestruirBolinhas(listaMatches);
+            StartCoroutine(DestruirBolinhasMatches(listaMatches));
         }
 
     }
@@ -84,45 +80,53 @@ public class GameController : MonoBehaviour
     {
         int auxKey = 0;
         List<BolaController> vizinhos = new List<BolaController>();
-        BolaController auxVal = null;
+        BolaController auxVal;
 
-        //x-1
+        //esquerda
          auxKey = hashPos((val.x - 1), val.y);
          if (conj.TryGetValue(auxKey, out auxVal))
          {
              vizinhos.Add(auxVal);
          }
-        auxKey = hashPos(val.x - 1, val.y - 1); // (val.x - 1) * 10 + (val.y - 1);
+         //esquerda topo
+        auxKey = hashPos(val.x - 1, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
-
-        // x
-        auxKey = hashPos(val.x, val.y - 1);//auxKey = (val.x) * 10 + (val.y - 1);
+        //direita topo
+        auxKey = hashPos(val.x, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
-        auxKey = hashPos(val.x, val.y + 1); // (val.x) + (val.y + 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }
-
-        //x+1
-        auxKey = hashPos(val.x + 1, val.y - 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
-        {
-            vizinhos.Add(auxVal);
-        }
+        //direita
         auxKey = hashPos(val.x + 1, val.y);
+        if (conj.TryGetValue(auxKey, out auxVal))
+        {
+            vizinhos.Add(auxVal);
+        }
+        //direita inferior
+        auxKey = hashPos(val.x, val.y - 1); 
+        if (conj.TryGetValue(auxKey, out auxVal))
+        {
+            vizinhos.Add(auxVal);
+        }
+        //esquerda inferior
+        auxKey = hashPos(val.x - 1, val.y - 1); 
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
         
         return vizinhos;
+    }
+
+    IEnumerator DestruirBolinhasMatches(List<BolaController> bolinhasParaDestruir)
+    {
+        yield return new WaitForSeconds(0.15f);
+        
+        DestruirBolinhas(bolinhasParaDestruir);
     }
 
 }
