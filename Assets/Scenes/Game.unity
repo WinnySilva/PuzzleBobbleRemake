@@ -2709,6 +2709,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4475350412385705916, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
       propertyPath: posicaoBolinhas
@@ -2727,7 +2732,7 @@ PrefabInstance:
     - target: {fileID: 4475350412385705918, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.401
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4475350412385705918, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
