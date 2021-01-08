@@ -1,0 +1,191 @@
+Index: Assets/Scripts/BolaController.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Collections;\r\nusing System.Collections.Generic;\r\nusing System.Text;\r\nusing UnityEngine;\r\nusing UnityEngine.Tilemaps;\r\n\r\npublic class BolaController : MonoBehaviour\r\n{\r\n    public Grid posicaoBolinhas;\r\n    public Tilemap posicaoBolinhasTile;\r\n    public float offsetJuncao = 0.35f;\r\n    public CoresBolinhas cor;\r\n    public int limiteLinhas = 12;\r\n    public GameController controleJogo;\r\n\r\n    public delegate void LimiteAlcancado();\r\n\r\n    public static event LimiteAlcancado LimiteBolinhasAlcancado;\r\n\r\n    public delegate void BolinhaFixadaAction();\r\n\r\n    public static event BolinhaFixadaAction BolinhaFixada;\r\n    public int x;\r\n    public int y;\r\n\r\n    private bool shooted;\r\n    private Rigidbody2D rg;\r\n    private bool isMatched;\r\n\r\n\r\n    public bool Shooted\r\n    {\r\n        get => shooted;\r\n        set => shooted = value;\r\n    }\r\n\r\n\r\n    // Start is called before the first frame update\r\n    void Start()\r\n    {\r\n        rg = GetComponent<Rigidbody2D>();\r\n    }\r\n\r\n    public void setColor(CoresBolinhas novaCor)\r\n    {\r\n        cor = novaCor;\r\n        SpriteRenderer spRen = GetComponent<SpriteRenderer>();\r\n\r\n        switch (novaCor)\r\n        {\r\n            case CoresBolinhas.AMARELO:\r\n                spRen.color = Color.yellow;\r\n                break;\r\n            case CoresBolinhas.AZUL:\r\n                spRen.color = Color.blue;\r\n                break;\r\n            case CoresBolinhas.VERMELHO:\r\n                spRen.color = Color.red;\r\n                break;\r\n            case CoresBolinhas.MATCHED:\r\n                spRen.color = Color.clear;\r\n                break;\r\n            default:\r\n                spRen.color = Color.white;\r\n                break;\r\n        }\r\n    }\r\n\r\n    private void OnDestroy()\r\n    {\r\n        Vector3Int celulaGrid = new Vector3Int(x, y, 0);\r\n        posicaoBolinhasTile.SetTile(celulaGrid, null);\r\n    }\r\n\r\n    private void OnCollisionEnter2D(Collision2D collision)\r\n    {\r\n        if (rg.bodyType == RigidbodyType2D.Static || !shooted)\r\n        {\r\n            return;\r\n        }\r\n\r\n        if (collision.gameObject.CompareTag(\"teto\")\r\n            || collision.gameObject.CompareTag(\"bubble\"))\r\n        {\r\n            Vector3Int cellPosition = FixBobblePosition(collision);\r\n            rg.bodyType = RigidbodyType2D.Static;\r\n\r\n            StringBuilder log = new StringBuilder();\r\n            log.AppendLine(collision.gameObject.tag);\r\n            log.AppendLine(\"POSICAO NO GRID \" + cellPosition);\r\n            log.AppendLine(\"position \" + transform.position);\r\n            log.AppendLine(\"positionDiff \" +\r\n                           (new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) -\r\n                            transform.position));\r\n            log.AppendLine(\"colisoes \" + collision.contacts.Length);\r\n            Debug.Log(log.ToString());\r\n\r\n            if (cellPosition.y <= -limiteLinhas)\r\n            {\r\n                LimiteBolinhasAlcancado();\r\n            }\r\n\r\n            BolinhaFixada();\r\n            x = cellPosition.x;\r\n            y = cellPosition.y;\r\n            controleJogo.AdicionarBolinha(x, y, this);\r\n        }\r\n    }\r\n\r\n    private Vector3Int FixBobblePosition(Collision2D collision)\r\n    {\r\n        Vector3Int celulaColidida = posicaoBolinhasTile.WorldToCell(transform.position);\r\n        Vector3Int novaCelula = buscarPosicaoLivre(collision, celulaColidida);\r\n        Tile hex = ScriptableObject.CreateInstance<Tile>();\r\n\r\n        hex.sprite = Resources.Load<Sprite>(\"Tilesets/Hexagon\");\r\n\r\n        posicaoBolinhasTile.SetTile(novaCelula, hex);\r\n        transform.position = posicaoBolinhasTile.CellToWorld(novaCelula);\r\n\r\n        return novaCelula;\r\n    }\r\n\r\n    private Vector3Int buscarPosicaoLivre(Collision2D collision, Vector3Int celula)\r\n    {\r\n        Vector3 colliderPosition = collision.contacts[0].point;\r\n        Vector3 positionDif = colliderPosition - transform.position;\r\n\r\n        bool ahEsquerda = positionDif.x > 0;\r\n\r\n        if (!posicaoBolinhasTile.HasTile(celula))\r\n        {\r\n            return celula;\r\n        }\r\n\r\n        Vector3Int tilePosition =  posicaoBolinhasTile.WorldToCell(colliderPosition);\r\n\r\n        Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);\r\n        Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);\r\n        Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);\r\n        Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);\r\n        //isso diminui a taxa de erro porém ainda precisa ser melhorado\r\n        if (ahEsquerda)\r\n        {\r\n            if (positionDif.y > 0.13f) // esquerda inferior\r\n            {\r\n                return !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :\r\n                    !posicaoBolinhasTile.HasTile(esq) ? esq :\r\n                    !posicaoBolinhasTile.HasTile(dir) ? dir : dirInf;\r\n            }\r\n\r\n            //esquerda\r\n            return !posicaoBolinhasTile.HasTile(esq) ? esq :\r\n                !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :\r\n                !posicaoBolinhasTile.HasTile(dirInf) ? dirInf : dir;\r\n        }\r\n\r\n\r\n        if (positionDif.y > 0.13f) // direita inferior\r\n        {\r\n            return !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :\r\n                !posicaoBolinhasTile.HasTile(dir) ? dir :\r\n                !posicaoBolinhasTile.HasTile(esq) ? esq : esqInf;\r\n        }\r\n\r\n        return !posicaoBolinhasTile.HasTile(dir) ? dir :\r\n            !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :\r\n            !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Assets/Scripts/BolaController.cs	(revision 42cd3b5235232c3fb447e44b77c300f4729e3bde)
++++ Assets/Scripts/BolaController.cs	(date 1610076394357)
+@@ -40,7 +40,20 @@
+     {
+         rg = GetComponent<Rigidbody2D>();
+     }
++    
++    void OnGUI()
++    {
++        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
++        Vector3 mouse = ray.origin;
++        Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow);
++        Vector3Int cord = posicaoBolinhasTile.WorldToCell(mouse);
++        Vector3Int cord2 = posicaoBolinhas.WorldToCell(mouse);
+ 
++        GUI.Label(new Rect(10, 10, 100, 20), $"{cord}");
++        GUI.Label(new Rect(10, 20, 100, 20), $"{cord2}"); // 2 casas decimais
++        GUI.Label(new Rect(10, 30, 100, 20), $"{ray.origin}"); // 2 casas decimais
++    }
++
+     public void setColor(CoresBolinhas novaCor)
+     {
+         cor = novaCor;
+Index: Assets/Scripts/GameController.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Collections;\r\nusing System.Collections.Generic;\r\nusing UnityEngine;\r\nusing UnityEngine.Tilemaps;\r\n\r\npublic class GameController : MonoBehaviour\r\n{\r\n    [SerializeField]\r\n    private Dictionary<int, BolaController> conj;\r\n\r\n    // Start is called before the first frame update\r\n    void Start()\r\n    {\r\n        conj = new Dictionary<int, BolaController>();\r\n    }\r\n\r\n    public void AdicionarBolinha(int x, int y, BolaController obj)\r\n    {\r\n        int coord = hashPos(x, y);\r\n        conj.Add(coord, obj);\r\n        EncontrarMatches(obj);\r\n    }\r\n\r\n    public void EncontrarMatches(BolaController val)\r\n    {\r\n\r\n        List<BolaController> avaliados = new List<BolaController>();\r\n        List<BolaController> listaMatches = new List<BolaController>();\r\n\r\n        Queue<BolaController> matches = new Queue<BolaController>();\r\n\r\n        matches.Enqueue(val);\r\n        listaMatches.Add(val);\r\n        avaliados.Add(val);\r\n\r\n        while (matches.Count > 0)\r\n        {\r\n            BolaController m = matches.Dequeue();\r\n            List<BolaController> vizinhos = BuscaVizinhos(m);\r\n            Debug.Log(\"Encontrou vizinhos: \" + vizinhos.Count);\r\n            foreach (BolaController v in vizinhos)\r\n            {\r\n                if (!avaliados.Contains(v))\r\n                {\r\n                    avaliados.Add(v);\r\n                    if (v.cor == val.cor)\r\n                    {\r\n                        matches.Enqueue(v);\r\n                        listaMatches.Add(v);\r\n                    }\r\n                }\r\n            }\r\n\r\n        }\r\n        Debug.Log(\" iguais \" + listaMatches.Count + \" avaliados: \" + avaliados.Count + \" iterador \" + matches.Count);\r\n        if (listaMatches.Count > 2)\r\n        {\r\n            StartCoroutine(DestruirBolinhasMatches(listaMatches));\r\n        }\r\n\r\n    }\r\n\r\n    private void DestruirBolinhas(List<BolaController> listaMatches)\r\n    {\r\n        int coord;\r\n        foreach (BolaController b in listaMatches)\r\n        {\r\n            coord = hashPos(b.x, b.y);\r\n            conj.Remove(coord);\r\n            Destroy(b.gameObject);\r\n        }\r\n    }\r\n    private int hashPos(int x, int y)\r\n    {\r\n        return x * 500 + y;\r\n    }\r\n\r\n\r\n    private List<BolaController> BuscaVizinhos(BolaController val)\r\n    {\r\n        int auxKey = 0;\r\n        List<BolaController> vizinhos = new List<BolaController>();\r\n        BolaController auxVal;\r\n\r\n        //esquerda\r\n         auxKey = hashPos((val.x - 1), val.y);\r\n         if (conj.TryGetValue(auxKey, out auxVal))\r\n         {\r\n             vizinhos.Add(auxVal);\r\n         }\r\n         //esquerda topo\r\n        auxKey = hashPos(val.x - 1, val.y + 1);\r\n        if (conj.TryGetValue(auxKey, out auxVal))\r\n        {\r\n            vizinhos.Add(auxVal);\r\n        }\r\n        //direita topo\r\n        auxKey = hashPos(val.x, val.y + 1);\r\n        if (conj.TryGetValue(auxKey, out auxVal))\r\n        {\r\n            vizinhos.Add(auxVal);\r\n        }\r\n        //direita\r\n        auxKey = hashPos(val.x + 1, val.y);\r\n        if (conj.TryGetValue(auxKey, out auxVal))\r\n        {\r\n            vizinhos.Add(auxVal);\r\n        }\r\n        //direita inferior\r\n        auxKey = hashPos(val.x, val.y - 1); \r\n        if (conj.TryGetValue(auxKey, out auxVal))\r\n        {\r\n            vizinhos.Add(auxVal);\r\n        }\r\n        //esquerda inferior\r\n        auxKey = hashPos(val.x - 1, val.y - 1); \r\n        if (conj.TryGetValue(auxKey, out auxVal))\r\n        {\r\n            vizinhos.Add(auxVal);\r\n        }\r\n        \r\n        return vizinhos;\r\n    }\r\n\r\n    IEnumerator DestruirBolinhasMatches(List<BolaController> bolinhasParaDestruir)\r\n    {\r\n        yield return new WaitForSeconds(0.15f);\r\n        \r\n        DestruirBolinhas(bolinhasParaDestruir);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Assets/Scripts/GameController.cs	(revision 42cd3b5235232c3fb447e44b77c300f4729e3bde)
++++ Assets/Scripts/GameController.cs	(date 1610077407180)
+@@ -5,25 +5,24 @@
+ 
+ public class GameController : MonoBehaviour
+ {
+-    [SerializeField]
+-    private Dictionary<int, BolaController> conj;
++    [SerializeField] private Dictionary<string, BolaController> conj;
+ 
+     // Start is called before the first frame update
+     void Start()
+     {
+-        conj = new Dictionary<int, BolaController>();
++        conj = new Dictionary<string, BolaController>();
+     }
+ 
+     public void AdicionarBolinha(int x, int y, BolaController obj)
+     {
+         int coord = hashPos(x, y);
+-        conj.Add(coord, obj);
++        Debug.Log($"Adicionando, hash: {coord}");
++        conj.Add($"{x}, {y}", obj);
+         EncontrarMatches(obj);
+     }
+ 
+     public void EncontrarMatches(BolaController val)
+     {
+-
+         List<BolaController> avaliados = new List<BolaController>();
+         List<BolaController> listaMatches = new List<BolaController>();
+ 
+@@ -50,14 +49,13 @@
+                     }
+                 }
+             }
+-
+         }
++
+         Debug.Log(" iguais " + listaMatches.Count + " avaliados: " + avaliados.Count + " iterador " + matches.Count);
+         if (listaMatches.Count > 2)
+         {
+             StartCoroutine(DestruirBolinhasMatches(listaMatches));
+         }
+-
+     }
+ 
+     private void DestruirBolinhas(List<BolaController> listaMatches)
+@@ -66,10 +64,11 @@
+         foreach (BolaController b in listaMatches)
+         {
+             coord = hashPos(b.x, b.y);
+-            conj.Remove(coord);
++            conjconj.Remove($"{b.x}, {b.y}");
+             Destroy(b.gameObject);
+         }
+     }
++
+     private int hashPos(int x, int y)
+     {
+         return x * 500 + y;
+@@ -83,50 +82,55 @@
+         BolaController auxVal;
+ 
+         //esquerda
+-         auxKey = hashPos((val.x - 1), val.y);
+-         if (conj.TryGetValue(auxKey, out auxVal))
+-         {
+-             vizinhos.Add(auxVal);
+-         }
+-         //esquerda topo
++        auxKey = hashPos((val.x - 1), val.y);
++        if (conj.TryGetValue($"{val.x - 1}, {val.y}", out auxVal))
++        {
++            vizinhos.Add(auxVal);
++        }
++
++        //esquerda topo
+         auxKey = hashPos(val.x - 1, val.y + 1);
+-        if (conj.TryGetValue(auxKey, out auxVal))
++        if (conj.TryGetValue($"{val.x - 1}, {val.y + 1}", out auxVal))
+         {
+             vizinhos.Add(auxVal);
+         }
++
+         //direita topo
+         auxKey = hashPos(val.x, val.y + 1);
+-        if (conj.TryGetValue(auxKey, out auxVal))
++        Debug.Log($"direita topo hash: {auxKey}");
++        if (conj.TryGetValue($"{val.x}, {val.y + 1}", out auxVal))
+         {
+             vizinhos.Add(auxVal);
+         }
++
+         //direita
+         auxKey = hashPos(val.x + 1, val.y);
+-        if (conj.TryGetValue(auxKey, out auxVal))
++        if (conj.TryGetValue($"{val.x + 1}, {val.y}", out auxVal))
+         {
+             vizinhos.Add(auxVal);
+         }
++
+         //direita inferior
+-        auxKey = hashPos(val.x, val.y - 1); 
+-        if (conj.TryGetValue(auxKey, out auxVal))
++        auxKey = hashPos(val.x, val.y - 1);
++        if (conj.TryGetValue($"{val.x}, {val.y - 1}", out auxVal))
+         {
+             vizinhos.Add(auxVal);
+         }
++
+         //esquerda inferior
+-        auxKey = hashPos(val.x - 1, val.y - 1); 
+-        if (conj.TryGetValue(auxKey, out auxVal))
++        auxKey = hashPos(val.x - 1, val.y - 1);
++        if (conj.TryGetValue($"{val.x - 1}, {val.y - 1}", out auxVal))
+         {
+             vizinhos.Add(auxVal);
+         }
+-        
++
+         return vizinhos;
+     }
+ 
+     IEnumerator DestruirBolinhasMatches(List<BolaController> bolinhasParaDestruir)
+     {
+         yield return new WaitForSeconds(0.15f);
+-        
++
+         DestruirBolinhas(bolinhasParaDestruir);
+     }
+-
+-}
++}
+\ No newline at end of file
+Index: .idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"BRANCH:origin/master\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </select>\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4a82512d-af48-4855-a928-46505372702a\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/BolaController.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/BolaController.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/GameController.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/GameController.cs\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/c4/2f9b3b13/FixedJoint2D.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/69/438996e9/SpriteRenderer.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8AD4503D-DF10-4342-A382-30E5B4197FF6/dd/d49bd905/GridLayout.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A47CD93-D89C-4682-94B3-36F3642F649F/64/121a44d9/Tilemap.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/95/7d3d732c/Quaternion.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"CHANGED_PATHS\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/Assets/Scripts/RecargaController.cs\" />\r\n        <option value=\"$PROJECT_DIR$/Assets/Scripts/MiraController.cs\" />\r\n        <option value=\"$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs\" />\r\n        <option value=\"$PROJECT_DIR$/Assets/Scripts/BolaController.cs\" />\r\n        <option value=\"$PROJECT_DIR$/Assets/Scripts/GameController.cs\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1lsUhNef7t5VIhnfZ3snyI9S3Vn\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DebuggerViewTab_PTCS_FirstProportionKey\" value=\"0.34994584\" />\r\n    <property name=\"DebuggerViewTab_PTCS_LastProportionKey\" value=\"0.30010834\" />\r\n    <property name=\"Discover.Launch.Via.Unity\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor &amp; Play\">\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <set />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <set />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4a82512d-af48-4855-a928-46505372702a\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1608385428787</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1608385428787</updated>\r\n      <workItem from=\"1608385469610\" duration=\"13452000\" />\r\n      <workItem from=\"1608422367778\" duration=\"1680000\" />\r\n      <workItem from=\"1609975520734\" duration=\"7665000\" />\r\n      <workItem from=\"1610066795572\" duration=\"7084000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"EditMode\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"866\" key=\"DiffContextDialog\" timestamp=\"1609977512383\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"866\" key=\"DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1609977512383\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1608415563494\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403646785\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563494\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.center\" timestamp=\"1608415563494\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403646785\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563494\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.left\" timestamp=\"1608415563493\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403646784\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563493\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.right\" timestamp=\"1608415563494\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403646785\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563494\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1608415563496\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403662145\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563496\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.center\" timestamp=\"1608415563495\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403662144\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563495\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.left\" timestamp=\"1608415563494\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403662144\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563494\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.right\" timestamp=\"1608415563496\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"379\" key=\"GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608403662145\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563496\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.bottom\" timestamp=\"1608415563497\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563497\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.center\" timestamp=\"1608415563497\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563497\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.left\" timestamp=\"1608415563496\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563496\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.right\" timestamp=\"1608415563497\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563497\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.bottom\" timestamp=\"1608415563500\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563500\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.center\" timestamp=\"1608415563499\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563499\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.left\" timestamp=\"1608415563498\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563498\" />\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.right\" timestamp=\"1608415563500\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"143\" key=\"GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050\" timestamp=\"1608415563500\" />\r\n    <state x=\"714\" y=\"214\" key=\"VCS.ChangeListViewerDialog\" timestamp=\"1609977148545\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"714\" y=\"214\" key=\"VCS.ChangeListViewerDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1609977148545\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"866\" key=\"VCS.FileHistoryDialog\" timestamp=\"1608404664011\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"866\" key=\"VCS.FileHistoryDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608404664011\" />\r\n    <state x=\"616\" y=\"243\" key=\"run.anything.popup\" timestamp=\"1609983566487\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"616\" y=\"243\" key=\"run.anything.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1609983566487\" />\r\n    <state x=\"623\" y=\"227\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1608411949779\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\r\n    </state>\r\n    <state x=\"623\" y=\"227\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050\" timestamp=\"1608411949779\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml	(revision 42cd3b5235232c3fb447e44b77c300f4729e3bde)
++++ .idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml	(date 1610138477530)
+@@ -107,7 +107,8 @@
+       <workItem from="1608385469610" duration="13452000" />
+       <workItem from="1608422367778" duration="1680000" />
+       <workItem from="1609975520734" duration="7665000" />
+-      <workItem from="1610066795572" duration="7084000" />
++      <workItem from="1610066795572" duration="8566000" />
++      <workItem from="1610135911058" duration="593000" />
+     </task>
+     <servers />
+   </component>
