@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class BolaController : MonoBehaviour
 {
-   
+
     public Tilemap posicaoBolinhasTile;
     public float offsetJuncao = 0.35f;
     public CoresBolinhas cor;
@@ -79,11 +79,11 @@ public class BolaController : MonoBehaviour
             return;
         }
 
-        if (collision.gameObject.CompareTag("teto")
+        if (collision.gameObject.CompareTag("hexTeto") || collision.gameObject.CompareTag("teto")
             || collision.gameObject.CompareTag("bubble"))
         {
             Vector3Int cellPosition = FixBobblePosition(collision);
-            rg.bodyType = RigidbodyType2D.Static;
+            // rg.bodyType = RigidbodyType2D.Static;
 
             StringBuilder log = new StringBuilder();
             log.AppendLine(collision.gameObject.tag);
@@ -95,6 +95,18 @@ public class BolaController : MonoBehaviour
             log.AppendLine("colisoes " + collision.contacts.Length);
             Debug.Log(log.ToString());
 
+            if (collision.gameObject.CompareTag("hexTeto"))
+            {
+
+                FixedJoint2D fj = this.gameObject.AddComponent<FixedJoint2D>();
+                //  fj.connectedBody = rg;
+                fj.anchor = Vector2.zero;
+                fj.connectedAnchor = Vector2.zero;
+          //      fj.distance = 0;
+                fj.frequency = 0;
+          //      fj.autoConfigureDistance = false;
+            }
+
             if (cellPosition.y <= -limiteLinhas)
             {
                 LimiteBolinhasAlcancado();
@@ -104,6 +116,19 @@ public class BolaController : MonoBehaviour
             x = cellPosition.x;
             y = cellPosition.y;
             controleJogo.AdicionarBolinha(x, y, this);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (rg.bodyType == RigidbodyType2D.Static || !shooted)
+        {
+            return;
+        }
+
+        if (collision.gameObject.CompareTag("chao"))
+        {
+            Destroy(this.gameObject);
         }
     }
 
@@ -133,11 +158,11 @@ public class BolaController : MonoBehaviour
             return celula;
         }
 
-        Vector3Int tilePosition =  posicaoBolinhasTile.WorldToCell(colliderPosition);
+        Vector3Int tilePosition = posicaoBolinhasTile.WorldToCell(colliderPosition);
 
         Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);
         Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);
-      
+
         Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);
         Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);
         //isso diminui a taxa de erro porém ainda precisa ser melhorado
@@ -168,4 +193,7 @@ public class BolaController : MonoBehaviour
             !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
             !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;
     }
+
+
+
 }

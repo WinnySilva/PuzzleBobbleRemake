@@ -18,6 +18,7 @@ public class RecargaController : MonoBehaviour
         MiraController.Fired += Fired;
         BolaController.BolinhaFixada  += RecarregarMira;
         BolaController.LimiteBolinhasAlcancado += LimiteBolinhasAlcancado;
+
         _posicaoInicialProjetil = atualProjetil.transform.position;
         RecarregarMira();
     }
@@ -31,8 +32,8 @@ public class RecargaController : MonoBehaviour
         BolaController bc;
        
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
-        bc = atualProjetil.GetComponent<BolaController>();
-
+        atualProjetil.GetComponent<CircleCollider2D>().enabled = false;
+        bc = atualProjetil.GetComponent<BolaController>();       
         bc.setColor(proximaCor());
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
@@ -55,6 +56,7 @@ public class RecargaController : MonoBehaviour
 
     public void Fired()
     {
+        atualProjetil.GetComponent<CircleCollider2D>().enabled = true;
         BolaController bc;
         bc = atualProjetil.GetComponent<BolaController>();
         bc.Shooted = true;

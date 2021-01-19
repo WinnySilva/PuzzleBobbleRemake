@@ -30,7 +30,7 @@ public class MiraController : MonoBehaviour
 
             //Debug.Log("fire");
             Rigidbody2D rg = AtualProjetil.GetComponent<Rigidbody2D>();
-            FixedJoint2D joint = AtualProjetil.GetComponent<FixedJoint2D>();
+            Joint2D joint = AtualProjetil.GetComponent<Joint2D>();
 
             float graus = Mathf.Abs(rg.rotation);
             graus = graus / 85;
