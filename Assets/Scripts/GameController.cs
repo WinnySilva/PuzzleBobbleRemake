@@ -7,9 +7,11 @@ public class GameController : MonoBehaviour
 {
 
     public Tilemap posicaoBolinhasTile;
+    public Rigidbody2D[] posicoesTeto;
 
     [SerializeField]
     private Dictionary<int, BolaController> conj;
+
     private int x, y;
     BolaController b;
     // Start is called before the first frame update
@@ -20,6 +22,11 @@ public class GameController : MonoBehaviour
         y = 0;
     }
 
+    public void RemoverBolinha(BolaController obj)
+    {
+        int key = hashPos(obj.x, obj.y);
+        conj.Remove(key);
+    }
     public void AdicionarBolinha(int x, int y, BolaController obj)
     {
         int coord = hashPos(x, y);
@@ -39,12 +46,27 @@ public class GameController : MonoBehaviour
         {
             GameObject go = b.gameObject;
             FixedJoint2D fj = go.AddComponent<FixedJoint2D>();
+            fj.autoConfigureConnectedAnchor = true;
             fj.anchor = Vector2.zero;
-            fj.connectedAnchor = Vector2.zero;
-         //   fj.distance = 0;
+        //    fj.connectedAnchor = Vector2.zero;
             fj.frequency = 0;
-         //   fj.autoConfigureDistance = false;
+            fj.connectedBody = rg;
         }
+    }
+
+    public Rigidbody2D ObterPosicaoBolinhaTeto(Vector3Int pos)
+    {
+        if ( pos.x > 5 || pos.x < -2)
+        {
+            return null;
+        }
+
+        if (pos.x == -2)
+        {
+            return this.posicoesTeto[0];
+        }
+
+        return this.posicoesTeto[pos.x+1];
     }
 
     public void EncontrarMatches(BolaController val)

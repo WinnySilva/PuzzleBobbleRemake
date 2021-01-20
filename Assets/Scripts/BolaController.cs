@@ -24,6 +24,7 @@ public class BolaController : MonoBehaviour
     public int y;
 
     private bool shooted;
+    private bool fixado;
     private Rigidbody2D rg;
     private bool isMatched;
 
@@ -39,6 +40,7 @@ public class BolaController : MonoBehaviour
     void Start()
     {
         rg = GetComponent<Rigidbody2D>();
+        fixado = false;
     }
 
     public void setColor(CoresBolinhas novaCor)
@@ -69,12 +71,13 @@ public class BolaController : MonoBehaviour
     private void OnDestroy()
     {
         Vector3Int celulaGrid = new Vector3Int(x, y, 0);
+        controleJogo.RemoverBolinha(this);
         posicaoBolinhasTile.SetTile(celulaGrid, null);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (rg.bodyType == RigidbodyType2D.Static || !shooted)
+        if (rg.bodyType == RigidbodyType2D.Static || !shooted || fixado)
         {
             return;
         }
@@ -82,6 +85,7 @@ public class BolaController : MonoBehaviour
         if (collision.gameObject.CompareTag("hexTeto") || collision.gameObject.CompareTag("teto")
             || collision.gameObject.CompareTag("bubble"))
         {
+            fixado = true;
             Vector3Int cellPosition = FixBobblePosition(collision);
             // rg.bodyType = RigidbodyType2D.Static;
 
@@ -99,12 +103,11 @@ public class BolaController : MonoBehaviour
             {
 
                 FixedJoint2D fj = this.gameObject.AddComponent<FixedJoint2D>();
-                //  fj.connectedBody = rg;
+                fj.autoConfigureConnectedAnchor = true;
                 fj.anchor = Vector2.zero;
-                fj.connectedAnchor = Vector2.zero;
-          //      fj.distance = 0;
+      //          fj.connectedAnchor = Vector2.zero;
                 fj.frequency = 0;
-          //      fj.autoConfigureDistance = false;
+                fj.connectedBody = this.controleJogo.ObterPosicaoBolinhaTeto(cellPosition);
             }
 
             if (cellPosition.y <= -limiteLinhas)
@@ -128,7 +131,7 @@ public class BolaController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("chao"))
         {
-            Destroy(this.gameObject);
+            StartCoroutine(SelfDestruct());
         }
     }
 
@@ -194,6 +197,11 @@ public class BolaController : MonoBehaviour
             !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;
     }
 
+    IEnumerator SelfDestruct()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
 
 
 }
