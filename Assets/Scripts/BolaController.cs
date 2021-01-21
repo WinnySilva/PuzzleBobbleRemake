@@ -70,6 +70,7 @@ public class BolaController : MonoBehaviour
 
     private void OnDestroy()
     {
+        controleJogo.SinalizaBolinhaDestruida();
         Vector3Int celulaGrid = new Vector3Int(x, y, 0);
         controleJogo.RemoverBolinha(this);
         posicaoBolinhasTile.SetTile(celulaGrid, null);
@@ -199,7 +200,7 @@ public class BolaController : MonoBehaviour
 
     IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 

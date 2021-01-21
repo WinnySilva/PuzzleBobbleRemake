@@ -11,6 +11,11 @@ public class GameController : MonoBehaviour
 
     [SerializeField]
     private Dictionary<int, BolaController> conj;
+    [SerializeField]
+    private int contagemBolinhasDestruidas = 0;
+    [SerializeField]
+    private int contagemBolinhasDisparadas = 0;
+
 
     private int x, y;
     BolaController b;
@@ -36,6 +41,7 @@ public class GameController : MonoBehaviour
         conj.Add(coord, obj);
         FixarBolinhaRede(obj);
         EncontrarMatches(obj);
+        contagemBolinhasDisparadas++;
     }
 
     public void FixarBolinhaRede(BolaController obj)
@@ -108,6 +114,11 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void SinalizaBolinhaDestruida()
+    {
+        contagemBolinhasDestruidas++;
+    }
+
     private void DestruirBolinhas(List<BolaController> listaMatches)
     {
         int coord;
@@ -132,18 +143,22 @@ public class GameController : MonoBehaviour
 
         GUI.Label(new Rect(10, 10, 100, 20), $"{cord}");
         GUI.Label(new Rect(10, 40, 100, 20), $"{ray.origin}");
-        GUI.Label(new Rect(10, 55, 100, 20), $":: {x},{y}");
-        if (b != null)
-        {
-            List<BolaController> vs = BuscaVizinhos(b);
-            int ypos = 55;
-            foreach (BolaController b in vs)
-            {
-                ypos += 30;
-                GUI.Label(new Rect(10, ypos, 100, 20), $"{b.cor}");
-            }
+        GUI.Label(new Rect(10, 60, 100, 20), $"Destruidas:: {contagemBolinhasDestruidas}");
+        GUI.Label(new Rect(10, 80, 100, 20), $"Disparadas:: {contagemBolinhasDisparadas}");
+        GUI.Label(new Rect(10, 100, 100, 20), $"Em jogo:: {conj.Count}");
+        GUI.Label(new Rect(10, 120, 100, 20), $":: {x},{y}");
 
-        }
+        /* if (b != null)
+         {
+             List<BolaController> vs = BuscaVizinhos(b);
+             int ypos = 55;
+             foreach (BolaController b in vs)
+             {
+                 ypos += 30;
+                 GUI.Label(new Rect(10, ypos, 100, 20), $"{b.cor}");
+             }
+
+         }*/
 
     }
 
