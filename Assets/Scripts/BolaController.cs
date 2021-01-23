@@ -98,17 +98,18 @@ public class BolaController : MonoBehaviour
                            (new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) -
                             transform.position));
             log.AppendLine("colisoes " + collision.contacts.Length);
-            Debug.Log(log.ToString());
+            //Debug.Log(log.ToString());
 
             if (collision.gameObject.CompareTag("hexTeto"))
             {
-
+                Rigidbody2D rg = this.controleJogo.ObterPosicaoBolinhaTeto(cellPosition);
                 FixedJoint2D fj = this.gameObject.AddComponent<FixedJoint2D>();
                 fj.autoConfigureConnectedAnchor = true;
                 fj.anchor = Vector2.zero;
       //          fj.connectedAnchor = Vector2.zero;
                 fj.frequency = 0;
-                fj.connectedBody = this.controleJogo.ObterPosicaoBolinhaTeto(cellPosition);
+                fj.connectedBody = rg;                              
+
             }
 
             if (cellPosition.y <= -limiteLinhas)
