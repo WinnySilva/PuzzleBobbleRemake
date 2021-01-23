@@ -5,11 +5,18 @@ using UnityEngine.Tilemaps;
 
 public class GameController : MonoBehaviour
 {
-    
+
     public Tilemap posicaoBolinhasTile;
+    public Rigidbody2D[] posicoesTeto;
 
     [SerializeField]
     private Dictionary<int, BolaController> conj;
+    [SerializeField]
+    private int contagemBolinhasDestruidas = 0;
+    [SerializeField]
+    private int contagemBolinhasDisparadas = 0;
+
+
     private int x, y;
     BolaController b;
     // Start is called before the first frame update
@@ -20,6 +27,11 @@ public class GameController : MonoBehaviour
         y = 0;
     }
 
+    public void RemoverBolinha(BolaController obj)
+    {
+        int key = hashPos(obj.x, obj.y);
+        conj.Remove(key);
+    }
     public void AdicionarBolinha(int x, int y, BolaController obj)
     {
         int coord = hashPos(x, y);
@@ -27,7 +39,40 @@ public class GameController : MonoBehaviour
         this.y = y;
         b = obj;
         conj.Add(coord, obj);
+        FixarBolinhaRede(obj);
         EncontrarMatches(obj);
+        contagemBolinhasDisparadas++;
+    }
+
+    public void FixarBolinhaRede(BolaController obj)
+    {
+        List<BolaController> vizinhos = BuscaVizinhos(obj);
+        Rigidbody2D rg = obj.GetComponent<Rigidbody2D>();
+        foreach (BolaController b in vizinhos)
+        {
+            GameObject go = b.gameObject;
+            FixedJoint2D fj = go.AddComponent<FixedJoint2D>();
+            fj.autoConfigureConnectedAnchor = true;
+            fj.anchor = Vector2.zero;
+        //    fj.connectedAnchor = Vector2.zero;
+            fj.frequency = 0;
+            fj.connectedBody = rg;
+        }
+    }
+
+    public Rigidbody2D ObterPosicaoBolinhaTeto(Vector3Int pos)
+    {
+        if ( pos.x > 5 || pos.x < -2)
+        {
+            return null;
+        }
+
+        if (pos.x == -2)
+        {
+            return this.posicoesTeto[0];
+        }
+
+        return this.posicoesTeto[pos.x+1];
     }
 
     public void EncontrarMatches(BolaController val)
@@ -69,6 +114,11 @@ public class GameController : MonoBehaviour
 
     }
 
+    public void SinalizaBolinhaDestruida()
+    {
+        contagemBolinhasDestruidas++;
+    }
+
     private void DestruirBolinhas(List<BolaController> listaMatches)
     {
         int coord;
@@ -81,7 +131,7 @@ public class GameController : MonoBehaviour
     }
     private int hashPos(int x, int y)
     {
-        return x * 5000 + y*500;
+        return x * 5000 + y * 500;
     }
 
     void OnGUI()
@@ -90,17 +140,26 @@ public class GameController : MonoBehaviour
         Vector3 mouse = ray.origin;
         Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow);
         Vector3Int cord = posicaoBolinhasTile.WorldToCell(mouse);
-        
+
         GUI.Label(new Rect(10, 10, 100, 20), $"{cord}");
-        GUI.Label(new Rect(10, 40, 100, 20), $"{ray.origin}"); 
-        GUI.Label(new Rect(10, 55, 100, 20), $":: {x},{y}");
-        List<BolaController> vs = BuscaVizinhos(b);
-        int ypos = 55;
-        foreach (BolaController b in vs)
-        {
-            ypos += 30;
-            GUI.Label(new Rect(10, ypos, 100, 20), $"{b.cor}");
-        }
+        GUI.Label(new Rect(10, 40, 100, 20), $"{ray.origin}");
+        GUI.Label(new Rect(10, 60, 100, 20), $"Destruidas:: {contagemBolinhasDestruidas}");
+        GUI.Label(new Rect(10, 80, 100, 20), $"Disparadas:: {contagemBolinhasDisparadas}");
+        GUI.Label(new Rect(10, 100, 100, 20), $"Em jogo:: {conj.Count}");
+        GUI.Label(new Rect(10, 120, 100, 20), $":: {x},{y}");
+
+        /* if (b != null)
+         {
+             List<BolaController> vs = BuscaVizinhos(b);
+             int ypos = 55;
+             foreach (BolaController b in vs)
+             {
+                 ypos += 30;
+                 GUI.Label(new Rect(10, ypos, 100, 20), $"{b.cor}");
+             }
+
+         }*/
+
     }
 
     private List<BolaController> BuscaVizinhos(BolaController val)
@@ -110,7 +169,6 @@ public class GameController : MonoBehaviour
         int auxKey;
         List<BolaController> vizinhos = new List<BolaController>();
         BolaController auxVal;
-
 
         if (par)
         {
@@ -122,7 +180,7 @@ public class GameController : MonoBehaviour
             xDireita = val.x + 1;
             xEsquerda = val.x;
         }
-        
+
         //esquerda topo
         auxKey = hashPos(xEsquerda, val.y + 1);
         if (conj.TryGetValue(auxKey, out auxVal))
@@ -131,7 +189,7 @@ public class GameController : MonoBehaviour
         }
 
         //esquerda inferior
-        auxKey = hashPos(xEsquerda , val.y - 1);
+        auxKey = hashPos(xEsquerda, val.y - 1);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
@@ -149,21 +207,21 @@ public class GameController : MonoBehaviour
         {
             vizinhos.Add(auxVal);
         }
-       
+
         //esquerda
         auxKey = hashPos((val.x - 1), val.y);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
-        }    
-        
+        }
+
         //direita
         auxKey = hashPos(val.x + 1, val.y);
         if (conj.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
-        
+
         return vizinhos;
     }
 
