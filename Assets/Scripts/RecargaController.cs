@@ -10,9 +10,11 @@ public class RecargaController : MonoBehaviour
     public FixedJoint2D joint;
     public GameObject bolaClone;
     public GameObject atualProjetil;
+    public GameObject teto;
 
     private Vector3 _posicaoInicialProjetil;
     private bool stopRecarregamento = false;
+    private bool stopTiro = false;
     private void Awake()
     {
         MiraController.Fired += Fired;
@@ -56,16 +58,23 @@ public class RecargaController : MonoBehaviour
 
     public void Fired()
     {
+        if (stopTiro)
+        {
+            return;
+        }
         atualProjetil.GetComponent<CircleCollider2D>().enabled = true;
+        atualProjetil.transform.parent = teto.transform;
         BolaController bc;
         bc = atualProjetil.GetComponent<BolaController>();
         bc.Shooted = true;
+        stopTiro = true;
     }
 
     IEnumerator RecarregarCoroutine()
     {
         yield return new WaitForSeconds(0.3f);
         atualProjetil.SetActive(true);
+        stopTiro = false;
     }
 
     private CoresBolinhas proximaCor()

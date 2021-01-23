@@ -38,12 +38,9 @@ public class MiraController : MonoBehaviour
             Vector3 vec = seta.transform.up * forcaImpulso;
 
             Destroy(joint);
-            //Debug.Log(rg.transform.up + " :: " + vec);
+           
             rg.AddForce(vec, ForceMode2D.Impulse);
-            if (Fired != null)
-            {
-                Fired();
-            }
+            Fired?.Invoke();
 
         }
     }

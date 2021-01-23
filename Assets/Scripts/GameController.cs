@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 
     public Tilemap posicaoBolinhasTile;
     public Rigidbody2D[] posicoesTeto;
+    public TetoController controleTeto;
 
     [SerializeField]
     private Dictionary<int, BolaController> conj;
@@ -42,6 +43,10 @@ public class GameController : MonoBehaviour
         FixarBolinhaRede(obj);
         EncontrarMatches(obj);
         contagemBolinhasDisparadas++;
+        if (contagemBolinhasDisparadas%8==0)
+        {
+            controleTeto.BaixarNivelTeto();
+        }
     }
 
     public void FixarBolinhaRede(BolaController obj)
