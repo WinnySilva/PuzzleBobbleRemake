@@ -1,8 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class RecargaController : MonoBehaviour
 {
@@ -77,6 +74,7 @@ public class RecargaController : MonoBehaviour
         stopTiro = false;
     }
 
+    // TODO nao deixar mais de 3 vezes a mesma bolinha, e aumentar as cores
     private CoresBolinhas proximaCor()
     {
        
