@@ -8,7 +8,6 @@ public class BolaController : MonoBehaviour
 {
 
     public Tilemap posicaoBolinhasTile;
-    public float offsetJuncao = 0.35f;
     public CoresBolinhas cor;
     public int limiteLinhas = 12;
     public GameController controleJogo;
@@ -27,11 +26,21 @@ public class BolaController : MonoBehaviour
     private bool fixado;
     private Rigidbody2D rg;
     private bool isMatched;
+    private bool coladoNoTeto;
+
+    public bool ColadoNoTeto
+    {
+        get => coladoNoTeto;
+    }
+
+    public Rigidbody2D Rg
+    {
+        get => rg;
+    }
 
 
     public bool Shooted
     {
-        get => shooted;
         set => shooted = value;
     }
 
@@ -88,7 +97,7 @@ public class BolaController : MonoBehaviour
         {
             fixado = true;
             Vector3Int cellPosition = FixBobblePosition(collision);
-            // rg.bodyType = RigidbodyType2D.Static;
+            rg.bodyType = RigidbodyType2D.Static;
 
             StringBuilder log = new StringBuilder();
             log.AppendLine(collision.gameObject.tag);
@@ -102,14 +111,7 @@ public class BolaController : MonoBehaviour
 
             if (collision.gameObject.CompareTag("hexTeto"))
             {
-                Rigidbody2D rg = this.controleJogo.ObterPosicaoBolinhaTeto(cellPosition);
-                FixedJoint2D fj = this.gameObject.AddComponent<FixedJoint2D>();
-                fj.autoConfigureConnectedAnchor = true;
-                fj.anchor = Vector2.zero;
-      //          fj.connectedAnchor = Vector2.zero;
-                fj.frequency = 0;
-                fj.connectedBody = rg;                              
-
+                coladoNoTeto = true;
             }
 
             if (cellPosition.y <= -limiteLinhas)

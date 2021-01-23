@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
 
     [SerializeField]
     private Dictionary<int, BolaController> conj;
+    private Dictionary<int, BolaController> bolasNoTeto;
     [SerializeField]
     private int contagemBolinhasDestruidas = 0;
     [SerializeField]
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         conj = new Dictionary<int, BolaController>();
+        bolasNoTeto = new Dictionary<int, BolaController>();
         x = 0;
         y = 0;
     }
@@ -38,46 +40,17 @@ public class GameController : MonoBehaviour
         int coord = hashPos(x, y);
         this.x = x;
         this.y = y;
-        b = obj;
+        if (obj.ColadoNoTeto)
+        {
+            bolasNoTeto.Add(coord, obj);
+        }
         conj.Add(coord, obj);
-        FixarBolinhaRede(obj);
         EncontrarMatches(obj);
         contagemBolinhasDisparadas++;
         if (contagemBolinhasDisparadas%8==0)
         {
             controleTeto.BaixarNivelTeto();
         }
-    }
-
-    public void FixarBolinhaRede(BolaController obj)
-    {
-        List<BolaController> vizinhos = BuscaVizinhos(obj);
-        Rigidbody2D rg = obj.GetComponent<Rigidbody2D>();
-        foreach (BolaController b in vizinhos)
-        {
-            GameObject go = b.gameObject;
-            FixedJoint2D fj = go.AddComponent<FixedJoint2D>();
-            fj.autoConfigureConnectedAnchor = true;
-            fj.anchor = Vector2.zero;
-        //    fj.connectedAnchor = Vector2.zero;
-            fj.frequency = 0;
-            fj.connectedBody = rg;
-        }
-    }
-
-    public Rigidbody2D ObterPosicaoBolinhaTeto(Vector3Int pos)
-    {
-        if ( pos.x > 5 || pos.x < -2)
-        {
-            return null;
-        }
-
-        if (pos.x == -2)
-        {
-            return this.posicoesTeto[0];
-        }
-
-        return this.posicoesTeto[pos.x+1];
     }
 
     public void EncontrarMatches(BolaController val)
@@ -118,6 +91,42 @@ public class GameController : MonoBehaviour
         }
 
     }
+    
+    public void DerrubarBolinhasSemEncontrarTeto()
+    {
+        List<BolaController> avaliados = new List<BolaController>();
+        Queue<BolaController> matches = new Queue<BolaController>();
+
+        foreach (BolaController bola in bolasNoTeto.Values)
+        {
+            matches.Enqueue(bola);
+            avaliados.Add(bola);
+        }
+
+        while (matches.Count > 0)
+        {
+            BolaController m = matches.Dequeue();
+            List<BolaController> vizinhos = BuscaVizinhos(m);
+            Debug.Log("Encontrou vizinhos: " + vizinhos.Count);
+            foreach (BolaController v in vizinhos)
+            {
+                if (!avaliados.Contains(v))
+                {
+                    avaliados.Add(v);
+                    matches.Enqueue(v);
+                }
+            }
+        }
+
+
+        foreach (BolaController bola in conj.Values)
+        {
+            if (!avaliados.Contains(bola))
+            {
+                bola.Rg.bodyType = RigidbodyType2D.Dynamic;
+            }
+        }
+    }
 
     public void SinalizaBolinhaDestruida()
     {
@@ -131,6 +140,10 @@ public class GameController : MonoBehaviour
         {
             coord = hashPos(b.x, b.y);
             conj.Remove(coord);
+            if (b.ColadoNoTeto)
+            {
+                bolasNoTeto.Remove(coord);
+            }
             Destroy(b.gameObject);
         }
     }
@@ -235,6 +248,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
 
         DestruirBolinhas(bolinhasParaDestruir);
+        DerrubarBolinhasSemEncontrarTeto();
     }
 
 }
