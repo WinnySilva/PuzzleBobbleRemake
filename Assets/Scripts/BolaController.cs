@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
@@ -6,7 +7,6 @@ using UnityEngine.Tilemaps;
 
 public class BolaController : MonoBehaviour
 {
-
     public Tilemap posicaoBolinhasTile;
     public CoresBolinhas cor;
     public int limiteLinhas = 12;
@@ -50,6 +50,21 @@ public class BolaController : MonoBehaviour
     {
         rg = GetComponent<Rigidbody2D>();
         fixado = false;
+        TetoController.AcaoTetoAbaixou += AbaixarBolinha;
+    }
+
+    public void AbaixarBolinha(float offsetBaixar)
+    {
+        try
+        {
+            Vector3 pos = transform.position;
+            pos.y -= offsetBaixar;
+            transform.position = pos;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
     }
 
     public void setColor(CoresBolinhas novaCor)
@@ -93,7 +108,7 @@ public class BolaController : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("hexTeto") || collision.gameObject.CompareTag("teto")
-            || collision.gameObject.CompareTag("bubble"))
+                                                       || collision.gameObject.CompareTag("bubble"))
         {
             fixado = true;
             Vector3Int cellPosition = FixBobblePosition(collision);
@@ -206,6 +221,4 @@ public class BolaController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
-
-
 }
