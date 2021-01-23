@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
         conj.Add(coord, obj);
         EncontrarMatches(obj);
         contagemBolinhasDisparadas++;
-        if (contagemBolinhasDisparadas % 4 == 0)
+        if (contagemBolinhasDisparadas % 8 == 0)
         {
             controleTeto.BaixarNivelTeto();
         }
@@ -68,7 +68,6 @@ public class GameController : MonoBehaviour
         {
             BolaController m = matches.Dequeue();
             List<BolaController> vizinhos = BuscaVizinhos(m);
-            Debug.Log("Encontrou vizinhos: " + vizinhos.Count);
             foreach (BolaController v in vizinhos)
             {
                 if (!avaliados.Contains(v))
@@ -83,7 +82,6 @@ public class GameController : MonoBehaviour
             }
         }
 
-        Debug.Log(" iguais " + listaMatches.Count + " avaliados: " + avaliados.Count + " iterador " + matches.Count);
         if (listaMatches.Count > 2)
         {
             StartCoroutine(DestruirBolinhasMatches(listaMatches));
@@ -122,6 +120,7 @@ public class GameController : MonoBehaviour
             {
                 bola.Rg.bodyType = RigidbodyType2D.Dynamic;
                 bola.Rg.gravityScale = 1f;
+                bola.Fixado = false;
             }
         }
     }

@@ -43,6 +43,11 @@ public class BolaController : MonoBehaviour
     {
         set => shooted = value;
     }
+    
+    public bool Fixado
+    {
+        set => fixado = value;
+    }
 
 
     // Start is called before the first frame update
@@ -64,6 +69,11 @@ public class BolaController : MonoBehaviour
         catch (Exception e)
         {
             Console.WriteLine(e);
+        }
+
+        if (transform.position.y < -limiteLinhas) // se for mais baixo que o game object de game over
+        {
+            LimiteBolinhasAlcancado();
         }
     }
 
@@ -114,22 +124,12 @@ public class BolaController : MonoBehaviour
             Vector3Int cellPosition = FixBobblePosition(collision);
             rg.bodyType = RigidbodyType2D.Static;
 
-            StringBuilder log = new StringBuilder();
-            log.AppendLine(collision.gameObject.tag);
-            log.AppendLine("POSICAO NO GRID " + cellPosition);
-            log.AppendLine("position " + transform.position);
-            log.AppendLine("positionDiff " +
-                           (new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y) -
-                            transform.position));
-            log.AppendLine("colisoes " + collision.contacts.Length);
-            //Debug.Log(log.ToString());
-
             if (collision.gameObject.CompareTag("hexTeto"))
             {
                 coladoNoTeto = true;
             }
 
-            if (cellPosition.y <= -limiteLinhas)
+            if (transform.position.y <= -limiteLinhas) // se for mais baixo que o game object de game over
             {
                 LimiteBolinhasAlcancado();
             }
@@ -143,15 +143,22 @@ public class BolaController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
         if (rg.bodyType == RigidbodyType2D.Static || !shooted)
         {
+            if (collision.gameObject.CompareTag("chaoGameOver"))
+            {
+                //termina o jogo 
+                Debug.Log("Entrou no trigger " + fixado);
+            }
             return;
         }
 
         if (collision.gameObject.CompareTag("chao"))
         {
             StartCoroutine(SelfDestruct());
-        }
+        } 
+        
     }
 
     private Vector3Int FixBobblePosition(Collision2D collision)

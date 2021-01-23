@@ -9,6 +9,7 @@ TagManager:
   - hexTeto
   - hexBolinhas
   - chao
+  - chaoGameOver
   layers:
   - Default
   - TransparentFX
