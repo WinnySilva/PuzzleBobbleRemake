@@ -58,10 +58,6 @@ public class BolaController : MonoBehaviour
     {
         try
         {
-            Vector3 pos = transform.position;
-            pos.y -= offsetBaixar;
-            transform.position = pos;
-            
             if (transform.position.y <= alturaDerrota.transform.position.y
             ) // se for mais baixo que o game object de game over
             {
@@ -104,8 +100,8 @@ public class BolaController : MonoBehaviour
     {
         controleJogo.SinalizaBolinhaDestruida();
         Vector3Int celulaGrid = new Vector3Int(x, y, 0);
-        controleJogo.RemoverBolinha(this);
         posicaoBolinhasTile.SetTile(celulaGrid, null);
+        controleJogo.RemoverBolinha(this);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -120,6 +116,8 @@ public class BolaController : MonoBehaviour
         {
             _fixado = true;
             Vector3Int cellPosition = ArrumarPosicaoDaBolha(collision);
+            Debug.Log($"Adding at position {cellPosition}");
+
             _rg.bodyType = RigidbodyType2D.Static;
 
             if (collision.gameObject.CompareTag("hexTeto"))
@@ -144,11 +142,6 @@ public class BolaController : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (_rg.bodyType == RigidbodyType2D.Static || !_atirado)
         {
-            if (collision.gameObject.CompareTag("chaoGameOver"))
-            {
-                //termina o jogo 
-                Debug.Log("Entrou no trigger " + _fixado);
-            }
             return;
         }
 
@@ -177,21 +170,43 @@ public class BolaController : MonoBehaviour
     {
         Vector3 colliderPosition = collision.contacts[0].point;
         Vector3 positionDif = colliderPosition - transform.position;
+        
+        Vector3Int tilePosition = posicaoBolinhasTile.WorldToCell(colliderPosition);
+        Debug.Log($"Collider position {tilePosition}");
 
         bool ahEsquerda = positionDif.x > 0;
 
+        if (!posicaoBolinhasTile.HasTile(tilePosition))
+        {
+            Debug.Log("Retornando posicao de colisao");
+            return tilePosition;
+        }
+        
         if (!posicaoBolinhasTile.HasTile(celula))
         {
-            return celula;
+            return AcharPosicaoBaseadoNaBola(celula, ahEsquerda, positionDif);
         }
 
-        Vector3Int tilePosition = posicaoBolinhasTile.WorldToCell(colliderPosition);
 
-        Vector3Int esqInf = new Vector3Int(tilePosition.x - 1, tilePosition.y - 1, tilePosition.z);
-        Vector3Int esq = new Vector3Int(tilePosition.x - 1, tilePosition.y, tilePosition.z);
+        int xEsquerda, xDireita;
+        if (tilePosition.y % 2 == 0)
+        {
+            xDireita = celula.x;
+            xEsquerda = celula.x - 1;
+        }
+        else
+        {
+            xDireita = celula.x + 1;
+            xEsquerda = celula.x;
+        }
 
-        Vector3Int dirInf = new Vector3Int(tilePosition.x, tilePosition.y - 1, tilePosition.z);
-        Vector3Int dir = new Vector3Int(tilePosition.x + 1, tilePosition.y, tilePosition.z);
+        
+        Vector3Int esqInf = new Vector3Int(xEsquerda, tilePosition.y - 1, tilePosition.z);
+        Vector3Int esq = new Vector3Int(xEsquerda, tilePosition.y, tilePosition.z);
+
+        Vector3Int dirInf = new Vector3Int(xDireita, tilePosition.y - 1, tilePosition.z);
+        Vector3Int dir = new Vector3Int(xDireita, tilePosition.y, tilePosition.z);
+
         //isso diminui a taxa de erro porém ainda precisa ser melhorado
         if (ahEsquerda)
         {
@@ -219,6 +234,35 @@ public class BolaController : MonoBehaviour
         return !posicaoBolinhasTile.HasTile(dir) ? dir :
             !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
             !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;
+    }
+
+    private Vector3Int AcharPosicaoBaseadoNaBola(Vector3Int celula, bool ahEsquerda, Vector3 positionDif)
+    {
+        int xEsquerda, xDireita;
+
+        Debug.Log("Retornando posicao da bolinha");
+        if (celula.y % 2 == 0)
+        {
+            xDireita = celula.x;
+            xEsquerda = celula.x - 1;
+        }
+        else
+        {
+            xDireita = celula.x + 1;
+            xEsquerda = celula.x;
+        }
+        
+        Vector3Int cimaEsq = new Vector3Int(xEsquerda, celula.y + 1, celula.z);
+
+        Vector3Int cimaDireita = new Vector3Int(xDireita, celula.y + 1, celula.z);
+
+        if (!posicaoBolinhasTile.HasTile(cimaEsq) && !posicaoBolinhasTile.HasTile(cimaDireita) && positionDif.y > 0.13f
+        ) // caso onde o bolinha esta sem tile, mas a posicao dela é em y - 2 da sustentacao
+        {
+            return ahEsquerda ? cimaEsq : cimaDireita;
+        }
+            
+        return celula;
     }
 
     IEnumerator AutoDestruir()
