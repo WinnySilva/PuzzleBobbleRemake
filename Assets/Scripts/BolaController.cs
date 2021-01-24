@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -9,72 +7,73 @@ public class BolaController : MonoBehaviour
 {
     public Tilemap posicaoBolinhasTile;
     public CoresBolinhas cor;
-    public int limiteLinhas = 12;
+    public GameObject alturaDerrota;
     public GameController controleJogo;
-
-    public delegate void LimiteAlcancado();
-
-    public static event LimiteAlcancado LimiteBolinhasAlcancado;
-
-    public delegate void BolinhaFixadaAction();
-
-    public static event BolinhaFixadaAction BolinhaFixada;
     public int x;
     public int y;
 
-    private bool shooted;
-    private bool fixado;
-    private Rigidbody2D rg;
+    public delegate void LimiteAlcancado();
+    public static event LimiteAlcancado LimiteBolinhasAlcancado;
+    
+    public delegate void BolinhaFixadaAction();
+    public static event BolinhaFixadaAction BolinhaFixada;
+    
+
+    private bool _atirado;
+    private bool _fixado;
+    private Rigidbody2D _rg;
     private bool isMatched;
-    private bool coladoNoTeto;
+    private bool _coladoNoTeto;
 
     public bool ColadoNoTeto
     {
-        get => coladoNoTeto;
+        get => _coladoNoTeto;
     }
 
     public Rigidbody2D Rg
     {
-        get => rg;
+        get => _rg;
     }
 
 
-    public bool Shooted
+    public bool Atirado
     {
-        set => shooted = value;
+        set => _atirado = value;
     }
     
     public bool Fixado
     {
-        set => fixado = value;
+        set => _fixado = value;
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rg = GetComponent<Rigidbody2D>();
-        fixado = false;
+        _rg = GetComponent<Rigidbody2D>();
+        _fixado = false;
         TetoController.AcaoTetoAbaixou += AbaixarBolinha;
     }
 
-    public void AbaixarBolinha(float offsetBaixar)
+    private void AbaixarBolinha(float offsetBaixar)
     {
         try
         {
             Vector3 pos = transform.position;
             pos.y -= offsetBaixar;
             transform.position = pos;
+            
+            if (transform.position.y <= alturaDerrota.transform.position.y
+            ) // se for mais baixo que o game object de game over
+            {
+                LimiteBolinhasAlcancado();
+            }
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
         }
 
-        // if (transform.position.y < -limiteLinhas) // se for mais baixo que o game object de game over
-        // {
-        //     LimiteBolinhasAlcancado();
-        // }
     }
 
     public void setColor(CoresBolinhas novaCor)
@@ -112,7 +111,7 @@ public class BolaController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (rg.bodyType == RigidbodyType2D.Static || !shooted || fixado)
+        if (_rg.bodyType == RigidbodyType2D.Static || !_atirado || _fixado)
         {
             return;
         }
@@ -120,16 +119,16 @@ public class BolaController : MonoBehaviour
         if (collision.gameObject.CompareTag("hexTeto") || collision.gameObject.CompareTag("teto")
                                                        || collision.gameObject.CompareTag("bubble"))
         {
-            fixado = true;
-            Vector3Int cellPosition = FixBobblePosition(collision);
-            rg.bodyType = RigidbodyType2D.Static;
+            _fixado = true;
+            Vector3Int cellPosition = ArrumarPosicaoDaBolha(collision);
+            _rg.bodyType = RigidbodyType2D.Static;
 
             if (collision.gameObject.CompareTag("hexTeto"))
             {
-                coladoNoTeto = true;
+                _coladoNoTeto = true;
             }
 
-            if (transform.position.y <= -limiteLinhas) // se for mais baixo que o game object de game over
+            if (transform.position.y <= alturaDerrota.transform.position.y) // se for mais baixo que o game object de game over
             {
                 LimiteBolinhasAlcancado();
             }
@@ -144,27 +143,27 @@ public class BolaController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.tag);
-        if (rg.bodyType == RigidbodyType2D.Static || !shooted)
+        if (_rg.bodyType == RigidbodyType2D.Static || !_atirado)
         {
             if (collision.gameObject.CompareTag("chaoGameOver"))
             {
                 //termina o jogo 
-                Debug.Log("Entrou no trigger " + fixado);
+                Debug.Log("Entrou no trigger " + _fixado);
             }
             return;
         }
 
         if (collision.gameObject.CompareTag("chao"))
         {
-            StartCoroutine(SelfDestruct());
+            StartCoroutine(AutoDestruir());
         } 
         
     }
 
-    private Vector3Int FixBobblePosition(Collision2D collision)
+    private Vector3Int ArrumarPosicaoDaBolha(Collision2D collision)
     {
         Vector3Int celulaColidida = posicaoBolinhasTile.WorldToCell(transform.position);
-        Vector3Int novaCelula = buscarPosicaoLivre(collision, celulaColidida);
+        Vector3Int novaCelula = BuscarPosicaoLivre(collision, celulaColidida);
         Tile hex = ScriptableObject.CreateInstance<Tile>();
 
         hex.sprite = Resources.Load<Sprite>("Tilesets/Hexagon");
@@ -175,7 +174,7 @@ public class BolaController : MonoBehaviour
         return novaCelula;
     }
 
-    private Vector3Int buscarPosicaoLivre(Collision2D collision, Vector3Int celula)
+    private Vector3Int BuscarPosicaoLivre(Collision2D collision, Vector3Int celula)
     {
         Vector3 colliderPosition = collision.contacts[0].point;
         Vector3 positionDif = colliderPosition - transform.position;
@@ -223,7 +222,7 @@ public class BolaController : MonoBehaviour
             !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;
     }
 
-    IEnumerator SelfDestruct()
+    IEnumerator AutoDestruir()
     {
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);

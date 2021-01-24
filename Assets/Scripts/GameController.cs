@@ -6,45 +6,43 @@ using UnityEngine.Tilemaps;
 public class GameController : MonoBehaviour
 {
     public Tilemap posicaoBolinhasTile;
-    public Rigidbody2D[] posicoesTeto;
     public TetoController controleTeto;
 
-    [SerializeField] private Dictionary<int, BolaController> conj;
-    private Dictionary<int, BolaController> bolasNoTeto;
     [SerializeField] private int contagemBolinhasDestruidas = 0;
     [SerializeField] private int contagemBolinhasDisparadas = 0;
 
 
-    private int x, y;
-
-    BolaController b;
+    private int _x, _y;
+    BolaController _bola;
+    private Dictionary<int, BolaController> _bolasNoJogo;
+    private Dictionary<int, BolaController> _bolasNoTeto;
 
     // Start is called before the first frame update
     void Start()
     {
-        conj = new Dictionary<int, BolaController>();
-        bolasNoTeto = new Dictionary<int, BolaController>();
-        x = 0;
-        y = 0;
+        _bolasNoJogo = new Dictionary<int, BolaController>();
+        _bolasNoTeto = new Dictionary<int, BolaController>();
+        _x = 0;
+        _y = 0;
     }
 
     public void RemoverBolinha(BolaController obj)
     {
         int key = hashPos(obj.x, obj.y);
-        conj.Remove(key);
+        _bolasNoJogo.Remove(key);
     }
 
     public void AdicionarBolinha(int x, int y, BolaController obj)
     {
         int coord = hashPos(x, y);
-        this.x = x;
-        this.y = y;
+        this._x = x;
+        this._y = y;
         if (obj.ColadoNoTeto)
         {
-            bolasNoTeto.Add(coord, obj);
+            _bolasNoTeto.Add(coord, obj);
         }
 
-        conj.Add(coord, obj);
+        _bolasNoJogo.Add(coord, obj);
         EncontrarMatches(obj);
         contagemBolinhasDisparadas++;
         if (contagemBolinhasDisparadas % 8 == 0)
@@ -93,7 +91,7 @@ public class GameController : MonoBehaviour
         List<BolaController> avaliados = new List<BolaController>();
         Queue<BolaController> matches = new Queue<BolaController>();
 
-        foreach (BolaController bola in bolasNoTeto.Values)
+        foreach (BolaController bola in _bolasNoTeto.Values)
         {
             matches.Enqueue(bola);
             avaliados.Add(bola);
@@ -114,7 +112,7 @@ public class GameController : MonoBehaviour
         }
 
 
-        foreach (BolaController bola in conj.Values)
+        foreach (BolaController bola in _bolasNoJogo.Values)
         {
             if (!avaliados.Contains(bola))
             {
@@ -136,10 +134,10 @@ public class GameController : MonoBehaviour
         foreach (BolaController b in listaMatches)
         {
             coord = hashPos(b.x, b.y);
-            conj.Remove(coord);
+            _bolasNoJogo.Remove(coord);
             if (b.ColadoNoTeto)
             {
-                bolasNoTeto.Remove(coord);
+                _bolasNoTeto.Remove(coord);
             }
 
             Destroy(b.gameObject);
@@ -162,8 +160,8 @@ public class GameController : MonoBehaviour
         GUI.Label(new Rect(10, 40, 100, 20), $"{ray.origin}");
         GUI.Label(new Rect(10, 60, 100, 20), $"Destruidas:: {contagemBolinhasDestruidas}");
         GUI.Label(new Rect(10, 80, 100, 20), $"Disparadas:: {contagemBolinhasDisparadas}");
-        GUI.Label(new Rect(10, 100, 100, 20), $"Em jogo:: {conj.Count}");
-        GUI.Label(new Rect(10, 120, 100, 20), $":: {x},{y}");
+        GUI.Label(new Rect(10, 100, 100, 20), $"Em jogo:: {_bolasNoJogo.Count}");
+        GUI.Label(new Rect(10, 120, 100, 20), $":: {_x},{_y}");
     }
 
     private List<BolaController> BuscaVizinhos(BolaController val)
@@ -187,42 +185,42 @@ public class GameController : MonoBehaviour
 
         //esquerda topo
         auxKey = hashPos(xEsquerda, val.y + 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
+        if (_bolasNoJogo.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
         //esquerda inferior
         auxKey = hashPos(xEsquerda, val.y - 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
+        if (_bolasNoJogo.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
         //direita topo
         auxKey = hashPos(xDireita, val.y + 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
+        if (_bolasNoJogo.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
         //direita inferior
         auxKey = hashPos(xDireita, val.y - 1);
-        if (conj.TryGetValue(auxKey, out auxVal))
+        if (_bolasNoJogo.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
         //esquerda
         auxKey = hashPos((val.x - 1), val.y);
-        if (conj.TryGetValue(auxKey, out auxVal))
+        if (_bolasNoJogo.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
 
         //direita
         auxKey = hashPos(val.x + 1, val.y);
-        if (conj.TryGetValue(auxKey, out auxVal))
+        if (_bolasNoJogo.TryGetValue(auxKey, out auxVal))
         {
             vizinhos.Add(auxVal);
         }
