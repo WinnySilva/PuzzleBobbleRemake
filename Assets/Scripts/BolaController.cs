@@ -213,27 +213,21 @@ public class BolaController : MonoBehaviour
             if (positionDif.y > 0.13f) // esquerda inferior
             {
                 return !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :
-                    !posicaoBolinhasTile.HasTile(esq) ? esq :
-                    !posicaoBolinhasTile.HasTile(dir) ? dir : dirInf;
+                    !posicaoBolinhasTile.HasTile(esq) ? esq : dirInf;
             }
 
             //esquerda
-            return !posicaoBolinhasTile.HasTile(esq) ? esq :
-                !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :
-                !posicaoBolinhasTile.HasTile(dirInf) ? dirInf : dir;
+            return !posicaoBolinhasTile.HasTile(esq) ? esq : esqInf;
         }
 
 
         if (positionDif.y > 0.13f) // direita inferior
         {
             return !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
-                !posicaoBolinhasTile.HasTile(dir) ? dir :
-                !posicaoBolinhasTile.HasTile(esq) ? esq : esqInf;
+                !posicaoBolinhasTile.HasTile(dir) ? dir : esqInf;
         }
 
-        return !posicaoBolinhasTile.HasTile(dir) ? dir :
-            !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
-            !posicaoBolinhasTile.HasTile(esqInf) ? esqInf : esq;
+        return !posicaoBolinhasTile.HasTile(dir) ? dir : dirInf;
     }
 
     private Vector3Int AcharPosicaoBaseadoNaBola(Vector3Int celula, bool ahEsquerda, Vector3 positionDif)
