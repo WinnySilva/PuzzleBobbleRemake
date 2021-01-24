@@ -34,7 +34,7 @@ public class RecargaController : MonoBehaviour
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
         atualProjetil.GetComponent<CircleCollider2D>().enabled = false;
         bc = atualProjetil.GetComponent<BolaController>();       
-        bc.setColor(ProximaCor());
+        bc.SetCor(ProximaCor());
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
         joint.connectedBody = mira.gameObject.GetComponent<Rigidbody2D>();

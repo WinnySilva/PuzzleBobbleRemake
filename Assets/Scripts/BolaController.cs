@@ -22,7 +22,6 @@ public class BolaController : MonoBehaviour
     private bool _atirado;
     private bool _fixado;
     private Rigidbody2D _rg;
-    private bool isMatched;
     private bool _coladoNoTeto;
 
     public bool ColadoNoTeto
@@ -48,7 +47,7 @@ public class BolaController : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _rg = GetComponent<Rigidbody2D>();
         _fixado = false;
@@ -66,7 +65,7 @@ public class BolaController : MonoBehaviour
             if (transform.position.y <= alturaDerrota.transform.position.y
             ) // se for mais baixo que o game object de game over
             {
-                LimiteBolinhasAlcancado();
+                LimiteBolinhasAlcancado?.Invoke();
             }
         }
         catch (Exception e)
@@ -76,7 +75,7 @@ public class BolaController : MonoBehaviour
 
     }
 
-    public void setColor(CoresBolinhas novaCor)
+    public void SetCor(CoresBolinhas novaCor)
     {
         cor = novaCor;
         SpriteRenderer spRen = GetComponent<SpriteRenderer>();
@@ -130,10 +129,10 @@ public class BolaController : MonoBehaviour
 
             if (transform.position.y <= alturaDerrota.transform.position.y) // se for mais baixo que o game object de game over
             {
-                LimiteBolinhasAlcancado();
+                LimiteBolinhasAlcancado?.Invoke();
             }
 
-            BolinhaFixada();
+            BolinhaFixada?.Invoke();
             x = cellPosition.x;
             y = cellPosition.y;
             controleJogo.AdicionarBolinha(x, y, this);

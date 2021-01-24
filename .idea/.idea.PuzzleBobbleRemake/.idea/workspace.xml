@@ -29,12 +29,8 @@
     <list default="true" id="4a82512d-af48-4855-a928-46505372702a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TetoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TetoController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,7 @@
       <workItem from="1609975520734" duration="7665000" />
       <workItem from="1610066795572" duration="8566000" />
       <workItem from="1610135911058" duration="2398000" />
-      <workItem from="1611511220069" duration="1661000" />
+      <workItem from="1611511220069" duration="2152000" />
     </task>
     <servers />
   </component>
@@ -254,6 +250,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1610138477490" />
+    <state x="603" y="124" width="714" height="801" key="find.popup" timestamp="1611513089160">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="603" y="124" width="714" height="801" key="find.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1611513089160" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1609983566487">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
