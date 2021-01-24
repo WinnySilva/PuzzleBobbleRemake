@@ -71,10 +71,10 @@ public class BolaController : MonoBehaviour
             Console.WriteLine(e);
         }
 
-        if (transform.position.y < -limiteLinhas) // se for mais baixo que o game object de game over
-        {
-            LimiteBolinhasAlcancado();
-        }
+        // if (transform.position.y < -limiteLinhas) // se for mais baixo que o game object de game over
+        // {
+        //     LimiteBolinhasAlcancado();
+        // }
     }
 
     public void setColor(CoresBolinhas novaCor)
