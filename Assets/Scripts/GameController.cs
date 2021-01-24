@@ -128,6 +128,11 @@ public class GameController : MonoBehaviour
         contagemBolinhasDestruidas++;
     }
 
+    public int ObterQtdBolinhasDestruidas()
+    {
+        return this.contagemBolinhasDestruidas;
+    }
+
     private void DestruirBolinhas(List<BolaController> listaMatches)
     {
         int coord;
@@ -235,4 +240,5 @@ public class GameController : MonoBehaviour
         DestruirBolinhas(bolinhasParaDestruir);
         DerrubarBolinhasSemEncontrarTeto();
     }
+
 }
