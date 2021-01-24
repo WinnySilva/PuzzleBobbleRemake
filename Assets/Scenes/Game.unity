@@ -2463,14 +2463,14 @@ PrefabInstance:
       objectReference: {fileID: 1252242480}
     - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
-      propertyPath: controleJogo
-      value: 
-      objectReference: {fileID: 624123137}
-    - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
-        type: 3}
       propertyPath: alturaDerrota
       value: 
       objectReference: {fileID: 469502575}
+    - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
+        type: 3}
+      propertyPath: controleJogo
+      value: 
+      objectReference: {fileID: 624123137}
     - target: {fileID: 4475350412385705918, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
       propertyPath: m_LocalPosition.x
