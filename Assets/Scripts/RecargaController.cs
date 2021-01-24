@@ -10,11 +10,12 @@ public class RecargaController : MonoBehaviour
     public GameObject teto;
 
     private Vector3 _posicaoInicialProjetil;
-    private bool stopRecarregamento = false;
-    private bool stopTiro = false;
+    private bool _pararRecarregamento = false;
+    private bool _pararTiro = false;
+    
     private void Awake()
     {
-        MiraController.Fired += Fired;
+        MiraController.Atirar += Atirado;
         BolaController.BolinhaFixada  += RecarregarMira;
         BolaController.LimiteBolinhasAlcancado += LimiteBolinhasAlcancado;
 
@@ -22,9 +23,9 @@ public class RecargaController : MonoBehaviour
         RecarregarMira();
     }
 
-    void RecarregarMira()
+    private void RecarregarMira()
     {
-        if (stopRecarregamento)
+        if (_pararRecarregamento)
         {
             return;
         }
@@ -33,7 +34,7 @@ public class RecargaController : MonoBehaviour
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
         atualProjetil.GetComponent<CircleCollider2D>().enabled = false;
         bc = atualProjetil.GetComponent<BolaController>();       
-        bc.setColor(proximaCor());
+        bc.SetCor(ProximaCor());
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
         joint.connectedBody = mira.gameObject.GetComponent<Rigidbody2D>();
@@ -47,15 +48,15 @@ public class RecargaController : MonoBehaviour
         StartCoroutine(RecarregarCoroutine());
     }
 
-    public void LimiteBolinhasAlcancado()
+    private void LimiteBolinhasAlcancado()
     {
         Debug.Log("Limite Alcançado");
-        stopRecarregamento = true;
+        _pararRecarregamento = true;
     }
 
-    public void Fired()
+    private void Atirado()
     {
-        if (stopTiro)
+        if (_pararTiro)
         {
             return;
         }
@@ -63,19 +64,19 @@ public class RecargaController : MonoBehaviour
         atualProjetil.transform.parent = teto.transform;
         BolaController bc;
         bc = atualProjetil.GetComponent<BolaController>();
-        bc.Shooted = true;
-        stopTiro = true;
+        bc.Atirado = true;
+        _pararTiro = true;
     }
 
-    IEnumerator RecarregarCoroutine()
+    private IEnumerator RecarregarCoroutine()
     {
         yield return new WaitForSeconds(0.3f);
         atualProjetil.SetActive(true);
-        stopTiro = false;
+        _pararTiro = false;
     }
 
     // TODO nao deixar mais de 3 vezes a mesma bolinha, e aumentar as cores
-    private CoresBolinhas proximaCor()
+    private static CoresBolinhas ProximaCor()
     {
        
         int rnd = Random.Range(0, 3);

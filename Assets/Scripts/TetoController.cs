@@ -1,15 +1,12 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TetoController : MonoBehaviour
 {
 
     public float offsetBaixar = 1;
     public GameObject posicaoBolinhas;
-    public GameObject posicoesTeto;
-    public Rigidbody2D offLimits;
+    public Rigidbody2D foraDoLimite;
     [SerializeField]
-    private int nivelTeto = 0;
     private Rigidbody2D rg;
     
     public delegate void EventoTetoAbaixou(float offsetAbaixar);
@@ -17,7 +14,7 @@ public class TetoController : MonoBehaviour
     public static event EventoTetoAbaixou AcaoTetoAbaixou;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rg = GetComponent<Rigidbody2D>();
     }
@@ -25,11 +22,9 @@ public class TetoController : MonoBehaviour
 
     public void BaixarNivelTeto()
     {
-        nivelTeto--;
 
         Vector3 pos = transform.position;
         pos.y -= offsetBaixar;
-      //  transform.position = pos;
 
         rg.MovePosition(pos);
 
@@ -37,9 +32,9 @@ public class TetoController : MonoBehaviour
         pos.y -= offsetBaixar;
         posicaoBolinhas.transform.position = pos;
 
-        pos = offLimits.position;
+        pos = foraDoLimite.position;
         pos.y -= offsetBaixar;
-        offLimits.MovePosition(pos);
+        foraDoLimite.MovePosition(pos);
 
         AcaoTetoAbaixou?.Invoke(offsetBaixar);
 

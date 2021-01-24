@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AtiradorController : MonoBehaviour
 {
-    public float speed = 5;
-
-    private float velocidade;
+    private float _velocidade;
 
     private void FixedUpdate()
     {
