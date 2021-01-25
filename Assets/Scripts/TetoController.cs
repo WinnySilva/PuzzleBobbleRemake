@@ -6,8 +6,8 @@ public class TetoController : MonoBehaviour
     public float offsetBaixar = 1;
     public GameObject posicaoBolinhas;
     public Rigidbody2D foraDoLimite;
-    [SerializeField]
-    private Rigidbody2D rg;
+
+    private Rigidbody2D _rg;
     
     public delegate void EventoTetoAbaixou(float offsetAbaixar);
 
@@ -16,7 +16,7 @@ public class TetoController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        rg = GetComponent<Rigidbody2D>();
+        _rg = GetComponent<Rigidbody2D>();
     }
 
 
@@ -26,7 +26,7 @@ public class TetoController : MonoBehaviour
         Vector3 pos = transform.position;
         pos.y -= offsetBaixar;
 
-        rg.MovePosition(pos);
+        _rg.MovePosition(pos);
 
         pos = posicaoBolinhas.transform.position;
         pos.y -= offsetBaixar;
