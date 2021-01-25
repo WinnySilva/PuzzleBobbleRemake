@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RecargaController : MonoBehaviour
@@ -10,16 +11,19 @@ public class RecargaController : MonoBehaviour
     public GameObject teto;
 
     private Vector3 _posicaoInicialProjetil;
-    private bool _pararRecarregamento = false;
-    private bool _pararTiro = false;
-    
+    private GameObject _proximoProjetil;
+    private bool _pararRecarregamento;
+    private bool _pararTiro;
+    private static List<CoresBolinhas> _ultimasBolinhas = new List<CoresBolinhas>();
+
     private void Awake()
     {
         MiraController.Atirar += Atirado;
-        BolaController.BolinhaFixada  += RecarregarMira;
+        BolaController.BolinhaFixada += RecarregarMira;
         BolaController.LimiteBolinhasAlcancado += LimiteBolinhasAlcancado;
 
         _posicaoInicialProjetil = atualProjetil.transform.position;
+        _posicaoInicialProjetil.x += 0.1f;
         RecarregarMira();
     }
 
@@ -29,11 +33,12 @@ public class RecargaController : MonoBehaviour
         {
             return;
         }
+
         BolaController bc;
-       
+
         atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
         atualProjetil.GetComponent<CircleCollider2D>().enabled = false;
-        bc = atualProjetil.GetComponent<BolaController>();       
+        bc = atualProjetil.GetComponent<BolaController>();
         bc.SetCor(ProximaCor());
 
         joint = atualProjetil.AddComponent<FixedJoint2D>();
@@ -60,6 +65,7 @@ public class RecargaController : MonoBehaviour
         {
             return;
         }
+
         atualProjetil.GetComponent<CircleCollider2D>().enabled = true;
         atualProjetil.transform.parent = teto.transform;
         BolaController bc;
@@ -75,12 +81,41 @@ public class RecargaController : MonoBehaviour
         _pararTiro = false;
     }
 
-    // TODO nao deixar mais de 3 vezes a mesma bolinha, e aumentar as cores
     private static CoresBolinhas ProximaCor()
     {
-       
-        int rnd = Random.Range(0, 3);
+        CoresBolinhas proxima;
+        while (true)
+        {
+            int rnd = Random.Range(0, 4);
 
-        return (CoresBolinhas)rnd;
+            proxima = (CoresBolinhas) rnd;
+
+            if (_ultimasBolinhas.Count == 3)
+            {
+                int countRepeticao = 0;
+                foreach (CoresBolinhas bola in _ultimasBolinhas)
+                {
+                    if (bola == proxima)
+                    {
+                        countRepeticao++;
+                    }
+                }
+
+                if (countRepeticao < 2)
+                {
+                    _ultimasBolinhas.RemoveAt(0);
+                    break;
+                }
+            }
+            else
+            {
+                break;
+            }
+        }
+
+
+        _ultimasBolinhas.Add(proxima);
+
+        return proxima;
     }
 }

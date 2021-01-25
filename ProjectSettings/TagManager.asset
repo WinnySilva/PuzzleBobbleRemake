@@ -10,6 +10,7 @@ TagManager:
   - hexBolinhas
   - chao
   - chaoGameOver
+  - parede
   layers:
   - Default
   - TransparentFX

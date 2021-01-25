@@ -116,6 +116,7 @@ public class GameController : MonoBehaviour
         {
             if (!avaliados.Contains(bola))
             {
+                bola.gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
                 bola.Rg.bodyType = RigidbodyType2D.Dynamic;
                 bola.Rg.gravityScale = 1f;
                 bola.Fixado = false;
