@@ -24,6 +24,15 @@ public class RecargaController : MonoBehaviour
 
         _posicaoInicialProjetil = atualProjetil.transform.position;
         _posicaoInicialProjetil.x += 0.1f;
+        
+        BolaController bc;
+
+        _proximoProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
+        _proximoProjetil.GetComponent<CircleCollider2D>().enabled = false;
+        bc = _proximoProjetil.GetComponent<BolaController>();
+        bc.SetCor(ProximaCor());
+        _proximoProjetil.SetActive(true);
+
         RecarregarMira();
     }
 
@@ -34,23 +43,15 @@ public class RecargaController : MonoBehaviour
             return;
         }
 
-        BolaController bc;
-
-        atualProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
-        atualProjetil.GetComponent<CircleCollider2D>().enabled = false;
-        bc = atualProjetil.GetComponent<BolaController>();
-        bc.SetCor(ProximaCor());
-
-        joint = atualProjetil.AddComponent<FixedJoint2D>();
-        joint.connectedBody = mira.gameObject.GetComponent<Rigidbody2D>();
-        joint.autoConfigureConnectedAnchor = false;
-        joint.anchor = new Vector2(0, 0);
+        atualProjetil = _proximoProjetil;
+        _proximoProjetil = null;
+        atualProjetil.transform.position = mira.transform.position;
 
         mira.AtualProjetil = atualProjetil;
+        
+        _pararTiro = false;
+        StartCoroutine(CarregarProximaBolha());
 
-        atualProjetil.transform.position = _posicaoInicialProjetil;
-
-        StartCoroutine(RecarregarCoroutine());
     }
 
     private void LimiteBolinhasAlcancado()
@@ -74,11 +75,17 @@ public class RecargaController : MonoBehaviour
         _pararTiro = true;
     }
 
-    private IEnumerator RecarregarCoroutine()
+    private IEnumerator CarregarProximaBolha()
     {
-        yield return new WaitForSeconds(0.3f);
-        atualProjetil.SetActive(true);
-        _pararTiro = false;
+        yield return new WaitForSeconds(0.2f);
+        
+        BolaController bc;
+
+        _proximoProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
+        _proximoProjetil.GetComponent<CircleCollider2D>().enabled = false;
+        bc = _proximoProjetil.GetComponent<BolaController>();
+        bc.SetCor(ProximaCor());
+        _proximoProjetil.SetActive(true);
     }
 
     private static CoresBolinhas ProximaCor()
