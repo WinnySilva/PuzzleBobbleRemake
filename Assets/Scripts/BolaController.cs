@@ -47,7 +47,7 @@ public class BolaController : MonoBehaviour
 
 
     // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
         _rg = GetComponent<Rigidbody2D>();
         _fixado = false;
@@ -86,6 +86,12 @@ public class BolaController : MonoBehaviour
                 break;
             case CoresBolinhas.VERMELHO:
                 spRen.color = Color.red;
+                break;
+            case CoresBolinhas.VERDE:
+                spRen.color = Color.green;
+                break;
+            case CoresBolinhas.BRANCO:
+                spRen.color = Color.white;
                 break;
             case CoresBolinhas.MATCHED:
                 spRen.color = Color.clear;

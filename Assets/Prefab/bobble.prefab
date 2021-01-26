@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4475350412385705916}
   - component: {fileID: 4475350412385705919}
   - component: {fileID: 4475350412385705917}
-  - component: {fileID: 1221693869633199614}
   m_Layer: 11
   m_Name: bobble
   m_TagString: bubble
@@ -141,18 +140,3 @@ MonoBehaviour:
   controleJogo: {fileID: 0}
   x: 0
   y: 0
---- !u!111 &1221693869633199614
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4475350412385705904}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c0c501fa3ae9ae349ab1f3546f076efc, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
