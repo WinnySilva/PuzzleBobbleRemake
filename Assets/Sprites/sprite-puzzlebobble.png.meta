@@ -1445,6 +1445,21 @@ TextureImporter:
   - first:
       213: 809330327757823817
     second: sprite-puzzlebobble_188
+  - first:
+      213: -1577290779093106017
+    second: sprite-puzzlebobble_189
+  - first:
+      213: 4643950341050775034
+    second: sprite-puzzlebobble_190
+  - first:
+      213: 4056952406411789621
+    second: sprite-puzzlebobble_191
+  - first:
+      213: 330258237522043513
+    second: sprite-puzzlebobble_192
+  - first:
+      213: -8041528398723799286
+    second: sprite-puzzlebobble_193
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1777,9 +1792,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 349
-        y: 3262
+        y: 3257
         width: 35
-        height: 46
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1924,9 +1939,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 692
-        y: 3262
+        y: 3258
         width: 35
-        height: 46
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -11470,6 +11485,111 @@ TextureImporter:
       bones: []
       spriteID: 94f94f325a15b3b00800000000000000
       internalID: 809330327757823817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-puzzlebobble_189
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 3314
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9208aca4665c1ae0800000000000000
+      internalID: -1577290779093106017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-puzzlebobble_190
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 3314
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5b2e00b30a27040800000000000000
+      internalID: 4643950341050775034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-puzzlebobble_191
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3314
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53547de08b03d4830800000000000000
+      internalID: 4056952406411789621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-puzzlebobble_192
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 3314
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972e5a30e10559400800000000000000
+      internalID: 330258237522043513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-puzzlebobble_193
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 3314
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a072ad6f680c66090800000000000000
+      internalID: -8041528398723799286
       vertices: []
       indices: 
       edges: []
