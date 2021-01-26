@@ -2,13 +2,13 @@
 
 public class AtiradorController : MonoBehaviour
 {
-    private float _velocidade;
+    public float velocidade;
 
     private void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        float graus = 85 * (horizontalInput);
+        float graus = velocidade * (horizontalInput);
 
         Quaternion rot = Quaternion.Euler(0, 0, - graus);
 
