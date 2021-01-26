@@ -14,29 +14,29 @@ public class GameController : MonoBehaviour
 
     private int _x, _y;
     BolaController _bola;
-    private Dictionary<int, BolaController> _bolasNoJogo;
-    private Dictionary<int, BolaController> _bolasNoTeto;
+    private Dictionary<string, BolaController> _bolasNoJogo;
+    private Dictionary<string, BolaController> _bolasNoTeto;
 
     // Start is called before the first frame update
     void Start()
     {
-        _bolasNoJogo = new Dictionary<int, BolaController>();
-        _bolasNoTeto = new Dictionary<int, BolaController>();
+        _bolasNoJogo = new Dictionary<string, BolaController>();
+        _bolasNoTeto = new Dictionary<string, BolaController>();
         _x = 0;
         _y = 0;
     }
 
     public void RemoverBolinha(BolaController obj)
     {
-        int key = hashPos(obj.x, obj.y);
+        string key = hashPos(obj.x, obj.y);
         _bolasNoJogo.Remove(key);
     }
 
     public void AdicionarBolinha(int x, int y, BolaController obj)
     {
-        int coord = hashPos(x, y);
-        this._x = x;
-        this._y = y;
+        string coord = hashPos(x, y);
+        _x = x;
+        _y = y;
         if (obj.ColadoNoTeto)
         {
             _bolasNoTeto.Add(coord, obj);
@@ -131,12 +131,12 @@ public class GameController : MonoBehaviour
 
     public int ObterQtdBolinhasDestruidas()
     {
-        return this.contagemBolinhasDestruidas;
+        return contagemBolinhasDestruidas;
     }
 
     private void DestruirBolinhas(List<BolaController> listaMatches)
     {
-        int coord;
+        string coord;
         foreach (BolaController b in listaMatches)
         {
             coord = hashPos(b.x, b.y);
@@ -150,9 +150,9 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private int hashPos(int x, int y)
+    private string hashPos(int x, int y)
     {
-        return x * 5000 + y * 500;
+        return $"x:{x} - y:{y}";
     }
 
     void OnGUI()
@@ -174,7 +174,7 @@ public class GameController : MonoBehaviour
     {
         bool par = val.y % 2 == 0;
         int xEsquerda, xDireita;
-        int auxKey;
+        string auxKey;
         List<BolaController> vizinhos = new List<BolaController>();
         BolaController auxVal;
 
