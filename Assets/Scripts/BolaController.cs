@@ -81,20 +81,30 @@ public class BolaController : MonoBehaviour
         switch (novaCor)
         {
             case CoresBolinhas.AMARELO:
-                spRen.color = Color.yellow;
+                spRen.color = new Color(0.9725491f, 0.9411765f, 0);
                 break;
             case CoresBolinhas.AZUL:
                 spRen.color = Color.blue;
                 break;
             case CoresBolinhas.VERMELHO:
-                spRen.color = Color.red;
+                spRen.color = new Color(0.8301887f, 0.1057316f, 0.1057316f);
                 break;
             case CoresBolinhas.VERDE:
-                spRen.color = Color.green;
+                spRen.color = new Color(0, 0.282353f,0);
                 break;
             case CoresBolinhas.BRANCO:
                 spRen.color = Color.white;
                 break;
+            case CoresBolinhas.CINZA:
+                spRen.color = new Color(0.3137255f, 0.3764706f, 0.3764706f);
+                break;
+            case CoresBolinhas.LARANJA :
+                spRen.color = new Color(0.9411765f, 0.517f, 0.09411766f);
+                break;
+            case CoresBolinhas.ROXO:
+                spRen.color = new Color(0.5333334f, 0.1882353f, 0.6901961f);
+                break;
+
             case CoresBolinhas.MATCHED:
                 spRen.color = Color.clear;
                 break;
@@ -106,6 +116,7 @@ public class BolaController : MonoBehaviour
 
     private void OnDestroy()
     {
+        AnimExplodir();
         controleJogo.SinalizaBolinhaDestruida();
         Vector3Int celulaGrid = new Vector3Int(x, y, 0);
         posicaoBolinhasTile.SetTile(celulaGrid, null);
@@ -323,4 +334,14 @@ public class BolaController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
+
+    public void AnimExplodir()
+    {
+        Animator anim;
+        if (TryGetComponent<Animator>(out anim))
+        {
+            anim.SetBool("toDestroy", true);
+        }
+    }
+
 }

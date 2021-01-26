@@ -145,8 +145,9 @@ public class GameController : MonoBehaviour
             {
                 _bolasNoTeto.Remove(coord);
             }
-
+                        
             Destroy(b.gameObject);
+            
         }
     }
 
