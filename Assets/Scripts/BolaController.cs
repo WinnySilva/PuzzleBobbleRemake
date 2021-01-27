@@ -275,29 +275,29 @@ public class BolaController : MonoBehaviour
         Vector3Int cimaDireita = new Vector3Int(xDireita, celula.y + 1, celula.z);
         Vector3Int direita = new Vector3Int(celula.x + 1, celula.y, celula.z);
 
+        if (tileDaBolaQueFoiColidida.y % 2 == 0)
+        {
+            xDireita = tileDaBolaQueFoiColidida.x;
+            xEsquerda = tileDaBolaQueFoiColidida.x - 1;
+        }
+        else
+        {
+            xDireita = tileDaBolaQueFoiColidida.x + 1;
+            xEsquerda = tileDaBolaQueFoiColidida.x;
+        }
+
+        Vector3Int esqInfDoColidido =
+            new Vector3Int(xEsquerda, tileDaBolaQueFoiColidida.y - 1, tileDaBolaQueFoiColidida.z);
+        Vector3Int dirInfDoColidido =
+            new Vector3Int(xDireita, tileDaBolaQueFoiColidida.y - 1, tileDaBolaQueFoiColidida.z);
         Debug.Log($"Position dif y {positionDif.y}");
-        if (!posicaoBolinhasTile.HasTile(cimaEsq) && !posicaoBolinhasTile.HasTile(cimaDireita) && positionDif.y > 0.08f
+        if (!posicaoBolinhasTile.HasTile(cimaEsq) && !posicaoBolinhasTile.HasTile(cimaDireita) && positionDif.y > 0.15f
         ) // caso onde o bolinha esta sem tile, e deve adionar em baixo da colisao, e a posicao da bola nao tem vizinhos superiores
         {
             Debug.Log($"Adicionando para esquerda {ahEsquerda}");
 
             Debug.Log(paredeTileMap.HasTile(ahEsquerda ? cimaEsq : cimaDireita));
 
-            if (tileDaBolaQueFoiColidida.y % 2 == 0)
-            {
-                xDireita = tileDaBolaQueFoiColidida.x;
-                xEsquerda = tileDaBolaQueFoiColidida.x - 1;
-            }
-            else
-            {
-                xDireita = tileDaBolaQueFoiColidida.x + 1;
-                xEsquerda = tileDaBolaQueFoiColidida.x;
-            }
-
-            Vector3Int esqInfDoColidido =
-                new Vector3Int(xEsquerda, tileDaBolaQueFoiColidida.y - 1, tileDaBolaQueFoiColidida.z);
-            Vector3Int dirInfDoColidido =
-                new Vector3Int(xDireita, tileDaBolaQueFoiColidida.y - 1, tileDaBolaQueFoiColidida.z);
 
             if (ahEsquerda)
             {
@@ -327,7 +327,8 @@ public class BolaController : MonoBehaviour
         Vector3Int esqDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x - 1, tileDaBolaQueFoiColidida.y, tileDaBolaQueFoiColidida.z);
         Vector3Int dirDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x + 1, tileDaBolaQueFoiColidida.y, tileDaBolaQueFoiColidida.z);
 
-        return ahEsquerda ? esqDoColidido : dirDoColidido;
+        return ahEsquerda ? (!posicaoBolinhasTile.HasTile(esqDoColidido) ? esqDoColidido : esqInfDoColidido): 
+            (!posicaoBolinhasTile.HasTile(dirDoColidido) ? dirDoColidido : dirInfDoColidido);
     }
 
     IEnumerator AutoDestruir()
