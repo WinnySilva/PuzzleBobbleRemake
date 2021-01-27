@@ -21,10 +21,12 @@ public class BolaController : MonoBehaviour
 
     public static event BolinhaFixadaAction BolinhaFixada;
 
-
+    [SerializeField]
     private bool _atirado;
+    [SerializeField]
     private bool _fixado;
     private Rigidbody2D _rg;
+    [SerializeField]
     private bool _coladoNoTeto;
 
     public bool ColadoNoTeto
@@ -91,7 +93,7 @@ public class BolaController : MonoBehaviour
                 spRen.color = new Color(0.8301887f, 0.1057316f, 0.1057316f);
                 break;
             case CoresBolinhas.VERDE:
-                spRen.color = new Color(0, 0.282353f,0);
+                spRen.color = new Color(0, 0.282353f, 0);
                 break;
             case CoresBolinhas.BRANCO:
                 spRen.color = Color.white;
@@ -99,7 +101,7 @@ public class BolaController : MonoBehaviour
             case CoresBolinhas.CINZA:
                 spRen.color = new Color(0.3137255f, 0.3764706f, 0.3764706f);
                 break;
-            case CoresBolinhas.LARANJA :
+            case CoresBolinhas.LARANJA:
                 spRen.color = new Color(0.9411765f, 0.517f, 0.09411766f);
                 break;
             case CoresBolinhas.ROXO:
@@ -327,7 +329,7 @@ public class BolaController : MonoBehaviour
         Vector3Int esqDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x - 1, tileDaBolaQueFoiColidida.y, tileDaBolaQueFoiColidida.z);
         Vector3Int dirDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x + 1, tileDaBolaQueFoiColidida.y, tileDaBolaQueFoiColidida.z);
 
-        return ahEsquerda ? (!posicaoBolinhasTile.HasTile(esqDoColidido) ? esqDoColidido : esqInfDoColidido): 
+        return ahEsquerda ? (!posicaoBolinhasTile.HasTile(esqDoColidido) ? esqDoColidido : esqInfDoColidido) :
             (!posicaoBolinhasTile.HasTile(dirDoColidido) ? dirDoColidido : dirInfDoColidido);
     }
 

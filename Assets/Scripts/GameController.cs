@@ -38,9 +38,7 @@ public class GameController : MonoBehaviour
         _x = x;
         _y = y;
 
-
-
-        if (y == 8 || obj.ColadoNoTeto)
+        if (y == 6 || obj.ColadoNoTeto)
         {
             obj.ColadoNoTeto = true;
             _bolasNoTeto.Add(coord, obj);
@@ -62,7 +60,7 @@ public class GameController : MonoBehaviour
         _x = x;
         _y = y;
 
-        if (y == 8 || obj.ColadoNoTeto)
+        if (y == 6 || obj.ColadoNoTeto)
         {
             obj.ColadoNoTeto = true;
             _bolasNoTeto.Add(coord, obj);

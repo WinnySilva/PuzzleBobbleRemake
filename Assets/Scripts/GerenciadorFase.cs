@@ -25,30 +25,30 @@ public class GerenciadorFase : MonoBehaviour
 
     public void ConfiguraFaseUm()
     {
-        Vector3Int[] posicoesVermelho = {new Vector3Int(-5,8,0),new Vector3Int(-4,8,0),
-        new Vector3Int(-5,7,0),new Vector3Int(-4,7,0)   };
+        Vector3Int[] posicoesVermelho = {new Vector3Int(-4,6,0),new Vector3Int(-3,6,0),
+        new Vector3Int(-4,5,0),new Vector3Int(-3,5,0)   };
 
         posicionarBolinhas(posicoesVermelho, prefab, CoresBolinhas.VERMELHO);
 
-        Vector3Int[] posicoesAmarelo = {new Vector3Int(-3,8,0),new Vector3Int(-2,8,0),
-        new Vector3Int(-3,7,0),new Vector3Int(-2,7,0)   };
+        Vector3Int[] posicoesAmarelo = {new Vector3Int(-2,6,0),new Vector3Int(-1,6,0),
+        new Vector3Int(-2,5,0),new Vector3Int(-1,5,0)   };
 
         posicionarBolinhas(posicoesAmarelo, prefab, CoresBolinhas.AMARELO);
 
-        Vector3Int[] posicoesAzul = {new Vector3Int(-1,8,0),new Vector3Int(0,8,0),
-        new Vector3Int(-1,7,0),new Vector3Int(0,7,0)   };
+        Vector3Int[] posicoesAzul = {new Vector3Int(0,6,0),new Vector3Int(1,6,0),
+        new Vector3Int(0,5,0),new Vector3Int(1,5,0)   };
 
         posicionarBolinhas(posicoesAzul, prefab, CoresBolinhas.AZUL);
 
-        Vector3Int[] verde = {new Vector3Int(1,8,0),new Vector3Int(2,8,0),
-        new Vector3Int(1,7,0),new Vector3Int(2,7,0)};
+        Vector3Int[] verde = {new Vector3Int(2,6,0),new Vector3Int(3,6,0),
+        new Vector3Int(2,5,0),new Vector3Int(3,5,0)};
 
         posicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
 
-        Vector3Int[] branco = {new Vector3Int(3,8,0),new Vector3Int(4,8,0),
-        new Vector3Int(3,7,0)};
+        //Vector3Int[] branco = {new Vector3Int(3,6,0),new Vector3Int(4,6,0),
+        //new Vector3Int(3,5,0)};
 
-        posicionarBolinhas(branco, prefab, CoresBolinhas.BRANCO);
+        //posicionarBolinhas(branco, prefab, CoresBolinhas.BRANCO);
 
     }
 
