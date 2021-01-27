@@ -5,29 +5,54 @@ using UnityEngine.Tilemaps;
 
 public class GerenciadorFase : MonoBehaviour
 {
-    public GameObject bolinhaVermelha;
+    public GameObject prefab;
     public Tilemap gridBolinhas;
     public GameObject alturaDerrota;
     public GameController controleJogo;
+    public GameObject teto;
 
-    private Vector3Int[] posicoesVermelho = 
-        {new Vector3Int(-5,8,0),new Vector3Int(-4,8,0),
-        new Vector3Int(-5,7,0),new Vector3Int(-4,7,0),
-    };
-
-    // Start is called before the first frame update
-    void Awake()
+    private void Start()
     {
-        posicionarBolinhas(posicoesVermelho, bolinhaVermelha);
+        ConfiguraFaseUm();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void posicionarBolinhas(Vector3Int[] posicoes, GameObject prefab)
+    public void ConfiguraFaseUm()
+    {
+        Vector3Int[] posicoesVermelho = {new Vector3Int(-5,8,0),new Vector3Int(-4,8,0),
+        new Vector3Int(-5,7,0),new Vector3Int(-4,7,0)   };
+
+        posicionarBolinhas(posicoesVermelho, prefab, CoresBolinhas.VERMELHO);
+
+        Vector3Int[] posicoesAmarelo = {new Vector3Int(-3,8,0),new Vector3Int(-2,8,0),
+        new Vector3Int(-3,7,0),new Vector3Int(-2,7,0)   };
+
+        posicionarBolinhas(posicoesAmarelo, prefab, CoresBolinhas.AMARELO);
+
+        Vector3Int[] posicoesAzul = {new Vector3Int(-1,8,0),new Vector3Int(0,8,0),
+        new Vector3Int(-1,7,0),new Vector3Int(0,7,0)   };
+
+        posicionarBolinhas(posicoesAzul, prefab, CoresBolinhas.AZUL);
+
+        Vector3Int[] verde = {new Vector3Int(1,8,0),new Vector3Int(2,8,0),
+        new Vector3Int(1,7,0),new Vector3Int(2,7,0)};
+
+        posicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
+
+        Vector3Int[] branco = {new Vector3Int(3,8,0),new Vector3Int(4,8,0),
+        new Vector3Int(3,7,0)};
+
+        posicionarBolinhas(branco, prefab, CoresBolinhas.BRANCO);
+
+    }
+
+    private void posicionarBolinhas(Vector3Int[] posicoes, GameObject prefab, CoresBolinhas cor)
     {
         Vector3 vec3;
         Rigidbody2D rg;
@@ -36,21 +61,35 @@ public class GerenciadorFase : MonoBehaviour
         foreach (Vector3Int v in posicoes)
         {
             vec3 = gridBolinhas.CellToWorld(v);
-          //  vec3.y += 0.1; 
-            
+
+
             GameObject novaBolinha = Instantiate(prefab, Vector3.zero, Quaternion.identity);
-            
+            novaBolinha.transform.position = vec3;
+            novaBolinha.transform.parent = teto.transform;
+
             bc = novaBolinha.GetComponent<BolaController>();
             bc.alturaDerrota = alturaDerrota;
             bc.controleJogo = controleJogo;
             bc.posicaoBolinhasTile = gridBolinhas;
+            bc.SetCor(cor);           
+            bc.x = v.x;
+            bc.y = v.y;
             bc.Atirado = true;
+            bc.Fixado = true;
+
+            Tile hex = ScriptableObject.CreateInstance<Tile>();
+            hex.sprite = Resources.Load<Sprite>("Tilesets/Hexagon");
+            gridBolinhas.SetTile(v, hex);
+
 
             rg = novaBolinha.GetComponent<Rigidbody2D>();
-            rg.bodyType = RigidbodyType2D.Dynamic;
-            novaBolinha.SetActive(true);
-            rg.MovePosition(vec3);
+            rg.bodyType = RigidbodyType2D.Static;
 
+            controleJogo.AdicionarBolinhaContrucaoFase(v.x, v.y, bc);
+            novaBolinha.SetActive(true);
+
+            Debug.Log(vec3);
+            Debug.Log(v);
         }
     }
 

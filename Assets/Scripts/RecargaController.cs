@@ -38,7 +38,7 @@ public class RecargaController : MonoBehaviour
 
     private void RecarregarMira()
     {
-        if (_pararRecarregamento)
+        if (_pararRecarregamento || _proximoProjetil ==null)
         {
             return;
         }
