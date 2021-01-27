@@ -237,7 +237,8 @@ public class GameController : MonoBehaviour
 
     IEnumerator DestruirBolinhasMatches(List<BolaController> bolinhasParaDestruir)
     {
-        yield return new WaitForSeconds(0.15f);
+        bolinhasParaDestruir.ForEach(b => b.AnimExplodir());
+        yield return new WaitForSeconds(0.3f);
 
         DestruirBolinhas(bolinhasParaDestruir);
         DerrubarBolinhasSemEncontrarTeto();
