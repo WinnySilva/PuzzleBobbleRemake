@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
@@ -6,10 +7,22 @@ public class UIController : MonoBehaviour
     public GameController controleJogo;
     public Text pontuacaoUIText;
 
+    public GameObject roundClearMsg;
+    public GameObject gameOverMsg;
+    public GameObject inicioRoundMsg;
+
 
     private void Awake()
     {
         GameController.FinalJogo += FinalJogo;
+        roundClearMsg.SetActive(false);
+        gameOverMsg.SetActive(false);
+        inicioRoundMsg.SetActive(false);
+    }
+
+    private void Start()
+    {
+        StartCoroutine(AparecerMensagemInicial());
     }
 
     // Update is called once per frame
@@ -36,7 +49,18 @@ public class UIController : MonoBehaviour
     {
         if (ehVitoria)
         {
-            Debug.Log("VITOORIA");
+            roundClearMsg.SetActive(true);
         }
+        else
+        {
+            gameOverMsg.SetActive(true);
+        }
+    }
+
+    IEnumerator AparecerMensagemInicial()
+    {
+        inicioRoundMsg.SetActive(true);
+        yield return new WaitForSeconds(2);
+        inicioRoundMsg.SetActive(false);
     }
 }
