@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     private Dictionary<string, BolaController> _bolasNoTeto;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _bolasNoJogo = new Dictionary<string, BolaController>();
         _bolasNoTeto = new Dictionary<string, BolaController>();
@@ -37,8 +37,12 @@ public class GameController : MonoBehaviour
         string coord = hashPos(x, y);
         _x = x;
         _y = y;
-        if (obj.ColadoNoTeto)
+
+
+
+        if (y == 8 || obj.ColadoNoTeto)
         {
+            obj.ColadoNoTeto = true;
             _bolasNoTeto.Add(coord, obj);
         }
 
@@ -50,6 +54,22 @@ public class GameController : MonoBehaviour
             controleTeto.BaixarNivelTeto();
         }
     }
+
+
+    public void AdicionarBolinhaContrucaoFase(int x, int y, BolaController obj)
+    {
+        string coord = hashPos(x, y);
+        _x = x;
+        _y = y;
+
+        if (y == 8 || obj.ColadoNoTeto)
+        {
+            obj.ColadoNoTeto = true;
+            _bolasNoTeto.Add(coord, obj);
+        }
+        _bolasNoJogo.Add(coord, obj);
+    }
+
 
     public void EncontrarMatches(BolaController val)
     {
@@ -145,9 +165,9 @@ public class GameController : MonoBehaviour
             {
                 _bolasNoTeto.Remove(coord);
             }
-                        
+
             Destroy(b.gameObject);
-            
+
         }
     }
 

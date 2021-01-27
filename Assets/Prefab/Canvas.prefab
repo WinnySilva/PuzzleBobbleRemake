@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 198318280}
   - component: {fileID: 198318279}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: InicioRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 8526959305947494384}
   - component: {fileID: 8526959305947494385}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

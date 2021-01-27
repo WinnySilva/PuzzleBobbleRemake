@@ -30,6 +30,7 @@ public class BolaController : MonoBehaviour
     public bool ColadoNoTeto
     {
         get => _coladoNoTeto;
+        set => _coladoNoTeto = value;
     }
 
     public Rigidbody2D Rg
