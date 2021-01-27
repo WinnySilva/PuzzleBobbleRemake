@@ -41,14 +41,9 @@ public class GerenciadorFase : MonoBehaviour
         posicionarBolinhas(posicoesAzul, prefab, CoresBolinhas.AZUL);
 
         Vector3Int[] verde = {new Vector3Int(2,6,0),new Vector3Int(3,6,0),
-        new Vector3Int(2,5,0),new Vector3Int(3,5,0)};
+        new Vector3Int(2,5,0)};
 
-        posicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
-
-        //Vector3Int[] branco = {new Vector3Int(3,6,0),new Vector3Int(4,6,0),
-        //new Vector3Int(3,5,0)};
-
-        //posicionarBolinhas(branco, prefab, CoresBolinhas.BRANCO);
+       // posicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
 
     }
 

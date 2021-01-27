@@ -7,6 +7,11 @@ public class UIController : MonoBehaviour
     public Text pontuacaoUIText;
 
 
+    private void Awake()
+    {
+        GameController.FinalJogo += FinalJogo;
+    }
+
     // Update is called once per frame
     private void Update()
     {
@@ -25,5 +30,13 @@ public class UIController : MonoBehaviour
         string pont = pontuacao.ToString().PadLeft(8, '0');
 
         pontuacaoUIText.text = pont;
+    }
+
+    private void FinalJogo(bool ehVitoria)
+    {
+        if (ehVitoria)
+        {
+            Debug.Log("VITOORIA");
+        }
     }
 }

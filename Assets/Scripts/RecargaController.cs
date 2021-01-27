@@ -20,7 +20,7 @@ public class RecargaController : MonoBehaviour
     {
         MiraController.Atirar += Atirado;
         BolaController.BolinhaFixada += RecarregarMira;
-        BolaController.LimiteBolinhasAlcancado += LimiteBolinhasAlcancado;
+        GameController.FinalJogo += PararRegarga;
 
         _posicaoInicialProjetil = atualProjetil.transform.position;
         _posicaoInicialProjetil.x += 0.1f;
@@ -54,9 +54,8 @@ public class RecargaController : MonoBehaviour
 
     }
 
-    private void LimiteBolinhasAlcancado()
-    {
-        Debug.Log("Limite Alcançado");
+    private void PararRegarga(bool ehVitoria)
+    { 
         _pararRecarregamento = true;
     }
 

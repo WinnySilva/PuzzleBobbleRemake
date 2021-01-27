@@ -12,18 +12,32 @@ public class GameController : MonoBehaviour
     [SerializeField] private int contagemBolinhasDisparadas = 0;
 
 
+    public delegate void FinalJogoAcao(bool vitoria);
+    public static event FinalJogoAcao FinalJogo;
+
     private int _x, _y;
     BolaController _bola;
     private Dictionary<string, BolaController> _bolasNoJogo;
     private Dictionary<string, BolaController> _bolasNoTeto;
+    private bool finalDeJogo = false;
 
     // Start is called before the first frame update
     void Awake()
     {
         _bolasNoJogo = new Dictionary<string, BolaController>();
         _bolasNoTeto = new Dictionary<string, BolaController>();
+        BolaController.LimiteBolinhasAlcancado += FinalJogoDerrota;
         _x = 0;
         _y = 0;
+    }
+
+    private void Update()
+    {
+        if (!finalDeJogo && this._bolasNoJogo.Count == 0)
+        {
+            finalDeJogo = true;
+            FinalJogo?.Invoke(true);
+        }
     }
 
     public void RemoverBolinha(BolaController obj)
@@ -259,7 +273,12 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         DestruirBolinhas(bolinhasParaDestruir);
-        DerrubarBolinhasSemEncontrarTeto();
+        DerrubarBolinhasSemEncontrarTeto();      
+    }
+
+    private void FinalJogoDerrota()
+    {
+        FinalJogo?.Invoke(false);
     }
 
 }
