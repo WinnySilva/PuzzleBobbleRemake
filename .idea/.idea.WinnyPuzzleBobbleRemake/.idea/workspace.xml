@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/cenario.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/cenario.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/bobbleColored.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/bobbleColored.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/posicao_bolinhas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/posicao_bolinhas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilesets/back.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilesets/back.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilesets/back1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilesets/back1.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
