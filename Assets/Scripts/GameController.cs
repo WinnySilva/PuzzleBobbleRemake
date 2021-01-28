@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (!_finalDeJogo && this._bolasNoJogo.Count == 0)
+        if (!_finalDeJogo && _bolasNoJogo.Count == 0)
         {
             _finalDeJogo = true;
             FinalJogo?.Invoke(true);
@@ -121,6 +121,7 @@ public class GameController : MonoBehaviour
 
         if (listaMatches.Count > 2)
         {
+            _gerenciadorDeSom.Play(ConstantesDeAudio.ESTOURO_BOLHA);
             StartCoroutine(DestruirBolinhasMatches(listaMatches));
         }
     }

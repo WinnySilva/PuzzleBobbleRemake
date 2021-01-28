@@ -43,3 +43,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615f06909a13f1b48bb17463209f4089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sons:
+  - nome: inicio_ready
+    clip: {fileID: 8300000, guid: 408f786ee05e2e74baee4015d6baf93d, type: 3}
+    loop: 0
+    origem: {fileID: 0}
+  - nome: inicio_go
+    clip: {fileID: 8300000, guid: 26596f1b3a3154f4984d420de9d8bab7, type: 3}
+    loop: 0
+    origem: {fileID: 0}
+  - nome: apos_tiro
+    clip: {fileID: 8300000, guid: 4e352de0e3f1ed84ab2bd9f66661d7a1, type: 3}
+    loop: 0
+    origem: {fileID: 0}
+  - nome: estouro_bolha
+    clip: {fileID: 8300000, guid: 0340949068243984cab5cf6eeaf8cabe, type: 3}
+    loop: 0
+    origem: {fileID: 0}

@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-002.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-002.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-005.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-005.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/GerenciadorDeSom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/GerenciadorDeSom.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +54,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/Som.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/CoresBolinhas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" />
       </list>
     </option>
   </component>
@@ -77,6 +78,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
@@ -197,6 +199,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="206" key="GridCell.Tab.3.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611615141528" />
+    <state x="2381" y="169" key="SettingsEditor" timestamp="1611793908006">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2381" y="169" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611793908006" />
     <state x="603" y="258" width="714" height="534" key="find.popup" timestamp="1611617070070">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
