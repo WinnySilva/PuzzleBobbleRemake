@@ -1,23 +1,34 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
     public GameController controleJogo;
-    public Text pontuacaoUIText;
+    public TextMeshProUGUI pontuacaoUIText;
 
-    public GameObject roundClearMsg;
+    public TextMeshProUGUI pontuacaoFinalUIText;
+    public TextMeshProUGUI segundosTotaisUIText;
+    public TextMeshProUGUI roundClearMsg;
+
     public GameObject gameOverMsg;
     public GameObject inicioRoundMsg;
+    public String proximaCena;
 
+
+    private DateTime horaInicio;
 
     private void Awake()
     {
         GameController.FinalJogo += FinalJogo;
-        roundClearMsg.SetActive(false);
         gameOverMsg.SetActive(false);
         inicioRoundMsg.SetActive(false);
+        pontuacaoFinalUIText.gameObject.SetActive(false);
+        segundosTotaisUIText.gameObject.SetActive(false);
+        roundClearMsg.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -36,9 +47,8 @@ public class UIController : MonoBehaviour
 
     void AtualizaPontuacao()
     {
-        int qntBolinhas = controleJogo.ObterQtdBolinhasDestruidas();
 
-        int pontuacao = qntBolinhas * 10;
+        float pontuacao = this.controleJogo.Pontuacao;
 
         string pont = pontuacao.ToString().PadLeft(8, '0');
 
@@ -49,7 +59,8 @@ public class UIController : MonoBehaviour
     {
         if (ehVitoria)
         {
-            roundClearMsg.SetActive(true);
+            StartCoroutine(Vitoria());
+            
         }
         else
         {
@@ -62,5 +73,38 @@ public class UIController : MonoBehaviour
         inicioRoundMsg.SetActive(true);
         yield return new WaitForSeconds(2);
         inicioRoundMsg.SetActive(false);
+        horaInicio = DateTime.Now;
+    }
+
+    IEnumerator Vitoria()
+    {
+        DateTime horaFinal = DateTime.Now;
+        TimeSpan diff = horaFinal.Subtract(horaInicio);
+        int segundos = (int)Math.Truncate(diff.TotalSeconds);
+        
+        pontuacaoFinalUIText.text = (controleJogo.ObterQtdBolinhasDestruidas() * 10).ToString()+"PTS" ;
+        segundosTotaisUIText.text = segundos.ToString().PadLeft(2, '0') + " SEC";
+        pontuacaoFinalUIText.gameObject.SetActive(true);
+        segundosTotaisUIText.gameObject.SetActive(true);
+        roundClearMsg.gameObject.SetActive(false);
+        yield return new WaitForSeconds(3);
+
+        pontuacaoFinalUIText.gameObject.SetActive(false);
+        segundosTotaisUIText.gameObject.SetActive(false);
+        roundClearMsg.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(3);
+        pontuacaoFinalUIText.gameObject.SetActive(false);
+        segundosTotaisUIText.gameObject.SetActive(false);
+        roundClearMsg.gameObject.SetActive(false);
+        if (!String.IsNullOrEmpty(proximaCena))
+        {
+            SceneManager.LoadScene(this.proximaCena);
+        }
+        else
+        {
+            SceneManager.LoadScene("MenuInicial");
+        }
+
     }
 }
