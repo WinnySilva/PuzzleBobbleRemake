@@ -23,7 +23,12 @@ public class GameController : MonoBehaviour
     private Dictionary<string, BolaController> _bolasNoTeto;
     private bool _finalDeJogo;
     private GerenciadorDeSom _gerenciadorDeSom;
-    
+
+
+    public Dictionary<string, BolaController> BolasNoJogo
+    {
+        get => _bolasNoJogo;
+    }
     
     // Start is called before the first frame update
     void Awake()

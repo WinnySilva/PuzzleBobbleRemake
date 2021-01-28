@@ -37,8 +37,7 @@ public class MiraController : MonoBehaviour
             Destroy(joint);
            
             rg.AddForce(vec, ForceMode2D.Impulse);
-        _gerenciadorDeSom.Play(ConstantesDeAudio.APOS_TIRO);
-            // StartCoroutine(TocarSomDoTiro());
+            _gerenciadorDeSom.Play(ConstantesDeAudio.APOS_TIRO);
             Atirar?.Invoke();
         }
     }

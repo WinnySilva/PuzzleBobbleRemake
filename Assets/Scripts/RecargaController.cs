@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Enums;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RecargaController : MonoBehaviour
 {
@@ -10,6 +13,7 @@ public class RecargaController : MonoBehaviour
     public GameObject bolaClone;
     public GameObject atualProjetil;
     public GameObject teto;
+    public GameController gameController;
 
     private Vector3 _posicaoInicialProjetil;
     private GameObject _proximoProjetil;
@@ -17,29 +21,22 @@ public class RecargaController : MonoBehaviour
     private bool _pararTiro;
     private static List<CoresBolinhas> _ultimasBolinhas = new List<CoresBolinhas>();
 
+
     private void Awake()
     {
         MiraController.Atirar += Atirado;
         BolaController.BolinhaFixada += RecarregarMira;
         GameController.FinalJogo += PararRegarga;
+    }
 
-        _posicaoInicialProjetil = atualProjetil.transform.position;
-        _posicaoInicialProjetil.x += 0.1f;
-        
-        BolaController bc;
-
-        _proximoProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
-        _proximoProjetil.GetComponent<CircleCollider2D>().enabled = false;
-        bc = _proximoProjetil.GetComponent<BolaController>();
-        bc.SetCor(ProximaCor());
-        _proximoProjetil.SetActive(true);
-
-        RecarregarMira();
+    private void Start()
+    {
+        StartCoroutine(CarregarPrimeiraBola());
     }
 
     private void RecarregarMira()
     {
-        if (_pararRecarregamento || _proximoProjetil ==null)
+        if (_pararRecarregamento || _proximoProjetil == null)
         {
             return;
         }
@@ -49,14 +46,13 @@ public class RecargaController : MonoBehaviour
         atualProjetil.transform.position = mira.transform.position;
 
         mira.AtualProjetil = atualProjetil;
-        
+
         _pararTiro = false;
         StartCoroutine(CarregarProximaBolha());
-
     }
 
     private void PararRegarga(bool ehVitoria)
-    { 
+    {
         _pararRecarregamento = true;
     }
 
@@ -78,7 +74,7 @@ public class RecargaController : MonoBehaviour
     private IEnumerator CarregarProximaBolha()
     {
         yield return new WaitForSeconds(0.2f);
-        
+
         BolaController bc;
 
         _proximoProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
@@ -88,41 +84,69 @@ public class RecargaController : MonoBehaviour
         _proximoProjetil.SetActive(true);
     }
 
-    private static CoresBolinhas ProximaCor()
+    private CoresBolinhas ProximaCor()
     {
         CoresBolinhas proxima;
         while (true)
         {
-            int rnd = Random.Range(0, 4);
+            Dictionary<string, BolaController> bolasDoJogo = gameController.BolasNoJogo; //bolinhas do jogo 
+            BolaController[] bolas = bolasDoJogo.Values.ToArray();
 
-            proxima = (CoresBolinhas) rnd;
-
-            if (_ultimasBolinhas.Count == 3)
+            if (bolas.Length > 0)
             {
-                int countRepeticao = 0;
-                foreach (CoresBolinhas bola in _ultimasBolinhas)
-                {
-                    if (bola == proxima)
-                    {
-                        countRepeticao++;
-                    }
-                }
+                int rnd = Random.Range(0, bolasDoJogo.Count);
 
-                if (countRepeticao < 2)
-                {
-                    _ultimasBolinhas.RemoveAt(0);
-                    break;
-                }
-            }
-            else
-            {
+                proxima = bolas[rnd].cor;
+
                 break;
             }
+
+
+            //caso seja necessario ter uma logica onde nao deixa repetir mais de x vezes a mesma cor 
+            // int countRepeticao = 0;
+            // if (_ultimasBolinhas.Count == 2)
+            // {
+            //     foreach (CoresBolinhas bola in _ultimasBolinhas)
+            //     {
+            //         if (bola == proxima)
+            //         {
+            //             countRepeticao++;
+            //         }
+            //     }
+            //
+            //     if (countRepeticao < 1)
+            //     {
+            //         _ultimasBolinhas.RemoveAt(0);
+            //         break;
+            //     }
+            // }
+            // else
+            // {
+            //     break;
+            // }
         }
 
 
         _ultimasBolinhas.Add(proxima);
 
         return proxima;
+    }
+
+    private IEnumerator CarregarPrimeiraBola()
+    {
+        yield return new WaitForSeconds(1);
+
+        _posicaoInicialProjetil = atualProjetil.transform.position;
+        _posicaoInicialProjetil.x += 0.1f;
+
+        BolaController bc;
+
+        _proximoProjetil = Instantiate(bolaClone, _posicaoInicialProjetil, Quaternion.identity);
+        _proximoProjetil.GetComponent<CircleCollider2D>().enabled = false;
+        bc = _proximoProjetil.GetComponent<BolaController>();
+        bc.SetCor(ProximaCor());
+        _proximoProjetil.SetActive(true);
+
+        RecarregarMira();
     }
 }
