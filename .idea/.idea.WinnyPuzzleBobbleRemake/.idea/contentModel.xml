@@ -30,6 +30,7 @@
           </e>
           <e p="GameController.cs" t="Include" />
           <e p="GerenciadorFase.cs" t="Include" />
+          <e p="MenuController.cs" t="Include" />
           <e p="MiraController.cs" t="Include" />
           <e p="RecargaController.cs" t="Include" />
           <e p="TetoController.cs" t="Include" />

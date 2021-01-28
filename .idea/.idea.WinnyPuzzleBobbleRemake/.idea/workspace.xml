@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/posicao_bolinhas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/posicao_bolinhas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/fase1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/fase1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuInicial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuInicial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuController.cs" />
       </list>
     </option>
   </component>
