@@ -48,6 +48,7 @@ public class RecargaController : MonoBehaviour
         mira.AtualProjetil = atualProjetil;
 
         _pararTiro = false;
+        mira.Atirando = false;
         StartCoroutine(CarregarProximaBolha());
     }
 

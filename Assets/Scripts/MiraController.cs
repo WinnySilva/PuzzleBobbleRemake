@@ -15,6 +15,12 @@ public class MiraController : MonoBehaviour
 
     private bool _tiroParado;
     private GerenciadorDeSom _gerenciadorDeSom;
+    private bool _atirando;
+
+    public bool Atirando
+    {
+        set => _atirando = value;
+    }
 
 
     private void Awake()
@@ -26,8 +32,11 @@ public class MiraController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1") && !_tiroParado)
+        if (Input.GetButtonDown("Fire1") && !_tiroParado && !_atirando)
         {
+            
+            _atirando = true;
+            
             Rigidbody2D rg = AtualProjetil.GetComponent<Rigidbody2D>();
             Joint2D joint = AtualProjetil.GetComponent<Joint2D>();
             

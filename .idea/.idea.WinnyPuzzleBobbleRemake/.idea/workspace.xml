@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/fase1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/fase1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" afterDir="false" />
     </list>
@@ -55,9 +53,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/CoresBolinhas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GerenciadorFase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" />
       </list>
     </option>
@@ -251,26 +249,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/RecargaController.cs</url>
-          <line>80</line>
+          <line>81</line>
           <properties documentPath="D:\WinnyPuzzleBobbleRemake\Assets\Scripts\RecargaController.cs" initialLine="90">
             <startOffsets>
-              <option value="1981" />
+              <option value="2012" />
             </startOffsets>
             <endOffsets>
-              <option value="2069" />
+              <option value="2100" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/RecargaController.cs</url>
-          <line>91</line>
+          <line>92</line>
           <properties documentPath="D:\WinnyPuzzleBobbleRemake\Assets\Scripts\RecargaController.cs" initialLine="97">
             <startOffsets>
-              <option value="2375" />
+              <option value="2406" />
             </startOffsets>
             <endOffsets>
-              <option value="2471" />
+              <option value="2502" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
