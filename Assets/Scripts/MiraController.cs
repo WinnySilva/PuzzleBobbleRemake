@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using Audio;
+using Enums;
+using UnityEngine;
 
 public class MiraController : MonoBehaviour
 {
@@ -10,17 +13,20 @@ public class MiraController : MonoBehaviour
 
     protected internal GameObject AtualProjetil { get; set; }
 
-    private bool tiroParado = false;
+    private bool _tiroParado;
+    private GerenciadorDeSom _gerenciadorDeSom;
+
 
     private void Awake()
     {
         GameController.FinalJogo += PararTiros;
+        _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1") && !tiroParado)
+        if (Input.GetButtonDown("Fire1") && !_tiroParado)
         {
             Rigidbody2D rg = AtualProjetil.GetComponent<Rigidbody2D>();
             Joint2D joint = AtualProjetil.GetComponent<Joint2D>();
@@ -31,13 +37,21 @@ public class MiraController : MonoBehaviour
             Destroy(joint);
            
             rg.AddForce(vec, ForceMode2D.Impulse);
+        _gerenciadorDeSom.Play(ConstantesDeAudio.APOS_TIRO);
+            // StartCoroutine(TocarSomDoTiro());
             Atirar?.Invoke();
         }
     }
 
+    private IEnumerator TocarSomDoTiro()
+    {
+        yield return new WaitForSeconds(0.005f);
+        
+    }
+
     void PararTiros(bool ehVitoria)
     {
-        tiroParado = true;
+        _tiroParado = true;
     }
 
 }
