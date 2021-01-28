@@ -22,13 +22,10 @@ public class BolaController : MonoBehaviour
 
     public static event BolinhaFixadaAction BolinhaFixada;
 
-    [SerializeField]
-    private bool _atirado;
-    [SerializeField]
-    private bool _fixado;
+    [SerializeField] private bool _atirado;
+    [SerializeField] private bool _fixado;
     private Rigidbody2D _rg;
-    [SerializeField]
-    private bool _coladoNoTeto;
+    [SerializeField] private bool _coladoNoTeto;
 
     public bool ColadoNoTeto
     {
@@ -294,7 +291,7 @@ public class BolaController : MonoBehaviour
         Vector3Int dirInfDoColidido =
             new Vector3Int(xDireita, tileDaBolaQueFoiColidida.y - 1, tileDaBolaQueFoiColidida.z);
         Debug.Log($"Position dif y {positionDif.y}");
-        if (!posicaoBolinhasTile.HasTile(cimaEsq) && !posicaoBolinhasTile.HasTile(cimaDireita) && positionDif.y > 0.15f
+        if (!posicaoBolinhasTile.HasTile(cimaEsq) && !posicaoBolinhasTile.HasTile(cimaDireita) && positionDif.y > 0.20f
         ) // caso onde o bolinha esta sem tile, e deve adionar em baixo da colisao, e a posicao da bola nao tem vizinhos superiores
         {
             Debug.Log($"Adicionando para esquerda {ahEsquerda}");
@@ -307,6 +304,7 @@ public class BolaController : MonoBehaviour
                 //adicionar no vizinho de baixo da esquerda do tileDaBolaQueFoiColidida, caso tenha parede, adiciona na direta
                 return !paredeTileMap.HasTile(esqInfDoColidido) ? esqInfDoColidido : dirInfDoColidido;
             }
+
             //adicionar no vizinho de baixo da direta do tileDaBolaQueFoiColidida, caso tenha parede, adiciona na esquerda
             return !paredeTileMap.HasTile(dirInfDoColidido) ? dirInfDoColidido : esqInfDoColidido;
         }
@@ -327,11 +325,38 @@ public class BolaController : MonoBehaviour
             }
         }
 
-        Vector3Int esqDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x - 1, tileDaBolaQueFoiColidida.y, tileDaBolaQueFoiColidida.z);
-        Vector3Int dirDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x + 1, tileDaBolaQueFoiColidida.y, tileDaBolaQueFoiColidida.z);
+        Vector3Int esqDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x - 1, tileDaBolaQueFoiColidida.y,
+            tileDaBolaQueFoiColidida.z);
+        Vector3Int dirDoColidido = new Vector3Int(tileDaBolaQueFoiColidida.x + 1, tileDaBolaQueFoiColidida.y,
+            tileDaBolaQueFoiColidida.z);
 
-        return ahEsquerda ? (!posicaoBolinhasTile.HasTile(esqDoColidido) ? esqDoColidido : esqInfDoColidido) :
-            (!posicaoBolinhasTile.HasTile(dirDoColidido) ? dirDoColidido : dirInfDoColidido);
+
+        if (ahEsquerda)
+        {
+            if (!posicaoBolinhasTile.HasTile(esqDoColidido) && !paredeTileMap.HasTile(esqDoColidido))
+            {
+                return esqDoColidido;
+            }
+
+            if (!paredeTileMap.HasTile(esqInfDoColidido))
+            {
+                return esqInfDoColidido;
+            }
+
+            return dirInfDoColidido;
+        }
+        
+        if (!posicaoBolinhasTile.HasTile(dirDoColidido) && !paredeTileMap.HasTile(dirDoColidido))
+        {
+            return dirDoColidido;
+        }
+
+        if (!paredeTileMap.HasTile(dirInfDoColidido))
+        {
+            return dirInfDoColidido;
+        }
+
+        return esqInfDoColidido;
     }
 
     IEnumerator AutoDestruir()
@@ -348,5 +373,4 @@ public class BolaController : MonoBehaviour
             anim.SetBool("toDestroy", true);
         }
     }
-
 }

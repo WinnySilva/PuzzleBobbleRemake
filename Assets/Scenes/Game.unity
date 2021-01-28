@@ -592,11 +592,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1032114891462184420, guid: d00f62deb2b08ee4a95730092a134f59,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1032114891462184425, guid: d00f62deb2b08ee4a95730092a134f59,
         type: 3}
       propertyPath: alturaDerrota

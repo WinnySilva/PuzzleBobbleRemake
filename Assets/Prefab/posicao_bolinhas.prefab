@@ -1313,6 +1313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bobbleColored
       objectReference: {fileID: 0}
+    - target: {fileID: 2089203418583726500, guid: 9d1de938c60fe9d4da982c53409f621f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2089203418583726501, guid: 9d1de938c60fe9d4da982c53409f621f,
         type: 3}
       propertyPath: m_Color.r
@@ -1338,11 +1343,6 @@ PrefabInstance:
       propertyPath: paredeTileMap
       value: 
       objectReference: {fileID: 7908993843338369426}
-    - target: {fileID: 2089203418583726505, guid: 9d1de938c60fe9d4da982c53409f621f,
-        type: 3}
-      propertyPath: alturaDerrota
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2089203418583726505, guid: 9d1de938c60fe9d4da982c53409f621f,
         type: 3}
       propertyPath: alturaDerrota
@@ -1468,11 +1468,6 @@ PrefabInstance:
       propertyPath: posicaoBolinhasTile
       value: 
       objectReference: {fileID: 7908993843147126825}
-    - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
-        type: 3}
-      propertyPath: alturaDerrota
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4475350412385705917, guid: 291b21a7b2985364895bc51650edc53f,
         type: 3}
       propertyPath: alturaDerrota
