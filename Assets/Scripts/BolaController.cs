@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Enums;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 

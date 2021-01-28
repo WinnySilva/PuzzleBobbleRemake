@@ -19,8 +19,15 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AtiradorController.cs" t="Include" />
+          <e p="Audio" t="Include">
+            <e p="GerenciadorDeSom.cs" t="Include" />
+            <e p="Som.cs" t="Include" />
+          </e>
           <e p="BolaController.cs" t="Include" />
-          <e p="Enum.cs" t="Include" />
+          <e p="Enums" t="Include">
+            <e p="ConstantesDeAudio.cs" t="Include" />
+            <e p="CoresBolinhas.cs" t="Include" />
+          </e>
           <e p="GameController.cs" t="Include" />
           <e p="GerenciadorFase.cs" t="Include" />
           <e p="MiraController.cs" t="Include" />

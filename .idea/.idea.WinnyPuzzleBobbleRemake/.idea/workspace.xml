@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/bobbleColored.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/bobbleColored.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/posicao_bolinhas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/posicao_bolinhas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-024 (READYYYYYY).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-024 (READYYYYYY).wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-025 (GO!).wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EFX/Arcade - Bust-a-Move Puzzle Bobble - Everything/pbobble-025 (GO!).wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +57,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/Som.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
@@ -92,6 +121,9 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

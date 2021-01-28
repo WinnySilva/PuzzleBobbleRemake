@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Audio;
+using Enums;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -19,8 +21,10 @@ public class GameController : MonoBehaviour
     BolaController _bola;
     private Dictionary<string, BolaController> _bolasNoJogo;
     private Dictionary<string, BolaController> _bolasNoTeto;
-    private bool finalDeJogo = false;
-
+    private bool _finalDeJogo;
+    private GerenciadorDeSom _gerenciadorDeSom;
+    
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -29,13 +33,16 @@ public class GameController : MonoBehaviour
         BolaController.LimiteBolinhasAlcancado += FinalJogoDerrota;
         _x = 0;
         _y = 0;
+
+        _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
+        StartCoroutine(TocarSonsDeInicio());
     }
 
     private void Update()
     {
-        if (!finalDeJogo && this._bolasNoJogo.Count == 0)
+        if (!_finalDeJogo && this._bolasNoJogo.Count == 0)
         {
-            finalDeJogo = true;
+            _finalDeJogo = true;
             FinalJogo?.Invoke(true);
         }
     }
@@ -281,4 +288,13 @@ public class GameController : MonoBehaviour
         FinalJogo?.Invoke(false);
     }
 
+    private IEnumerator TocarSonsDeInicio()
+    {
+        _gerenciadorDeSom.Play(ConstantesDeAudio.INICIO_READY);
+        yield return new WaitForSeconds(0.9f);
+        
+        _gerenciadorDeSom.Play(ConstantesDeAudio.INICIO_GO);
+
+    }
+    
 }
