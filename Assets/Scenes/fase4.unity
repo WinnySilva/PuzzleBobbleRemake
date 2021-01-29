@@ -480,6 +480,11 @@ PrefabInstance:
       propertyPath: controleTeto
       value: 
       objectReference: {fileID: 306543062}
+    - target: {fileID: 8526959306146322328, guid: 395eeae9b001eb64e938835b97cbe468,
+        type: 3}
+      propertyPath: proximaCena
+      value: fase5
+      objectReference: {fileID: 0}
     - target: {fileID: 8526959306146322329, guid: 395eeae9b001eb64e938835b97cbe468,
         type: 3}
       propertyPath: m_LocalPosition.x
