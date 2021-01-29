@@ -85,25 +85,25 @@ public class BolaController : MonoBehaviour
                 spRen.color = new Color(0.9725491f, 0.9411765f, 0);
                 break;
             case CoresBolinhas.AZUL:
-                spRen.color = Color.blue;
+                spRen.color = new Color(0, 0.6313722f, 1);
                 break;
             case CoresBolinhas.VERMELHO:
                 spRen.color = new Color(0.8301887f, 0.1057316f, 0.1057316f);
                 break;
             case CoresBolinhas.VERDE:
-                spRen.color = new Color(0, 0.282353f, 0);
+                spRen.color = new Color(0, 1, 0);
                 break;
             case CoresBolinhas.BRANCO:
                 spRen.color = Color.white;
                 break;
             case CoresBolinhas.CINZA:
-                spRen.color = new Color(0.3137255f, 0.3764706f, 0.3764706f);
+                spRen.color = new Color(0.1363f, 0.1698f, 0.1698f);
                 break;
             case CoresBolinhas.LARANJA:
                 spRen.color = new Color(0.9411765f, 0.517f, 0.09411766f);
                 break;
             case CoresBolinhas.ROXO:
-                spRen.color = new Color(0.5333334f, 0.1882353f, 0.6901961f);
+                spRen.color = new Color(0.6376572f, 0, 1);
                 break;
 
             case CoresBolinhas.MATCHED:
