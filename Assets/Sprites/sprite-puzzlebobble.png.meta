@@ -1676,6 +1676,9 @@ TextureImporter:
   - first:
       213: 761942653446485385
     second: sprite-puzzlebobble_265
+  - first:
+      213: 8227676443031199918
+    second: Barra de derrota
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -13310,7 +13313,7 @@ TextureImporter:
         width: 5
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -13318,6 +13321,27 @@ TextureImporter:
       bones: []
       spriteID: 98575ed6ec6f29a00800000000000000
       internalID: 761942653446485385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barra de derrota
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1524
+        width: 128
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea069b102249e2270800000000000000
+      internalID: 8227676443031199918
       vertices: []
       indices: 
       edges: []
