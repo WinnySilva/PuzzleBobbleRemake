@@ -60,3 +60,23 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0340949068243984cab5cf6eeaf8cabe, type: 3}
     loop: 0
     origem: {fileID: 0}
+  - nome: musica_fase
+    clip: {fileID: 8300000, guid: 9337ab7b6966f4a48a1aa5e093ecc1ee, type: 3}
+    loop: 1
+    origem: {fileID: 0}
+  - nome: derrota_som
+    clip: {fileID: 8300000, guid: 38037d7b6399ce64f97822e0f574d381, type: 3}
+    loop: 0
+    origem: {fileID: 0}
+  - nome: game_over
+    clip: {fileID: 8300000, guid: d38cadef4ebfed34bb675a280b53b1b6, type: 3}
+    loop: 0
+    origem: {fileID: 0}
+  - nome: stage_clear
+    clip: {fileID: 8300000, guid: aac1b85d8550abc47b06a15ed2ae42de, type: 3}
+    loop: 0
+    origem: {fileID: 0}
+  - nome: title
+    clip: {fileID: 8300000, guid: 1f723d246b9dceb4882542f1c11a7533, type: 3}
+    loop: 0
+    origem: {fileID: 0}

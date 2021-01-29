@@ -1,11 +1,19 @@
-﻿using System.Collections;
+﻿using Audio;
+using Enums;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    // Update is called once per frame
+    private GerenciadorDeSom _gerenciadorDeSom;
+    private void Start()
+    {
+        _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
+
+        _gerenciadorDeSom.Play(ConstantesDeAudio.TITLE);
+    }
     void Update()
     {
         if (Input.anyKeyDown)
