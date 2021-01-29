@@ -17,7 +17,7 @@ namespace Audio
             }
         }
         
-        public void Play(string nome)
+        public AudioSource Play(string nome)
         {
             Som somParaTocar = Array.Find(sons, som => som.nome == nome);
             if (somParaTocar == null)
