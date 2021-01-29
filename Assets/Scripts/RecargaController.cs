@@ -14,14 +14,17 @@ public class RecargaController : MonoBehaviour
     public GameObject atualProjetil;
     public GameObject teto;
     public GameController gameController;
+    public float tempoParaAtirar = 10;
+    public float tempoDeAviso = 7;
 
     private Vector3 _posicaoInicialProjetil;
     private GameObject _proximoProjetil;
     private bool _pararRecarregamento;
     private bool _pararTiro;
+    private float _tempoDesdeOUltimoTiro = 0f;
+    private bool _avisouDoTiro = false; 
     private static List<CoresBolinhas> _ultimasBolinhas = new List<CoresBolinhas>();
-
-
+    
     private void Awake()
     {
         MiraController.Atirar += Atirado;
@@ -39,6 +42,22 @@ public class RecargaController : MonoBehaviour
     private void Start()
     {
         StartCoroutine(CarregarPrimeiraBola());
+    }
+
+    private void Update()
+    {
+        _tempoDesdeOUltimoTiro += Time.deltaTime;
+        if (_tempoDesdeOUltimoTiro > tempoDeAviso && !_avisouDoTiro)
+        {
+            _avisouDoTiro = true;
+        }
+
+        if (_tempoDesdeOUltimoTiro > tempoParaAtirar)
+        {
+            _avisouDoTiro = false;
+            _tempoDesdeOUltimoTiro = 0;
+            mira.AtirarBola();
+        }
     }
 
     private void RecarregarMira()

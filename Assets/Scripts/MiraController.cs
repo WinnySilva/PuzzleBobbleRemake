@@ -29,6 +29,7 @@ public class MiraController : MonoBehaviour
         GameController.FinalJogo += PararTiros;
         _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
     }
+    
 
     private void OnDestroy()
     {
@@ -40,21 +41,25 @@ public class MiraController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && !_tiroParado && !_atirando)
         {
-            
-            _atirando = true;
-            
-            Rigidbody2D rg = AtualProjetil.GetComponent<Rigidbody2D>();
-            Joint2D joint = AtualProjetil.GetComponent<Joint2D>();
-            
-            
-            Vector3 vec = seta.transform.up * forcaImpulso;
-
-            Destroy(joint);
-           
-            rg.AddForce(vec, ForceMode2D.Impulse);
-            _gerenciadorDeSom.Play(ConstantesDeAudio.APOS_TIRO);
-            Atirar?.Invoke();
+            AtirarBola();
         }
+    }
+
+    public void AtirarBola()
+    {
+        _atirando = true;
+            
+        Rigidbody2D rg = AtualProjetil.GetComponent<Rigidbody2D>();
+        Joint2D joint = AtualProjetil.GetComponent<Joint2D>();
+            
+            
+        Vector3 vec = seta.transform.up * forcaImpulso;
+
+        Destroy(joint);
+           
+        rg.AddForce(vec, ForceMode2D.Impulse);
+        _gerenciadorDeSom.Play(ConstantesDeAudio.APOS_TIRO);
+        Atirar?.Invoke();
     }
 
     private IEnumerator TocarSomDoTiro()
