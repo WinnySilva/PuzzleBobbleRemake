@@ -232,7 +232,7 @@ public class BolaController : MonoBehaviour
         //isso diminui a taxa de erro porém ainda precisa ser melhorado
         if (ahEsquerda)
         {
-            if (positionDif.y > 0.13f) // esquerda inferior
+            if (positionDif.y > 0.20f) // esquerda inferior
             {
                 return !posicaoBolinhasTile.HasTile(esqInf) ? esqInf :
                     !posicaoBolinhasTile.HasTile(esq) ? esq : dirInf;
@@ -243,7 +243,7 @@ public class BolaController : MonoBehaviour
         }
 
 
-        if (positionDif.y > 0.13f) // direita inferior
+        if (positionDif.y > 0.20f) // direita inferior
         {
             return !posicaoBolinhasTile.HasTile(dirInf) ? dirInf :
                 !posicaoBolinhasTile.HasTile(dir) ? dir : esqInf;
