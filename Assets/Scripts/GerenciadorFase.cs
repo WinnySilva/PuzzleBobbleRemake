@@ -32,6 +32,10 @@ public class GerenciadorFase : MonoBehaviour
          new Vector3Int(-3,3,0),new Vector3Int(-2,3,0),
         };
 
+    public Vector3Int[] posicoesCinza = { };
+    public Vector3Int[] posicoesRoxa = { };
+    public Vector3Int[] posicoesBranca = { };
+
     public GameObject prefab;
     public Tilemap gridBolinhas;
     public GameObject alturaDerrota;
@@ -56,7 +60,12 @@ public class GerenciadorFase : MonoBehaviour
         PosicionarBolinhas(posicoesAmarelo, prefab, CoresBolinhas.AMARELO);
         PosicionarBolinhas(posicoesAzul, prefab, CoresBolinhas.AZUL);
         PosicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
-    }
+
+        PosicionarBolinhas(posicoesCinza, prefab, CoresBolinhas.CINZA) ;
+        PosicionarBolinhas(posicoesRoxa, prefab, CoresBolinhas.ROXO);
+        PosicionarBolinhas(posicoesBranca, prefab, CoresBolinhas.BRANCO);        
+
+}
 
     private void PosicionarBolinhas(Vector3Int[] posicoes, GameObject prefab, CoresBolinhas cor)
     {
