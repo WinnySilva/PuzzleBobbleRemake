@@ -524,14 +524,6 @@ PrefabInstance:
       propertyPath: controleTeto
       value: 
       objectReference: {fileID: 306543062}
-    - target: {fileID: 1314921539, guid: 395eeae9b001eb64e938835b97cbe468, type: 3}
-      propertyPath: m_text
-      value: Round 01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1344433544, guid: 395eeae9b001eb64e938835b97cbe468, type: 3}
-      propertyPath: m_text
-      value: Round 01
-      objectReference: {fileID: 0}
     - target: {fileID: 8526959306146322329, guid: 395eeae9b001eb64e938835b97cbe468,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1039,10 +1031,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 384439927, guid: 19c629adf32d39a46938b10dc5c3d362, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.35
-      objectReference: {fileID: 0}
     - target: {fileID: 1898494120416626180, guid: 19c629adf32d39a46938b10dc5c3d362,
         type: 3}
       propertyPath: m_LocalPosition.x
