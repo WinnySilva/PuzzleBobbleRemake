@@ -121,50 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &24665075
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 24665077}
-  - component: {fileID: 24665076}
-  m_Layer: 0
-  m_Name: GameInfoAcrossRounds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &24665076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24665075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a15e51ad76e0ac0499fa818b038fa3e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pontuacao: 0
---- !u!4 &24665077
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24665075}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1512806, y: -0.47306773, z: -0.6442377}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &235391920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -524,10 +480,13 @@ PrefabInstance:
       propertyPath: controleTeto
       value: 
       objectReference: {fileID: 306543062}
-    - target: {fileID: 8526959306146322328, guid: 395eeae9b001eb64e938835b97cbe468,
-        type: 3}
-      propertyPath: proximaCena
-      value: fase2
+    - target: {fileID: 1314921539, guid: 395eeae9b001eb64e938835b97cbe468, type: 3}
+      propertyPath: m_text
+      value: Round 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344433544, guid: 395eeae9b001eb64e938835b97cbe468, type: 3}
+      propertyPath: m_text
+      value: Round 02
       objectReference: {fileID: 0}
     - target: {fileID: 8526959306146322329, guid: 395eeae9b001eb64e938835b97cbe468,
         type: 3}
@@ -688,26 +647,17 @@ MonoBehaviour:
   - {x: -4, y: 5, z: 0}
   - {x: -3, y: 5, z: 0}
   - {x: 0, y: 4, z: 0}
-  - {x: 1, y: 4, z: 0}
-  - {x: -1, y: 3, z: 0}
-  - {x: 0, y: 3, z: 0}
   posicoesAmarelo:
   - {x: -2, y: 6, z: 0}
   - {x: -1, y: 6, z: 0}
   - {x: -2, y: 5, z: 0}
   - {x: -1, y: 5, z: 0}
   - {x: 2, y: 4, z: 0}
-  - {x: 3, y: 4, z: 0}
-  - {x: 1, y: 3, z: 0}
-  - {x: 2, y: 3, z: 0}
   posicoesAzul:
   - {x: 0, y: 6, z: 0}
   - {x: 1, y: 6, z: 0}
   - {x: 0, y: 5, z: 0}
   - {x: 1, y: 5, z: 0}
-  - {x: -4, y: 4, z: 0}
-  - {x: -3, y: 4, z: 0}
-  - {x: -4, y: 3, z: 0}
   verde:
   - {x: 2, y: 6, z: 0}
   - {x: 3, y: 6, z: 0}
@@ -715,7 +665,6 @@ MonoBehaviour:
   - {x: -2, y: 4, z: 0}
   - {x: -1, y: 4, z: 0}
   - {x: -3, y: 3, z: 0}
-  - {x: -2, y: 3, z: 0}
   prefab: {fileID: 1653526965}
   gridBolinhas: {fileID: 1394341342}
   alturaDerrota: {fileID: 698185190}

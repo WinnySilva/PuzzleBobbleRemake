@@ -11,6 +11,7 @@ TagManager:
   - chao
   - chaoGameOver
   - parede
+  - gameInfo
   layers:
   - Default
   - TransparentFX

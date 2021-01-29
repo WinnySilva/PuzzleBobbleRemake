@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene("Scenes/fase1"); //trocar de cena
+            SceneManager.LoadScene("fase1", LoadSceneMode.Single); //trocar de cena
         }
     }
 }

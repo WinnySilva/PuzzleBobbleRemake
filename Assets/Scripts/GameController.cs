@@ -28,10 +28,8 @@ public class GameController : MonoBehaviour
     private bool _finalDeJogo;
     private GerenciadorDeSom _gerenciadorDeSom;
 
-    private float _pontuacao;
-
-
-    public float Pontuacao { get => _pontuacao; }
+    
+    private GameInfoAcrossRounds gameInfo;       
 
     public Dictionary<string, BolaController> BolasNoJogo
     {
@@ -46,9 +44,14 @@ public class GameController : MonoBehaviour
         BolaController.LimiteBolinhasAlcancado += FinalJogoDerrota;
         _x = 0;
         _y = 0;
-        _pontuacao = 0;
+       
         _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
-        StartCoroutine(TocarSonsDeInicio());
+        StartCoroutine(TocarSonsDeInicio());        
+    }
+
+    private void Start()
+    {
+         gameInfo = GameObject.FindObjectOfType<GameInfoAcrossRounds>();
     }
 
     private void Update()
@@ -181,7 +184,7 @@ public class GameController : MonoBehaviour
             }
         }
 
-        this._pontuacao += bolasADerrubar == 0 ? 0 : Mathf.Pow(2, bolasADerrubar) * 10;
+        this.gameInfo.Pontuacao = bolasADerrubar == 0 ? 0 : Mathf.Pow(2, bolasADerrubar) * 10;
 
     }
 
@@ -206,7 +209,7 @@ public class GameController : MonoBehaviour
             {
                 _bolasNoTeto.Remove(coord);
             }
-            _pontuacao += 10;
+            this.gameInfo.Pontuacao = 10;
             Destroy(b.gameObject);
 
         }

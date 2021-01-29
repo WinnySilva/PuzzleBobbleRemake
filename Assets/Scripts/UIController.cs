@@ -16,7 +16,8 @@ public class UIController : MonoBehaviour
 
     public GameObject gameOverMsg;
     public GameObject inicioRoundMsg;
-    public String proximaCena;         
+    public String proximaCena;
+    private GameInfoAcrossRounds gameInfo;
 
     private void Awake()
     {
@@ -26,11 +27,13 @@ public class UIController : MonoBehaviour
         pontuacaoFinalUIText.gameObject.SetActive(false);
         segundosTotaisUIText.gameObject.SetActive(false);
         roundClearMsg.gameObject.SetActive(false);
+        
     }
 
     private void Start()
     {
         StartCoroutine(AparecerMensagemInicial());
+        gameInfo = GameObject.FindObjectOfType<GameInfoAcrossRounds>();
     }
 
     // Update is called once per frame
@@ -45,9 +48,9 @@ public class UIController : MonoBehaviour
     void AtualizaPontuacao()
     {
 
-        float pontuacao = this.controleJogo.Pontuacao;
+        double pontuacao = this.gameInfo.Pontuacao;
 
-        string pont = pontuacao.ToString().PadLeft(8, '0');
+        string pont = Mathf.RoundToInt((float)pontuacao).ToString().PadLeft(8, '0');
 
         pontuacaoUIText.text = pont;
     }
@@ -93,11 +96,11 @@ public class UIController : MonoBehaviour
         roundClearMsg.gameObject.SetActive(false);
         if (!String.IsNullOrEmpty(proximaCena))
         {
-            SceneManager.LoadScene(this.proximaCena);
+            SceneManager.LoadScene(this.proximaCena, LoadSceneMode.Single);
         }
         else
         {
-            SceneManager.LoadScene("MenuInicial");
+            SceneManager.LoadScene("MenuInicial", LoadSceneMode.Single);
         }
 
     }
