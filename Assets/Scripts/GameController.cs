@@ -68,8 +68,9 @@ public class GameController : MonoBehaviour
             DateTime horaFinal = DateTime.Now;
             TimeSpan diff = horaFinal.Subtract(HoraInicio);
             this.CalculoBonus(diff.TotalSeconds);
-            TempoJogo = Math.Truncate(diff.TotalSeconds);
-            FinalJogo?.Invoke(true);          
+            TempoJogo = Math.Truncate(diff.TotalSeconds);            
+            this.gameInfo.Pontuacao = this.PontuacaoBonus;
+            FinalJogo?.Invoke(true);
         }
     }
 

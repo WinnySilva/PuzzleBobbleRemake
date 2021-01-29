@@ -27,7 +27,7 @@ public class UIController : MonoBehaviour
         pontuacaoFinalUIText.gameObject.SetActive(false);
         segundosTotaisUIText.gameObject.SetActive(false);
         roundClearMsg.gameObject.SetActive(false);
-        
+
     }
 
     private void OnDestroy()
@@ -65,14 +65,14 @@ public class UIController : MonoBehaviour
         if (ehVitoria)
         {
             StartCoroutine(Vitoria());
-            
+
         }
         else
         {
             gameOverMsg.SetActive(true);
         }
     }
-        
+
     IEnumerator AparecerMensagemInicial()
     {
         inicioRoundMsg.SetActive(true);
@@ -82,8 +82,14 @@ public class UIController : MonoBehaviour
     }
 
     IEnumerator Vitoria()
-    {       
-        pontuacaoFinalUIText.text = Mathf.RoundToInt((float)controleJogo.PontuacaoBonus).ToString()+" PTS" ;
+    {
+        String ptBonuts = "NO BONUS";
+        if (controleJogo.PontuacaoBonus > 0)
+        {
+            ptBonuts = Mathf.RoundToInt((float)controleJogo.PontuacaoBonus).ToString() + " PTS";
+        }
+
+        pontuacaoFinalUIText.text = ptBonuts;
         segundosTotaisUIText.text = Mathf.RoundToInt((float)controleJogo.TempoJogo).ToString().PadLeft(2, '0') + " SEC";
 
         pontuacaoFinalUIText.gameObject.SetActive(true);
