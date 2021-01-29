@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/DinoDireita.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/DinoDireita.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/DinoEsquerda.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/DinoEsquerda.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animacao/Bolha.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animacao/Bolha.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +55,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/Som.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/CoresBolinhas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/ConstantesDeAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuController.cs" />
@@ -59,7 +64,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GerenciadorDeSom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/DinoEsquerda.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animation/DinoDireita.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AtiradorController.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +123,7 @@
       <workItem from="1611609613601" duration="15336000" />
       <workItem from="1611704574643" duration="1019000" />
       <workItem from="1611871257647" duration="627000" />
-      <workItem from="1611953821602" duration="1814000" />
+      <workItem from="1611953821602" duration="3341000" />
     </task>
     <servers />
   </component>
@@ -237,23 +246,6 @@
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1611618042261" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/BolaController.cs</url>
-          <line>335</line>
-          <properties documentPath="D:\WinnyPuzzleBobbleRemake\Assets\Scripts\BolaController.cs" initialLine="333">
-            <startOffsets>
-              <option value="10997" />
-            </startOffsets>
-            <endOffsets>
-              <option value="11012" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#RecargaController.ProximaCor" memberName="this" />

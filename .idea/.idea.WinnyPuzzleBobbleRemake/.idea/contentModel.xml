@@ -18,6 +18,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Animation" t="Include">
+            <e p="DinoDireita.cs" t="Include" />
+            <e p="DinoEsquerda.cs" t="Include" />
+          </e>
           <e p="AtiradorController.cs" t="Include" />
           <e p="Audio" t="Include">
             <e p="GerenciadorDeSom.cs" t="Include" />

@@ -16,12 +16,7 @@ namespace Audio
                 som.origem.loop = som.loop;
             }
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-        }
-
+        
         public void Play(string nome)
         {
             Som somParaTocar = Array.Find(sons, som => som.nome == nome);

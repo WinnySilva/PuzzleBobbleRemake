@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Animation;
 using Enums;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -22,7 +23,8 @@ public class RecargaController : MonoBehaviour
     private bool _pararRecarregamento;
     private bool _pararTiro;
     private float _tempoDesdeOUltimoTiro = 0f;
-    private bool _avisouDoTiro = false; 
+    private bool _avisouDoTiro = false;
+    private DinoEsquerda _dinoEsquerda;
     private static List<CoresBolinhas> _ultimasBolinhas = new List<CoresBolinhas>();
     
     private void Awake()
@@ -41,6 +43,7 @@ public class RecargaController : MonoBehaviour
 
     private void Start()
     {
+        _dinoEsquerda = FindObjectOfType<DinoEsquerda>();
         StartCoroutine(CarregarPrimeiraBola());
     }
 
@@ -50,12 +53,14 @@ public class RecargaController : MonoBehaviour
         if (_tempoDesdeOUltimoTiro > tempoDeAviso && !_avisouDoTiro)
         {
             _avisouDoTiro = true;
+            _dinoEsquerda.AnimacaoHurry(true);
         }
 
         if (_tempoDesdeOUltimoTiro > tempoParaAtirar)
         {
             _avisouDoTiro = false;
             _tempoDesdeOUltimoTiro = 0;
+            _dinoEsquerda.AnimacaoHurry(false);
             mira.AtirarBola();
         }
     }
@@ -89,6 +94,10 @@ public class RecargaController : MonoBehaviour
         {
             return;
         }
+        
+        _avisouDoTiro = false;
+        _tempoDesdeOUltimoTiro = 0;
+        _dinoEsquerda.AnimacaoHurry(false);
 
         atualProjetil.GetComponent<CircleCollider2D>().enabled = true;
         atualProjetil.transform.parent = teto.transform;
