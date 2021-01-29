@@ -641,30 +641,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c3cda53150ff343a62a50b7490538a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posicoesVermelho:
-  - {x: -4, y: 6, z: 0}
-  - {x: -3, y: 6, z: 0}
-  - {x: -4, y: 5, z: 0}
-  - {x: -3, y: 5, z: 0}
-  - {x: 0, y: 4, z: 0}
-  posicoesAmarelo:
-  - {x: -2, y: 6, z: 0}
-  - {x: -1, y: 6, z: 0}
-  - {x: -2, y: 5, z: 0}
-  - {x: -1, y: 5, z: 0}
-  - {x: 2, y: 4, z: 0}
+  posicoesVermelho: []
+  posicoesAmarelo: []
   posicoesAzul:
-  - {x: 0, y: 6, z: 0}
-  - {x: 1, y: 6, z: 0}
-  - {x: 0, y: 5, z: 0}
-  - {x: 1, y: 5, z: 0}
+  - {x: -1, y: 5, z: 0}
+  - {x: -1, y: 3, z: 0}
+  - {x: -1, y: 0, z: 0}
   verde:
-  - {x: 2, y: 6, z: 0}
-  - {x: 3, y: 6, z: 0}
-  - {x: 2, y: 5, z: 0}
-  - {x: -2, y: 4, z: 0}
   - {x: -1, y: 4, z: 0}
-  - {x: -3, y: 3, z: 0}
+  - {x: -1, y: 1, z: 0}
+  posicoesCinza:
+  - {x: -1, y: 6, z: 0}
+  - {x: 0, y: 6, z: 0}
+  posicoesRoxa:
+  - {x: -1, y: 2, z: 0}
+  posicoesBranca:
+  - {x: -1, y: -1, z: 0}
   prefab: {fileID: 1653526965}
   gridBolinhas: {fileID: 1394341342}
   alturaDerrota: {fileID: 698185190}
