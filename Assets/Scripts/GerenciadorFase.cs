@@ -52,14 +52,13 @@ public class GerenciadorFase : MonoBehaviour
 
     public void ConfiguraFase()
     {
-       
-        posicionarBolinhas(posicoesVermelho, prefab, CoresBolinhas.VERMELHO);
-        posicionarBolinhas(posicoesAmarelo, prefab, CoresBolinhas.AMARELO);
-        posicionarBolinhas(posicoesAzul, prefab, CoresBolinhas.AZUL);
-        posicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
+        PosicionarBolinhas(posicoesVermelho, prefab, CoresBolinhas.VERMELHO);
+        PosicionarBolinhas(posicoesAmarelo, prefab, CoresBolinhas.AMARELO);
+        PosicionarBolinhas(posicoesAzul, prefab, CoresBolinhas.AZUL);
+        PosicionarBolinhas(verde, prefab, CoresBolinhas.VERDE);
     }
 
-    private void posicionarBolinhas(Vector3Int[] posicoes, GameObject prefab, CoresBolinhas cor)
+    private void PosicionarBolinhas(Vector3Int[] posicoes, GameObject prefab, CoresBolinhas cor)
     {
         Vector3 vec3;
         Rigidbody2D rg;

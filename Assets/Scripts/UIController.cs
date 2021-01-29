@@ -30,6 +30,11 @@ public class UIController : MonoBehaviour
         
     }
 
+    private void OnDestroy()
+    {
+        GameController.FinalJogo -= FinalJogo;
+    }
+
     private void Start()
     {
         StartCoroutine(AparecerMensagemInicial());

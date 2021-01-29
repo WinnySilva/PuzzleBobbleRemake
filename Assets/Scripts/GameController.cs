@@ -49,6 +49,12 @@ public class GameController : MonoBehaviour
         StartCoroutine(TocarSonsDeInicio());        
     }
 
+    private void OnDestroy()
+    {
+        BolaController.LimiteBolinhasAlcancado -= FinalJogoDerrota;
+
+    }
+
     private void Start()
     {
          gameInfo = GameObject.FindObjectOfType<GameInfoAcrossRounds>();

@@ -29,6 +29,13 @@ public class RecargaController : MonoBehaviour
         GameController.FinalJogo += PararRegarga;
     }
 
+    private void OnDestroy()
+    {
+        MiraController.Atirar -= Atirado;
+        BolaController.BolinhaFixada -= RecarregarMira;
+        GameController.FinalJogo -= PararRegarga;
+    }
+
     private void Start()
     {
         StartCoroutine(CarregarPrimeiraBola());

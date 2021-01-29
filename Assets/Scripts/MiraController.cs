@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Audio;
 using Enums;
 using UnityEngine;
@@ -27,6 +28,11 @@ public class MiraController : MonoBehaviour
     {
         GameController.FinalJogo += PararTiros;
         _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
+    }
+
+    private void OnDestroy()
+    {
+        GameController.FinalJogo -= PararTiros;
     }
 
     // Update is called once per frame

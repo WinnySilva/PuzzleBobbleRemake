@@ -57,7 +57,7 @@ public class BolaController : MonoBehaviour
         _fixado = false;
         TetoController.AcaoTetoAbaixou += AbaixarBolinha;
     }
-
+    
     private void AbaixarBolinha(float offsetBaixar)
     {
         try
@@ -122,6 +122,8 @@ public class BolaController : MonoBehaviour
         Vector3Int celulaGrid = new Vector3Int(x, y, 0);
         posicaoBolinhasTile.SetTile(celulaGrid, null);
         controleJogo.RemoverBolinha(this);
+        
+        TetoController.AcaoTetoAbaixou -= AbaixarBolinha;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

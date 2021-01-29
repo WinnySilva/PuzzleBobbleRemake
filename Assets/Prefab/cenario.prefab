@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 1898494120310772149}
   - component: {fileID: 1898494120310772151}
   - component: {fileID: 1898494120310772150}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: cenario_tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898494120310772148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1898494120416626180}
@@ -4278,7 +4278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1898494120416626180}
   - component: {fileID: 1898494120416626203}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: cenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4325,7 +4325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898494120513532421}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5267,7 +5267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898494121013092162}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5282,7 +5282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898494121013092161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.94, z: 0}
+  m_LocalPosition: {x: -0.39, y: -0.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1898494121093948484}
@@ -5303,7 +5303,7 @@ GameObject:
   - component: {fileID: 1898494121093948484}
   - component: {fileID: 1898494121093948485}
   - component: {fileID: 1458323494}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: alavanca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5318,8 +5318,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898494121093948507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.09, y: -6.65, z: 0}
-  m_LocalScale: {x: 2.196426, y: 2.196426, z: 2.196426}
+  m_LocalPosition: {x: 1.13, y: -6.54, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 2.196426}
   m_Children: []
   m_Father: {fileID: 1898494121013092162}
   m_RootOrder: 0
@@ -5405,7 +5405,7 @@ GameObject:
   - component: {fileID: 1898494121872279019}
   - component: {fileID: 1898494121872278932}
   - component: {fileID: 1485383427}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: dinoDireita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5420,7 +5420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898494121872279018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.01, y: -6.285, z: 0}
+  m_LocalPosition: {x: 2.16, y: -6.285, z: 0}
   m_LocalScale: {x: 3.3817735, y: 3.4198704, z: 2.196426}
   m_Children: []
   m_Father: {fileID: 1898494121013092162}
@@ -5507,7 +5507,7 @@ GameObject:
   - component: {fileID: 1898494121938730698}
   - component: {fileID: 1898494121938730699}
   - component: {fileID: 936779168}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: dinoEsq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5609,7 +5609,7 @@ GameObject:
   - component: {fileID: 1898494122300520872}
   - component: {fileID: 1898494122300520873}
   - component: {fileID: 420341343}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: maquina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
