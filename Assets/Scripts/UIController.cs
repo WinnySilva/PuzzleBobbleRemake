@@ -16,10 +16,7 @@ public class UIController : MonoBehaviour
 
     public GameObject gameOverMsg;
     public GameObject inicioRoundMsg;
-    public String proximaCena;
-
-
-    private DateTime horaInicio;
+    public String proximaCena;         
 
     private void Awake()
     {
@@ -67,23 +64,20 @@ public class UIController : MonoBehaviour
             gameOverMsg.SetActive(true);
         }
     }
-
+        
     IEnumerator AparecerMensagemInicial()
     {
         inicioRoundMsg.SetActive(true);
         yield return new WaitForSeconds(2);
         inicioRoundMsg.SetActive(false);
-        horaInicio = DateTime.Now;
+        this.controleJogo.HoraInicio = DateTime.Now;
     }
 
     IEnumerator Vitoria()
-    {
-        DateTime horaFinal = DateTime.Now;
-        TimeSpan diff = horaFinal.Subtract(horaInicio);
-        int segundos = (int)Math.Truncate(diff.TotalSeconds);
-        
-        pontuacaoFinalUIText.text = (controleJogo.ObterQtdBolinhasDestruidas() * 10).ToString()+"PTS" ;
-        segundosTotaisUIText.text = segundos.ToString().PadLeft(2, '0') + " SEC";
+    {       
+        pontuacaoFinalUIText.text = Mathf.RoundToInt((float)controleJogo.PontuacaoBonus).ToString()+" PTS" ;
+        segundosTotaisUIText.text = Mathf.RoundToInt((float)controleJogo.TempoJogo).ToString().PadLeft(2, '0') + " SEC";
+
         pontuacaoFinalUIText.gameObject.SetActive(true);
         segundosTotaisUIText.gameObject.SetActive(true);
         roundClearMsg.gameObject.SetActive(false);
@@ -107,4 +101,6 @@ public class UIController : MonoBehaviour
         }
 
     }
+
+
 }

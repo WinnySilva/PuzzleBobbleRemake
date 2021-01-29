@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Audio;
 using Enums;
@@ -16,6 +17,9 @@ public class GameController : MonoBehaviour
 
     public delegate void FinalJogoAcao(bool vitoria);
     public static event FinalJogoAcao FinalJogo;
+    public double PontuacaoBonus { get; set; }
+    public double TempoJogo { get; set; }
+    public DateTime HoraInicio { get; set; }
 
     private int _x, _y;
     BolaController _bola;
@@ -25,6 +29,7 @@ public class GameController : MonoBehaviour
     private GerenciadorDeSom _gerenciadorDeSom;
 
     private float _pontuacao;
+
 
     public float Pontuacao { get => _pontuacao; }
 
@@ -51,7 +56,11 @@ public class GameController : MonoBehaviour
         if (!_finalDeJogo && _bolasNoJogo.Count == 0)
         {
             _finalDeJogo = true;
-            FinalJogo?.Invoke(true);
+            DateTime horaFinal = DateTime.Now;
+            TimeSpan diff = horaFinal.Subtract(HoraInicio);
+            this.CalculoBonus(diff.TotalSeconds);
+            TempoJogo = Math.Truncate(diff.TotalSeconds);
+            FinalJogo?.Invoke(true);          
         }
     }
 
@@ -172,7 +181,7 @@ public class GameController : MonoBehaviour
             }
         }
 
-        this._pontuacao += bolasADerrubar == 0 ? 0 : Mathf.Pow(2,bolasADerrubar) * 10;
+        this._pontuacao += bolasADerrubar == 0 ? 0 : Mathf.Pow(2, bolasADerrubar) * 10;
 
     }
 
@@ -307,6 +316,23 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.9f);
 
         _gerenciadorDeSom.Play(ConstantesDeAudio.INICIO_GO);
+
+    }
+
+    private void CalculoBonus(Double sec)
+    {
+        if (sec > 48)
+        {
+            this.PontuacaoBonus = 0;
+        }
+        else if (sec < 6)
+        {
+            this.PontuacaoBonus = 50000;
+        }
+        else
+        {
+            this.PontuacaoBonus = Math.Truncate((48 - sec) * 1162.79);
+        }        
 
     }
 
