@@ -263,7 +263,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -480,6 +480,14 @@ PrefabInstance:
       propertyPath: controleTeto
       value: 
       objectReference: {fileID: 306543062}
+    - target: {fileID: 1314921539, guid: 395eeae9b001eb64e938835b97cbe468, type: 3}
+      propertyPath: m_text
+      value: Round 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344433544, guid: 395eeae9b001eb64e938835b97cbe468, type: 3}
+      propertyPath: m_text
+      value: Round 04
+      objectReference: {fileID: 0}
     - target: {fileID: 8526959306146322328, guid: 395eeae9b001eb64e938835b97cbe468,
         type: 3}
       propertyPath: proximaCena
