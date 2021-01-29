@@ -27,8 +27,9 @@ public class GameController : MonoBehaviour
     private Dictionary<string, BolaController> _bolasNoTeto;
     private bool _finalDeJogo;
     private GerenciadorDeSom _gerenciadorDeSom;
+    private AudioSource musicaFase;  
 
-    
+
     private GameInfoAcrossRounds gameInfo;       
 
     public Dictionary<string, BolaController> BolasNoJogo
@@ -70,6 +71,7 @@ public class GameController : MonoBehaviour
             this.CalculoBonus(diff.TotalSeconds);
             TempoJogo = Math.Truncate(diff.TotalSeconds);            
             this.gameInfo.Pontuacao = this.PontuacaoBonus;
+            
             FinalJogo?.Invoke(true);
         }
     }
@@ -326,6 +328,8 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(0.9f);
 
         _gerenciadorDeSom.Play(ConstantesDeAudio.INICIO_GO);
+
+        _gerenciadorDeSom.Play(ConstantesDeAudio.MUSICA_FASE);
 
     }
 

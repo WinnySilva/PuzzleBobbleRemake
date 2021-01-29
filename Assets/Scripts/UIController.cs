@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Audio;
+using Enums;
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -18,6 +20,8 @@ public class UIController : MonoBehaviour
     public GameObject inicioRoundMsg;
     public String proximaCena;
     private GameInfoAcrossRounds gameInfo;
+    private GerenciadorDeSom _gerenciadorDeSom;
+    private bool foiDerrotado;
 
     private void Awake()
     {
@@ -27,6 +31,7 @@ public class UIController : MonoBehaviour
         pontuacaoFinalUIText.gameObject.SetActive(false);
         segundosTotaisUIText.gameObject.SetActive(false);
         roundClearMsg.gameObject.SetActive(false);
+        foiDerrotado = false;
 
     }
 
@@ -37,8 +42,9 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(AparecerMensagemInicial());
+        _gerenciadorDeSom = FindObjectOfType<GerenciadorDeSom>();
         gameInfo = GameObject.FindObjectOfType<GameInfoAcrossRounds>();
+        StartCoroutine(AparecerMensagemInicial());
     }
 
     // Update is called once per frame
@@ -48,6 +54,13 @@ public class UIController : MonoBehaviour
         {
             AtualizaPontuacao();
         }
+
+        if (foiDerrotado && Input.anyKeyDown)
+        {
+            SceneManager.LoadScene("MenuInicial", LoadSceneMode.Single); //trocar de cena
+        }
+
+
     }
 
     void AtualizaPontuacao()
@@ -62,13 +75,17 @@ public class UIController : MonoBehaviour
 
     private void FinalJogo(bool ehVitoria)
     {
+        _gerenciadorDeSom.Stop(ConstantesDeAudio.MUSICA_FASE);
         if (ehVitoria)
         {
+            _gerenciadorDeSom.Play(ConstantesDeAudio.STAGE_CLEAR);
             StartCoroutine(Vitoria());
-
         }
         else
         {
+            foiDerrotado = true;
+            _gerenciadorDeSom.Play(ConstantesDeAudio.DERROTA_SOM);
+            _gerenciadorDeSom.Play(ConstantesDeAudio.GAME_OVER);
             gameOverMsg.SetActive(true);
         }
     }

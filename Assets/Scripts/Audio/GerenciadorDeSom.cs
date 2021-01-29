@@ -23,10 +23,25 @@ namespace Audio
             if (somParaTocar == null)
             {
                 Debug.LogWarning($"Som selecionado nao encontrado: {nome}");
-                return;
+                return null;
             }
             
             somParaTocar.origem.Play();
+            return somParaTocar.origem;
         }
+
+        public AudioSource Stop(string nome)
+        {
+            Som somParaTocar = Array.Find(sons, som => som.nome == nome);
+            if (somParaTocar == null)
+            {
+                Debug.LogWarning($"Som selecionado nao encontrado: {nome}");
+                return null;
+            }
+
+            somParaTocar.origem.Stop();
+            return somParaTocar.origem;
+        }
+
     }
 }
