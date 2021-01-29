@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1896fbe6-df84-4f27-816d-a737b364d0fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WinnyPuzzleBobbleRemake/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/cenario.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/cenario.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/fase1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/fase1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BolaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GerenciadorFase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GerenciadorFase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RecargaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,10 +241,10 @@
           <line>335</line>
           <properties documentPath="D:\WinnyPuzzleBobbleRemake\Assets\Scripts\BolaController.cs" initialLine="333">
             <startOffsets>
-              <option value="11027" />
+              <option value="11015" />
             </startOffsets>
             <endOffsets>
-              <option value="11042" />
+              <option value="11030" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />

@@ -57,7 +57,7 @@ public class BolaController : MonoBehaviour
         _fixado = false;
         TetoController.AcaoTetoAbaixou += AbaixarBolinha;
     }
-    
+
     private void AbaixarBolinha(float offsetBaixar)
     {
         try
@@ -122,7 +122,7 @@ public class BolaController : MonoBehaviour
         Vector3Int celulaGrid = new Vector3Int(x, y, 0);
         posicaoBolinhasTile.SetTile(celulaGrid, null);
         controleJogo.RemoverBolinha(this);
-        
+
         TetoController.AcaoTetoAbaixou -= AbaixarBolinha;
     }
 
@@ -335,7 +335,8 @@ public class BolaController : MonoBehaviour
 
         if (ahEsquerda)
         {
-            if (!posicaoBolinhasTile.HasTile(esqDoColidido) && !paredeTileMap.HasTile(esqDoColidido))
+            if (!posicaoBolinhasTile.HasTile(esqDoColidido) && !paredeTileMap.HasTile(esqDoColidido) &&
+                positionDif.y < 0.20f)
             {
                 return esqDoColidido;
             }
@@ -347,8 +348,9 @@ public class BolaController : MonoBehaviour
 
             return dirInfDoColidido;
         }
-        
-        if (!posicaoBolinhasTile.HasTile(dirDoColidido) && !paredeTileMap.HasTile(dirDoColidido))
+
+        if (!posicaoBolinhasTile.HasTile(dirDoColidido) && !paredeTileMap.HasTile(dirDoColidido) &&
+            positionDif.y < 0.20f)
         {
             return dirDoColidido;
         }
